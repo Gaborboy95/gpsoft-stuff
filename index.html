@@ -1,969 +1,938 @@
 <html>
-
-<head>
+  <head>
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <style type="text/css">
-        html {
-            background-color: black;
-            color: white !important;
-            text-align: center !important;
-            user-select: none;
-            margin: auto;
-            list-style: none;
-        }
-        
-        ol {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        table, th, td {
-          border: 1px solid;
-        }
-        
-        .c1 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-        }
-        
-        .c16 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        
-        .c24 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 22pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c2 {
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 12pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c20 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 15.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c21 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 13.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c25 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 18pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c17 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.07;
-            orphans: 2;
-            widows: 2;
-            height: 11pt;
-        }
-        
-        .c19 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            height: 11pt;
-        }
-        
-        .c11 {
-            padding-top: 24pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c10 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c14 {
-            padding-top: 12pt;
-            padding-bottom: 0pt;
-            line-height: 1.6363636363636365;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c8 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c27 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 15.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c5 {
-            font-weight: 800;
-        }
-        
-        .c6 {
-            font-size: 7pt;
-            font-family: "Times New Roman";
-            font-weight: 400;
-        }
-        
-        .c26 {
-            text-indent: -18pt;
-        }
-        
-        .c4 {
-            font-weight: 400;
-            font-family: "Courier New";
-        }
-        
-        .c15 {
-            text-indent: -18pt;
-        }
-        
-        .c9 {
-            text-indent: -18pt;
-        }
-        
-        .c13 {
-            height: 11pt;
-        }
-        
-        .c7 {
-            font-size: 12pt;
-        }
-        
-        .c12 {
-            font-size: 7pt;
-        }
-        
-        .title {
-            padding-top: 0pt;
-            font-size: 26pt;
-            padding-bottom: 3pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .subtitle {
-            padding-top: 0pt;
-            font-size: 15pt;
-            padding-bottom: 16pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        li {
-            font-size: 11pt;
-            font-family: "Arial";
-        }
-        
-        p {
-            margin: 0;
-            font-size: 11pt;
-            font-family: "Arial";
-        }
-        
-        h1 {
-            padding-top: 20pt;
-            font-size: 20pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h2 {
-            padding-top: 18pt;
-            font-size: 16pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h3 {
-            padding-top: 16pt;
-            font-size: 14pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h4 {
-            padding-top: 14pt;
-            font-size: 12pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h5 {
-            padding-top: 12pt;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h6 {
-            padding-top: 12pt;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-        }
+      html {
+        background-color: black;
+        color: white !important;
+        text-align: center !important;
+        user-select: none;
+        margin: auto;
+        list-style: none;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+	  body {
+		width: 100vw;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+		padding: 10px;
+		overflow-x: hidden;
+		scrollbar-width: none; 
+		-ms-overflow-style: none;
+		visibility: visible;
+	  }
+
+	  body::-webkit-scrollbar {
+		display: none;
+	  }
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+	  table {
+		  margin: auto;
+		  overflow-x: auto !important;
+	  }
+
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+
+	  .c7, 
+	  .c4 {
+		  font-weight: bold;
+	  }
     </style>
-</head>
+  </head>
 
-<body id="buffje" class="c18" onclick="this.style.setProperty('color', this.style.color == 'white' ? 'black' : 'white', 'important')" style="width: 100vw; overflow-x: hidden;">
-    <ol class="c1 lst-kix_tpq8m4h3lfvd-0 start" start="1">
-        <li class="c0 c6 li-bullet-0"><span class="c2">Fogalmak</span></li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">&Aacute;ltal&aacute;nos v&aacute;laszt&oacute;jog</span
-          ><span class="c2"
-            >: demokr&aacute;ci&aacute;ban, nincs tekintettel korra (de 18+),
-            nemre, iskol&aacute;zotts&aacute;gra</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megp&aacute;rt</span
-          ><span class="c2"
-            >: nagy, t&ouml;bb t&iacute;zezres tags&aacute;gsz&aacute;m&uacute;
-            p&aacute;rt</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Fasizmus</span
-          ><span class="c2"
-            >: sz&eacute;ls&#337;jobb oldali, tot&aacute;lis dikt&aacute;tora
-            Mussolini, Nemzeti Fasiszta P&aacute;rt ir&aacute;ny&iacute;t,
-            nacionalista, egy vezet&#337;-ideol&oacute;gia-p&aacute;rt</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Korporat&iacute;v &aacute;llam</span
-          ><span class="c2"
-            >: fasiszta &aacute;llam &eacute;p&iacute;ti ki, szakmai
-            &aacute;gazatonk&eacute;nt t&ouml;m&ouml;r&iacute;tik az embereket,
-            nem a t&aacute;rsadalmi r&eacute;tegek szerint: munkaad&oacute;,
-            munkav&aacute;llal&oacute; &eacute;s &aacute;llami
-            tisztvisel&#337;</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Kisantant</span
-          ><span class="c2"
-            >: 1920-21, 3 tag: Csehszlov&aacute;kia, Rom&aacute;nia,
-            Jugoszl&aacute;via, c&eacute;lja Magyarorsz&aacute;g
-            elszigetel&eacute;se &eacute;s a francia befoly&aacute;s
-            fenntart&aacute;sa, francia &ouml;tletre j&ouml;tt l&eacute;tre</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Dawes-terv</span
-          ><span class="c2"
-            >: amerikai gazdas&aacute;gi terv a
-            vil&aacute;gv&aacute;ls&aacute;gb&oacute;l val&oacute;
-            kil&aacute;bal&aacute;sra</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">P&aacute;rt&aacute;llam</span
-          ><span class="c2"
-            >: tot&aacute;lis diktat&uacute;r&aacute;ban j&ouml;n l&eacute;tre,
-            &aacute;llam &ouml;sszefon&oacute;dik a diktat&uacute;r&aacute;t
-            gyakorl&oacute; p&aacute;rttal; n&aacute;cik, szovjetek,
-            fasiszt&aacute;k</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">&Aacute;llamos&iacute;t&aacute;s</span
-          ><span class="c2"
-            >: mag&aacute;ntulajdon k&aacute;rp&oacute;tl&aacute;s
-            n&eacute;lk&uuml;li elv&eacute;tele, kommunizmussal egy&uuml;tt
-            j&aacute;r: f&#337;leg gy&aacute;rak, c&eacute;gek</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Kollektiviz&aacute;l&aacute;s</span
-          ><span class="c2"
-            >: f&ouml;ldbirtokok kisaj&aacute;t&iacute;t&aacute;sa
-            k&aacute;rp&oacute;tl&aacute;s n&eacute;lk&uuml;l</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tervutas&iacute;t&aacute;sos rendszer</span
-          ><span class="c2"
-            >: szabad piacba beavatkozik az &aacute;llam tervekkel:
-            megsz&#369;nteti/csak beavatkozik</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Gulag</span
-          ><span class="c2"
-            >: b&uuml;ntet&#337; t&aacute;borok h&aacute;l&oacute;zata,
-            Szovjetuni&oacute;, &iacute;t&eacute;lettel vagy an&eacute;lk&uuml;l,
-            rettenetes k&ouml;r&uuml;lm&eacute;nyek, &aacute;ltal&aacute;ban
-            hal&aacute;l</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Szem&eacute;lyi kultusz</span
-          ><span class="c2"
-            >: tot&aacute;lis diktat&uacute;ra jellemz&#337;je: a vez&eacute;rt
-            dics&#337;&iacute;tik, az &#337; kultusz&aacute;t terjesztik &eacute;s
-            szem&eacute;lye &aacute;tsz&ouml;vi a mindennapokat (szobrok,
-            plak&aacute;tok, stb.)</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Koncepci&oacute;s per</span
-          ><span class="c2"
-            >: valamilyen igazs&aacute;galappal rendelkez&#337;, de
-            v&eacute;geredm&eacute;nyben elferd&iacute;tett per -&gt; hamis
-            &iacute;t&eacute;letek, diktat&uacute;r&aacute;k politikai
-            fegyvere</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&#337;zsde</span
-          ><span class="c2"
-            >: szabadpiaci kapitalista &aacute;llamokra jellemz&#337; -&gt;
-            v&aacute;llalat r&eacute;szv&eacute;nyeket bocs&aacute;t ki, az
-            &aacute;rfolyam fog v&aacute;ltozni, objekt&iacute;v (termel&eacute;si
-            adatok) &eacute;s szubjekt&iacute;v (k&uuml;ls&#337; dolgok, az
-            emberek mit gondolnak) t&eacute;nyez&#337;k is
-            befoly&aacute;solj&aacute;k</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&uacute;ltermel&eacute;si v&aacute;ls&aacute;g</span
-          ><span class="c2"
-            >: t&uacute;l sok term&eacute;ket termeltek, amit nem tudnak eladni
-            -&gt; 1929-es v&aacute;ls&aacute;g oka</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">New Deal</span
-          ><span class="c2"
-            >: Roosevelt v&aacute;laszt&aacute;si programja, amelyet az amerikai
-            v&aacute;ls&aacute;gb&oacute;l kil&aacute;bal&aacute;s&eacute;rt
-            &iacute;rt, alapjait Keynes gondolataira &eacute;p&iacute;tette: nem
-            termel&#337; &aacute;llami beruh&aacute;z&aacute;sokkal
-            n&ouml;velt&eacute;k a v&aacute;s&aacute;rl&oacute;er&#337;t</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tot&aacute;lis diktat&uacute;ra</span
-          ><span class="c2"
-            >: ny&iacute;lt er&#337;szakkal t&aacute;mad&oacute; hatalom</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megpropaganda</span
-          ><span class="c2"
-            >: kisz&eacute;les&iacute;tett&eacute;k a v&aacute;laszt&oacute;jogot
-            -&gt; t&ouml;bb m&#369;velts&eacute;gi szint szavazhat -&gt;
-            alacsonyabb szinten kell megfogalmazni a sz&ouml;vegeket</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Nemzetiszocializmus</span
-          ><span class="c2"
-            >: a saj&aacute;t nemzetet el&#337;t&eacute;rbe helyezik,
-            vil&aacute;guralomra t&ouml;r&#337; nacionalista mozgalom,
-            vezet&#337;je Adolf Hitler, n&aacute;cik</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Fajelm&eacute;let</span
-          ><span class="c2"
-            >: nemzeteket rangsorolt&aacute;k: als&oacute;bb,
-            &iacute;rtand&oacute; n&eacute;pek; szolg&aacute;l&oacute;
-            n&eacute;pek; n&eacute;metek: uralkod&oacute;k, legfells&#337;bb
-            rend&#369; n&eacute;p</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Zsid&oacute;&uuml;ld&ouml;z&eacute;s</span
-          ><span class="c2"
-            >: antiszemitizmus, fajelm&eacute;let szerint
-            elpuszt&iacute;tand&oacute; faj</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">F&uuml;hrer</span
-          ><span class="c2"
-            >: vez&eacute;r, Hitler, N&eacute;metorsz&aacute;g teljhatalm&uacute;
-            dikt&aacute;tora</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">SS</span
-          ><span class="c2"
-            >: fekete egyenruh&aacute;s, elit egys&eacute;gek, eredetileg Hitler
-            test&#337;rs&eacute;ge, k&eacute;s&#337;bb a Hossz&uacute;
-            K&eacute;sek &eacute;jszak&aacute;j&aacute;n lesznek
-            h&iacute;rhedtek</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Berlin-R&oacute;ma tengely</span
-          ><span class="c2"
-            >: Olaszorsz&aacute;g-N&eacute;metorsz&aacute;g
-            sz&ouml;vets&eacute;gi, egym&aacute;st t&aacute;mogat&oacute;
-            szerz&#337;d&eacute;se</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Anschluss</span
-          ><span class="c2"
-            >: Ausztria N&eacute;metorsz&aacute;ghoz csatol&aacute;sa</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tekint&eacute;lyelv&#369; &aacute;llam</span
-          ><span class="c2"
-            >: m&#369;k&ouml;dik, de korl&aacute;tolt a demokr&aacute;cia: a
-            vezet&#337; olyan magas tekint&eacute;ly&#369;, hogy a
-            jog&aacute;llamis&aacute;g felett &aacute;ll,
-            tekint&eacute;ly&eacute;t felhaszn&aacute;lva
-            ir&aacute;ny&iacute;t</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Er&#337;szakmentes ellen&aacute;ll&aacute;s</span
-          ><span class="c2"
-            >: Gandhi a vezet&#337;je, indiai f&uuml;ggetlens&eacute;gi mozgalom,
-            a britek elleni ellen&aacute;ll&aacute;ssal kiv&iacute;vja India
-            f&uuml;ggetlens&eacute;g&eacute;t</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Magaskult&uacute;ra (elitkult&uacute;ra)</span
-          ><span class="c2"
-            >: a m&#369;veltebb, kifinomultabb emberek
-            sz&oacute;rakoztat&aacute;si m&oacute;dja (opera, nagyreg&eacute;nyek,
-            stb.)</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megkult&uacute;ra</span
-          ><span class="c2"
-            >: a t&ouml;megek &aacute;ltal is meg&eacute;rtett
-            sz&oacute;rakoztat&aacute;si m&oacute;dok, mindenki meg&eacute;rti
-            (operett, kom&eacute;dia)</span
-          >
-        </li>
-      </ul>
-      <ol class="c1 lst-kix_tpq8m4h3lfvd-0" start="2">
-        <li class="c0 c6 li-bullet-0">
-          <span class="c2">Szem&eacute;lyek</span>
-        </li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Benito Mussolini</span
-          ><span class="c2"
-            >: Olasz fasiszta politikus, dikt&aacute;tor, a n&aacute;ci
-            N&eacute;metorsz&aacute;g sz&ouml;vets&eacute;gese, szem&eacute;lyi
-            kultuszt &eacute;p&iacute;tett ki, 1922-43</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Szt&aacute;lin</span
-          ><span class="c2"
-            >: Szovjet politikus, k&eacute;s&#337;bb dikt&aacute;tor, a
-            Szovjetuni&oacute; Kommunista P&aacute;rtj&aacute;nak
-            f&#337;titk&aacute;ra, aki felismeri ezen tiszts&eacute;g
-            fontoss&aacute;g&aacute;t &eacute;s ezt kihaszn&aacute;lva veszi
-            &aacute;t a hatalmat</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Franklin Delano Roosevelt</span
-          ><span class="c2"
-            >: 1932-ben nyerte meg az eln&ouml;kv&aacute;laszt&aacute;st az
-            USA-ban a demokrat&aacute;k oldal&aacute;n, &#337; hirdette meg a New
-            Deal programot, amely a megold&aacute;s volt a
-            v&aacute;ls&aacute;gb&oacute;l val&oacute;
-            kil&aacute;bal&aacute;sra</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">John Maynard Keynes</span
-          ><span class="c2"
-            >: New Deal k&ouml;zgazdas&aacute;gi alapjait kidolgoz&oacute;
-            k&ouml;zgazd&aacute;sz</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Adolf Hitler</span
-          ><span class="c2"
-            >: Osztr&aacute;k sz&uuml;let&eacute;s&#369; n&eacute;met politikus, a
-            Nemzetiszocialista N&eacute;met Munk&aacute;sp&aacute;rt
-            vezet&#337;je, k&eacute;s&#337;bb N&eacute;metorsz&aacute;g
-            teljhatalm&uacute; vezet&#337;je, F&uuml;hrere</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Joseph Goebbels</span
-          ><span class="c2"
-            >: N&aacute;ci N&eacute;metorsz&aacute;g propaganda minisztere, a
-            n&aacute;cizmust &uuml;gyesen terjeszti &eacute;s
-            propag&aacute;lja</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Mah&aacute;tma Gandhi</span
-          ><span class="c2"
-            >: Indiai politikus, spiritu&aacute;lis vezet&#337;, a brit uralom
-            elleni passz&iacute;v ellen&aacute;ll&aacute;s megteremt&#337;je, a
-            s&oacute;menet megszervez&#337;je, k&eacute;s&#337;bb az &uacute;j
-            indiai alkotm&aacute;ny egyik megalkot&oacute;ja</span
-          >
-        </li>
-      </ul>
-      <ol class="c1 lst-kix_tpq8m4h3lfvd-0" start="3">
-        <li class="c0 c6 li-bullet-0">
-          <span class="c2">Kronol&oacute;gia</span>
-        </li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3"
-            >1922 (Fasiszta hatalom&aacute;tv&eacute;tel
-            Olaszorsz&aacute;gban)</span
-          >
-        </li>
-      </ul>
-      <p class="c0 c8 c9">
-        <span class="c2"
-          >Olaszorsz&aacute;g az antant r&eacute;sz&eacute;n nyert de
-          v&eacute;g&uuml;l a b&eacute;keszerz&#337;d&eacute;ssel
-          el&eacute;gtelen</span
+  <body
+    id="buffje"
+    class="c18"
+    onclick="this.style.setProperty('opacity', this.style.opacity == '1' ? '0' : '1', 'important')"
+  >
+    <ol class="c13 lst-kix_4kchk7yj2aqj-0" start="2">
+      <li class="c24 c10 li-bullet-0">
+        <span class="c4">Vil&aacute;girodalom</span>
+      </li>
+    </ol>
+    <p class="c3">
+      <span class="c7">1.</span><span class="c6">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >Kiknek, milyen m&#369;v&eacute;vel &eacute;s mikor kezd&#337;dik a
+        klasszikus moderns&eacute;g?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_fznqo0mjiuf2-0 start">
+      <li class="c2 li-bullet-0">
+        <span class="c1">Flaubert: Bovaryn&eacute; 1857</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Baudelaire: A roml&aacute;s vir&aacute;gai</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Kezdet: 1857 (19. sz&aacute;zad II. fele)</span>
+      </li>
+    </ul>
+    <p class="c3">
+      <span class="c7">2.</span><span class="c6">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >Mutasd be a realizmust &eacute;s a realista reg&eacute;ny
+        &aacute;ltal&aacute;nos jellemz&#337;it</span
+      >
+    </p>
+    <ul class="c13 lst-kix_51yoncsry3wc-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1"
+          >Eredete 19. sz&aacute;zad , 20. sz&aacute;zadban bontakozik ki.
+          Filoz&oacute;fiai alapja a pozitivizmus.</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >mert r&eacute;szben tudt&aacute;k csak
-          &eacute;rv&eacute;nyes&iacute;teni a
-          k&eacute;r&eacute;s&uuml;ket.(balk&aacute;n-f&eacute;lsziget
-          terjeszked&eacute;s + f&ouml;ldk&ouml;zi tenger + gyarmatok)</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Forr&aacute;sa: Ill&uacute;zi&oacute;veszt&eacute;s</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >H&aacute;bor&uacute; ut&aacute;n &#10132; gazdas&aacute;gi
-          v&aacute;ls&aacute;g, t&aacute;rsadalmi el&eacute;gedetlens&eacute;g =
-          politikai v&aacute;ls&aacute;g</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Nem elfordul a saj&aacute;t korukkal, hanem szemben&eacute;z
+          vel&uuml;k.</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Mussolini l&eacute;p fel a nemzeti fasiszta p&aacute;rt vezet&#337;je
-          k&eacute;nt</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Sz&eacute;les t&aacute;rsadalomrajz.</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >A realizmus a kor reprezentat&iacute;v m&#369;faj&aacute;ban, a
+          reg&eacute;nyben teljesedik ki. Kalandreg&eacute;nyek,
+          karrierreg&eacute;nyek, l&eacute;lektani-reg&eacute;nyek,
+          t&ouml;rt&eacute;nelmi-reg&eacute;nyek, csal&aacute;dreg&eacute;nyek.
+          Terjedelm&uuml;k szerint besz&eacute;l&uuml;nk kis- &eacute;s
+          nagyreg&eacute;nyekr&#337;l.</span
         >
-      </p>
-      <ul class="c1 lst-kix_p20sdo5mw4sx-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >a rend &eacute;s a jog v&eacute;delm&eacute;re l&eacute;ptek
-            f&ouml;l</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2">1922 &ldquo;marcia su Roma&rdquo;</span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >fekete ruh&aacute;s t&ouml;meggel bevonult R&oacute;m&aacute;ba
-            &eacute;s &aacute;tvette a hatalmat</span
-          >
-        </li>
-      </ul>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1929
-          ig diktat&oacute;rikusan uralkodik 1929 ut&aacute;n alakul ki</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Kalandreg&eacute;nyek: F&#337;h&#337;s sok kalandon megy
+          kereszt&uuml;l. V&aacute;ratlan fordulatok. &Eacute;rdekes. Kalandor
+          utazik, vil&aacute;got l&aacute;t.</span
         >
-      </p>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uralkod&aacute;sa:
-          adott eszme, adott dikt&aacute;tor beleavatkozik az eg&eacute;sz
-          t&aacute;rsadalomba</span
+      </li>
+    </ul>
+    <p class="c12"><span class="c1"></span></p>
+    <ul class="c13 lst-kix_51yoncsry3wc-0">
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Reg&eacute;nycselekm&eacute;ny:
+          Esem&eacute;nyek/T&ouml;rt&eacute;n&eacute;sek rendszere, amely
+          sor&aacute;n a reg&eacute;nyvil&aacute;g megval&oacute;sul.</span
         >
-      </p>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jellemz&#337;je:
-          egy dikt&aacute;tor, egy p&aacute;rt, egy eszme (DUCE)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nincs
-          antiszemitizmus c&eacute;l: R&oacute;mai birodalomm&aacute;
-          alak&iacute;tani &uacute;jra.</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Reg&eacute;nyvil&aacute;g: Az &iacute;r&oacute; mutatja be
+          (narr&aacute;ci&oacute;, 3. szem&eacute;lyen kereszt&uuml;l, stb).
+          Reg&eacute;ny&iacute;r&oacute; beleolvadhat a karaktereibe, de
+          n&aacute;luk mindig t&ouml;bbet tud.</span
         >
-      </p>
-      <p class="c0">
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-        ><span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Korpor&aacute;ci&oacute;
-          jellemezte: csoportos&iacute;tja az embereket</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Reg&eacute;nyt&eacute;r: Ahol j&aacute;tsz&oacute;dik a
+          t&ouml;rt&eacute;net. Lehet val&oacute;s f&ouml;ldrajzi hely, vagy
+          fant&aacute;zia.</span
         >
-      </p>
-      <p class="c0 c8">
-        <span class="c7 c3"
-          >(A Szovjetuni&oacute; l&eacute;trehoz&aacute;sa)</span
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">&nbsp;</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Reg&eacute;nyid&#337;: Szerepl&#337;k ideje, reg&eacute;ny
+          &bdquo;&oacute;r&aacute;ja&rdquo;. Olvas&oacute;val egy&uuml;tt halad,
+          ahogy megy el&#337;re a t&ouml;rt&eacute;netben.</span
         >
-      </p>
-      <p class="c0 c8 c9">
-        <span class="c2"
-          >Bolsevikok nyernek &iacute;gy l&eacute;trej&ouml;n a
-          Szovjetuni&oacute;. Gazdas&aacute;g gyenge, &uacute;jj&aacute; kell
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Reg&eacute;nyh&#337;s: Olyan szerepl&#337;, aki/ami a
+          reg&eacute;nyt&ouml;rt&eacute;net &aacute;lland&oacute;
+          r&eacute;szese. (._.&rdquo;)</span
+        >
+      </li>
+    </ul>
+    <p class="c12 c15"><span class="c1"></span></p>
+    <ul class="c13 lst-kix_51yoncsry3wc-0">
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Az ir&aacute;nyzathoz kapcsol&oacute;dik a tipikuss&aacute;g. A
+          tipikuss&aacute;g: Olyan helyzeteket, olyan h&#337;s&ouml;ket, olyan
+          sorsokat mutat be, amelyek saj&aacute;t egyedis&eacute;g&uuml;k&ouml;n
+          kereszt&uuml;l valamilyen t&aacute;rsadalmilag &aacute;ltal&aacute;nos
+          dolgot fejeznek ki.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >A realizmushoz t&aacute;rsul a teljess&eacute;g eszm&eacute;je is. Ez
+          egyszerre extenz&iacute;v &eacute;s intenz&iacute;v, avagy
+          sz&eacute;less&eacute;gben &eacute;s m&eacute;lys&eacute;g&eacute;ben
+          teljess&eacute;gre t&ouml;rekszik.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Erre a mindentud&oacute; elbesz&eacute;l&#337;i n&eacute;z&#337;pint
+          a legjobb.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c38"
+          >Tov&aacute;bbi n&eacute;z&#337;pontok: Lehet a t&ouml;rt&eacute;net
+          szerepl&#337;je, f&#337;szerepl&#337;je, ak&aacute;r senki.</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>3.</span><span class="c16">&nbsp; &nbsp; &nbsp;</span
+      ><span class="c6">&nbsp;</span
+      ><span class="c4"
+        >H&iacute;res szerz&#337;k &eacute;s m&#369;veik
+        p&aacute;ros&iacute;t&aacute;sa</span
+      >
+    </p>
+    <p class="c3 c28"><span class="c4"></span></p>
+    <a id="t.1e93ecd90d46a9948510bcae7d765cba5c5be631"></a><a id="t.0"></a>
+    <table class="c9">
+      <tbody>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Balzac</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Goriot Ap&oacute;</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Emily Bronte</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1">&Uuml;v&ouml;lt&#337; szelek</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Dickens</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1"
+                >Kar&aacute;csonyi &eacute;nek, Twist Oliv&eacute;r</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Flaubert</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Bovaryn&eacute;</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Tolsztoj</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1"
+                >Ivan Iljics hal&aacute;la, Anna Karenina, H&aacute;bor&uacute;
+                &eacute;s b&eacute;ke</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Dosztojevszkij</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1"
+                >B&#369;n &eacute;s b&#369;nh&#337;d&eacute;s</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Csehov</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1">Sir&aacute;ly, A csinovnyik hal&aacute;la</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Ibsen</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Baudelaire</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1">Egy d&ouml;g, Kapcsolatok, Az albatrosz</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Verlaine</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1"
+                >&#336;szi chanson, K&ouml;lt&eacute;szettan</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c18" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Rimbaud</span></p>
+          </td>
+          <td class="c25" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1">A mag&aacute;nhangz&oacute;k szonettje</span>
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="c3 c28"><span class="c4"></span></p>
+    <p class="c3">
+      <span>4.</span><span class="c16">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >Melyik m&#369; szerepl&#337;je? Raszkolnyikov, Emma, Cservjakov,
+        Trepljov, Trigorin, Nyina, Hedvig, Hjalmar, Gregers, Werle, Gina</span
+      >
+    </p>
+    <p class="c12 c10"><span class="c4"></span></p>
+    <a id="t.6805ec6de6e6bfcd527e6a2f179608ff44e52b69"></a><a id="t.1"></a>
+    <table class="c27">
+      <tbody>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Raszkolnyikov</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1"
+                >B&#369;n &eacute;s b&#369;nh&#337;d&eacute;s</span
+              >
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Emma</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Bovaryn&eacute;</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Cservjakov</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10">
+              <span class="c1">A csinovnyik hal&aacute;la</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Trepljov</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Sir&aacute;ly</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Trigorin</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Sir&aacute;ly</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Nyina</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Sir&aacute;ly</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Hedvig</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Hjalmar</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Gregers</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Werle</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c0" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Gina</span></p>
+          </td>
+          <td class="c21" colspan="1" rowspan="1">
+            <p class="c5 c10"><span class="c1">Vadkacsa</span></p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+    <p class="c12 c10"><span class="c4"></span></p>
+    <p class="c3">
+      <span>5.</span><span class="c16">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4">Mi jellemzi Csehov novell&aacute;it?</span>
+    </p>
+    <ul class="c13 lst-kix_7mc8mhu606o5-0 start">
+      <li class="c17 c15 li-bullet-0"><span class="c1">Szatirikus</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Novell&aacute;i t&ouml;bbs&eacute;ge: R&ouml;vid
+          elbesz&eacute;l&eacute;s</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >R&ouml;vids&eacute;g &eacute;s
+          val&oacute;s&aacute;g&aacute;br&aacute;zol&aacute;s</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Egy-egy jellemz&#337; mozzanat megragad&aacute;sa
         </span>
-      </p>
-      <p class="c0 c8 c9"><span class="c2">mindent tervezni.</span></p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Gondok: t&#337;ke, szakember. Nincs seg&iacute;ts&eacute;g a nyugati
-          orsz&aacute;gt&oacute;l hiszen kommunizmus. Marxi elm&eacute;let nem
-          fektette le hogyan &eacute;p&uuml;l fel a prolet&aacute;r
-          &aacute;llam</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Legfontosabb: Szerepl&#337;k gondolkod&aacute;sa/hangulata</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2">1924-ben meghal Lenin (agyv&eacute;rz&eacute;s)</span>
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Verseng&eacute;s Bolsevikok k&ouml;z&ouml;tt ki lesz a
-          vezet&#337;&#10132; Trockij ellent&eacute;t Szt&aacute;lin
-          k&ouml;z&ouml;tt</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Nincs szerepl&#337; jellemz&eacute;s/l&eacute;lek&aacute;llapot
+          le&iacute;r&aacute;s</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Szt&aacute;lin sok inform&aacute;ci&oacute; gy&#369;jt&eacute;se miatt
-          nyer. 1928-ban Trockij-t sz&aacute;m&#369;zik
-          Kazahszt&aacute;nba(Szovjetuni&oacute; elhagy&aacute;sa). A
-          k&uuml;zdelem eszmei &aacute;gon is folytat&oacute;dik. Szt&aacute;lin
-          szocialista egyorsz&aacute;gba &eacute;s saj&aacute;t eszm&eacute;it
-          haszn&aacute;lja.</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Ezek: cselekedeteikb&#337;l/besz&eacute;d&uuml;kb&#337;l
+          der&uuml;lnek ki</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >A f&ouml;ldeket kollektiviz&aacute;lt&aacute;k &eacute;s a megtermelt
-          term&eacute;ket eladni k&uuml;lf&ouml;ld&ouml;n &#10132; p&eacute;nz
-          &#10132;gy&aacute;rak, neh&eacute;zipar, iparos&iacute;tj&aacute;k az
-          orsz&aacute;got &eacute;s a katonas&aacute;got(eredeti
-          t&#337;kefelhalmoz&aacute;s). Kul&aacute;k: gazdag parasztok.</span
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Csehov nem mindentud&oacute;, elhallgatja a
+          t&ouml;rt&eacute;netet</span
         >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Holodomor (1932-1933) &#10132; &ouml;sszes gabon&aacute;t
-          export&aacute;lja</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Minden ellens&eacute;get ki&aacute;ll&iacute;tott &#10132;
-          gul&aacute;gokba (munkat&aacute;borba,b&iacute;r&oacute;s&aacute;gi
-          &iacute;t&eacute;let n&eacute;lk&uuml;l)</span
-        >
-      </p>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1924 (A Dawes-terv)</span>
-        </li>
-      </ul>
-      <p class="c0 c10">
+      </li>
+      <li class="c2 li-bullet-0">
         <span
-          >A p&eacute;nz&uuml;gyi &ldquo;v&eacute;rkering&eacute;s&rdquo;
-          beind&iacute;t&aacute;s&aacute;ra az Egyes&uuml;lt &Aacute;llamok tett
-          javaslatot 1924-ben, ez volt a (Dawes-terv). &Ouml;szt&ouml;n&ouml;zte a
-          n&eacute;metorsz&aacute;gi befektet&eacute;seket &eacute;s hiteleket
-          ny&uacute;jtott a vesztes orsz&aacute;goknak. &Iacute;gy k&eacute;pes
-          lett a j&oacute;v&aacute;t&eacute;telek fizet&eacute;s&eacute;re is ami
-          az antant orsz&aacute;gok k&ouml;lts&eacute;gvet&eacute;s&eacute;t is
-          stabiliz&aacute;lta. Eur&oacute;pai gazdas&aacute;g beind&iacute;tja a
-          k&uuml;lkereskedelmet, &eacute;s mindenki k&eacute;pes lesz
-          visszafizetni hiteleit az Egyes&uuml;lt &Aacute;llamoknak
+          >Jellemz&#337;k: H&eacute;tk&ouml;znapis&aacute;g + H&#337;sei unalmas
+          emberek</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>6.</span><span class="c16">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >Mi jellemzi Csehov dr&aacute;m&aacute;it? Mit jelent az &uacute;n.
+        dr&aacute;maiatlan dr&aacute;ma? Mit jelk&eacute;pez a
+        sir&aacute;ly?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_pb37ffqc1zow-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1"
+          >Csehov novell&aacute;it a sz&iacute;npadra viszi. Ezek az &uacute;n.
+          dr&aacute;maiatlan dr&aacute;m&aacute;i.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">T&ouml;rt&eacute;net hi&aacute;nyzik</span>
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">Nincs konfliktus</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Nincs dr&aacute;mai rangsor (f&#337;/mell&eacute;k
+          szerepl&#337;k)</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Szerepl&#337;k &eacute;lete unalmas. Nem cselekednek, csak
+          sajn&aacute;ltatj&aacute;k magukat.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c4">A sir&aacute;ly 3 dolgot is jelk&eacute;pez:</span>
+      </li>
+    </ul>
+    <ul class="c13 lst-kix_pb37ffqc1zow-1 start">
+      <li class="c8 li-bullet-0">
+        <span class="c1"
+          >Nyina sz&aacute;m&aacute;ra: &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+          &nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Boldogs&aacute;g,
+          szabads&aacute;g. &Ouml;nmag&aacute;val azonos&iacute;tja</span
+        >
+      </li>
+      <li class="c8 li-bullet-0">
+        <span class="c1"
+          >Trepljov sz&aacute;m&aacute;ra: &nbsp; &nbsp; &nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&Ouml;ngyilkoss&aacute;g</span
+        >
+      </li>
+      <li class="c8 li-bullet-0">
+        <span
+          >Trigorin sz&aacute;m&aacute;ra: &nbsp; &nbsp; &nbsp;
+          &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Novellat&eacute;ma</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>7.</span><span class="c16">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >Mi jellemzi az analitikus dr&aacute;m&aacute;t? Ki &iacute;rt ilyen
+        dr&aacute;m&aacute;kat?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_p3j16mvm850h-0 start">
+      <li class="c2 li-bullet-0"><span>Ibsen: Vadkacsa</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Elemzik a m&uacute;lt/jelen esem&eacute;nyeit</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >A darab kezdetekor m&aacute;r minden megt&ouml;rt&eacute;nt.
+          Dial&oacute;gusokb&oacute;l tudjuk meg a t&ouml;rt&eacute;netet, amire
+          a jelen r&aacute;megy &eacute;s mindent t&ouml;nkretesz</span
+        >
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">&nbsp;</span></li>
+      <li class="c2 li-bullet-0">
+        <span
+          >Szerepl&#337;k p&aacute;rbesz&eacute;de viszi el&#337;re a
+          t&ouml;rt&eacute;netet. Nincs szerepl&#337;jellemz&eacute;s,
+          besz&eacute;deikb&#337;l der&uuml;l ki.</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>8.</span><span class="c16">&nbsp; &nbsp; &nbsp; </span
+      ><span class="c4"
+        >A vadkacsa r&ouml;vid elemz&eacute;s&eacute;vel mutassa be,
+        bizony&iacute;tsa, hogy ez analitikus dr&aacute;ma! Mit jelk&eacute;pez
+        a vadkacsa a m&#369;ben?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_qh8s0k3cknzp-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1"
+          >A vadkacsa dr&aacute;m&aacute;ban voltak&eacute;ppen minden
+          megt&ouml;rt&eacute;nt Hedvig hal&aacute;l&aacute;n
+          k&iacute;v&uuml;l.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Ekdal csal&aacute;d a boldogs&aacute;g
+          ill&uacute;zi&oacute;j&aacute;ban &eacute;l. Hedvig egy 14 &eacute;ves
+          l&aacute;ny, akit a sz&uuml;lei mindenn&eacute;l jobban szeretnek, de
+          egyben nagy gondot is ad nekik: gyenge a l&aacute;t&aacute;sa
+          ,id&#337;vel meg fog vakulni. Hedvig &ouml;ngyilkoss&aacute;ga lesz a
+          darab trag&eacute;di&aacute;ja.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Hedviget is lehetne a vadkacsa szimb&oacute;lum&aacute;nak tekinteni,
+          hiszen &#337; nem val&oacute;di gyermeke az Ekdal csal&aacute;dnak.
+          Mikor Hjalmar r&aacute;j&ouml;n a val&oacute;di helyzetre, ell&ouml;ki
+          mag&aacute;t&oacute;l Hedviget, aki &#337;t apjak&eacute;nt szerette.
+          A l&aacute;ny mindent megtesz, hogy apj&aacute;nak bizony&iacute;tson,
+          &iacute;gy lesz majd &ouml;ngyilkos.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c4"
+          >A dr&aacute;m&aacute;ban a vadkacsa t&ouml;bbf&eacute;le
+          szimb&oacute;lumot vesz f&ouml;l:</span
+        >
+      </li>
+    </ul>
+    <ul class="c13 lst-kix_qh8s0k3cknzp-1 start">
+      <li class="c8 li-bullet-0">
+        <span class="c1"
+          >Az &eacute;lethazugs&aacute;gok szimb&oacute;luma</span
+        >
+      </li>
+      <li class="c8 li-bullet-0">
+        <span class="c1">Vad&aacute;szat szimb&oacute;luma</span>
+      </li>
+      <li class="c8 li-bullet-0">
+        <span>Hedvig &aacute;ldozat&aacute;nak szimb&oacute;luma</span>
+      </li>
+    </ul>
+    <p class="c3">
+      <span>9.</span><span class="c16">&nbsp; &nbsp; &nbsp;</span
+      ><span class="c6">&nbsp;</span
+      ><span class="c4"
+        >Mi jellemzi a 19. sz. m&aacute;sodik fel&eacute;nek
+        l&iacute;r&aacute;j&aacute;t &eacute;s k&ouml;lt&#337;it!</span
+      >
+    </p>
+    <ul class="c13 lst-kix_6qdnjsjy9wi7-0 start">
+      <li class="c15 c17 li-bullet-0">
+        <span class="c1"
+          >A 19. sz&aacute;zad II. fel&eacute;t&#337;l besz&eacute;l&uuml;nk
+          moderns&eacute;gr&#337;l.
         </span>
-      </p>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1925 (A locarn&oacute;i egyezm&eacute;ny)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_8grsn05gykj4-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Franciaorsz&aacute;g &uacute;j
-            biztons&aacute;gpolitik&aacute;j&aacute;nak els&#337;
-            eredm&eacute;nye. N&eacute;metorsz&aacute;g &eacute;s a nagyhatalmak </span
-          ><span class="c2">garant&aacute;lt&aacute;k</span
-          ><span class="c2"
-            >, hogy N&eacute;metorsz&aacute;g nem t&ouml;rekszik a nyugati
-            hat&aacute;rainak megv&aacute;ltoztat&aacute;s&aacute;ra. Ez
-            meger&#337;s&iacute;tette a versailles-i
-            b&eacute;keszerz&#337;d&eacute;st A hat&aacute;rok </span
-          ><span class="c2">s&eacute;rthetetlens&eacute;g&eacute;&eacute;rt</span
-          ><span class="c2"
-            >&nbsp;Nagy-Britannia &eacute;s Olaszorsz&aacute;g v&aacute;llalt
-            garanci&aacute;t. A rajna vid&eacute;ket
-            demilitariz&aacute;lt&aacute;k. A n&aacute;ci
-            hatalom&aacute;tv&eacute;tel ut&aacute;n N&eacute;metorsz&aacute;g az
-            egyezm&eacute;nyt megszegi amikor bevonult a
-            Rajna-vid&eacute;kre.</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3"
-            >1929-1933 (A vil&aacute;ggazdas&aacute;gi v&aacute;ls&aacute;g)</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_cd4bbenoabo3-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Az els&#337; vil&aacute;gh&aacute;bor&uacute; ut&aacute;n az USA
-            gazdas&aacute;gi n&ouml;veked&eacute;s t&ouml;retlen&uuml;l
-            folytat&oacute;dik, viszont a fogyaszt&aacute;s nem n&#337;.
-            Ez&aacute;ltal a r&eacute;szv&eacute;ny&aacute;rak cs&ouml;kkenni
-            kezdtek v&eacute;g&uuml;l a &ldquo;Fekete kedden&rdquo;
-            &ouml;sszeomlik a t&#337;zsde, egy h&eacute;t alatt 40%-ot estek
-            &aacute;tlagosan a r&eacute;szv&eacute;nyek.
-          </span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >T&uacute;ltermel&eacute;si v&aacute;ls&aacute;g &#10132;
-            t&#337;zsdep&aacute;nik &#10132; bankp&aacute;nik (emberek rohannak
-            kivenni a p&eacute;nz&uuml;ket).</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Megn&ouml;velik a v&aacute;mokat, &iacute;gy &ouml;sszeomlik a
-            vil&aacute;gkereskedelem.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >&Ouml;rd&ouml;gi k&ouml;r: munkan&eacute;lk&uuml;lis&eacute;g
-            &#10132; cs&ouml;kken&#337; v&aacute;s&aacute;rl&oacute;er&#337;
-            &#10132; cs&ouml;kken a bev&eacute;tel &#10132;
-            munkan&eacute;lk&uuml;lis&eacute;g</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >V&eacute;g&uuml;l John Maynard Keynes (brit k&ouml;zgazd&aacute;sz)
-            javaslat&aacute;ra fogyaszt&aacute;s&eacute;l&eacute;nk&iacute;t&#337;
-            &aacute;llami beruh&aacute;z&aacute;sok &aacute;ltal
-            &aacute;ll&iacute;tj&aacute;k helyre a gazdas&aacute;got.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Franklin Roosevelt &uacute;j eln&ouml;k, innent&#337;l beavatkozik az
-            &aacute;llam a gazdas&aacute;gba</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1933 (Hitler hatalomra ker&uuml;l&eacute;se)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_exr0t7c1b7ou-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Weimari k&ouml;zt&aacute;rsas&aacute;g els&#337; &eacute;veiben
-            sz&aacute;mos sz&eacute;ls&#337;s&eacute;ges p&aacute;rt alakul,
-            p&eacute;ld&aacute;ul az NSDAP (Nemzetiszocialista N&eacute;met
-            Munk&aacute;sp&aacute;rt). Ennek vezet&#337;je (f&uuml;hrer) Adolf
-            Hitler volt. Radik&aacute;lis k&uuml;lpolitikai terveket,
-            szoci&aacute;lis demag&oacute;gi&aacute;t &eacute;s antiszemitizmust
-            h&iacute;rdet.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >B&aacute;r a m&uuml;ncheni s&ouml;rpuccs nem siker&uuml;l, a
-            gazdas&aacute;gi v&aacute;ls&aacute;g idej&eacute;n megn&#337; a
-            n&eacute;pszer&#369;s&eacute;g&uuml;k &eacute;s a n&aacute;ci
-            propaganda gyors &eacute;s hat&eacute;konyan m&#369;k&ouml;dve
-            v&eacute;g&uuml;l Hindenburg kinevezi Hitler minisztereln&ouml;knek.
-            Alg f&eacute;l &eacute;v alatt felsz&aacute;molj&aacute;k a
-            demokr&aacute;ci&aacute;t &eacute;s a felhatalmaz&aacute;si
-            t&ouml;rv&eacute;ny elfogad&aacute;s&aacute;val teljesk&ouml;r&#369;
-            hatalma lesz. A hossz&uacute; k&eacute;sek
-            &eacute;jszak&aacute;j&aacute;n minden addigi ellenfel&eacute;vel
-            v&eacute;gez (pl SA vezet&#337;je: Ernst R&ouml;hm) &eacute;s
-            &ouml;sszevonja az &aacute;llamf&#337;i &eacute;s
-            korm&aacute;nyf&#337;i poz&iacute;ci&oacute;t. A
-            krist&aacute;ly&eacute;jszak&aacute;n zsid&oacute;kat lincseltek meg,
-            boltokat fosztottak ki, illetve zsinag&oacute;g&aacute;kat
-            &eacute;gettek le.</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3 c7">1936 (Berlin-R&oacute;ma tengely)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_93yazgp71kx3-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >1935-t&#337;l sz&aacute;mos ponton elkezdi megszegni a Versailles-i
-            b&eacute;k&eacute;t N&eacute;metorsz&aacute;g: fegyverkeznek, majd
-            bevezetik a hadk&ouml;telezetts&eacute;get: Olaszorsz&aacute;g, a
-            britek &eacute;s a franci&aacute;k is el&iacute;t&eacute;lik &eacute;s
-            ki&aacute;llnak Ausztria f&uuml;ggetlens&eacute;ge mellett -&gt;
-            &uacute;gy t&#369;nik, hogy ezen orsz&aacute;gok
-            sz&ouml;vets&eacute;gre l&eacute;pve a Szovjetuni&oacute;val
-            beker&iacute;tik N&eacute;metorsz&aacute;got, de az olaszok &eacute;s
-            a szovjetek k&ouml;z&ouml;tt ellent&eacute;t alakul ki, mert a
-            szovjetek kihirdetik az antifasiszta &ouml;sszefog&aacute;s
-            sz&uuml;ks&eacute;gess&eacute;g&eacute;t: el&#337;sz&ouml;r
-            N&eacute;metorsz&aacute;g &eacute;s Jap&aacute;n, majd
-            Olaszorsz&aacute;g k&ouml;t kommunistaellenes
-            &nbsp;szerz&#337;d&eacute;st (antikomintern paktum).
-          </span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Olasz-n&eacute;met bar&aacute;ts&aacute;gnak h&aacute;la Mussolini
-            elkezd Afrik&aacute;ban terjeszkedni - britek &eacute;s
-            franci&aacute;k alig vesznek r&oacute;la tudom&aacute;st, Hitler
-            elismeri a terjeszked&eacute;st, Mussolini elt&aacute;volodik addigi
-            sz&ouml;vets&eacute;geseit&#337;l. 1936 &#337;sz&eacute;n Hitler
-            &eacute;s Mussolini meg&aacute;llapodik, hogy egyeztetik
-            k&uuml;lpolitikai l&eacute;p&eacute;seiket: Berlin-R&oacute;ma tengely
-            megsz&uuml;letik, 1940-ben Toki&oacute; is csatlakozik.</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1938 (Anschluss, a m&uuml;ncheni konferencia)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_63k7e0c4f96j-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >1935-t&#337;l sorra s&eacute;rtik meg a Versailles-i b&eacute;ke
-            pontjait a n&eacute;metek, a britek tudom&aacute;sul veszik a
-            terjeszked&eacute;st &eacute;s flotta&eacute;p&iacute;t&eacute;st.
-            1937-t&#337;l Anglia &uacute;j minisztereln&ouml;ke Neville
-            Chamberlain: n&eacute;metek jogos s&eacute;relmeinek
-            orvosl&aacute;s&aacute;val szeretn&eacute; cs&ouml;kkenteni a
-            fesz&uuml;lts&eacute;get. Franciaorsz&aacute;g egyed&uuml;l marad
-            n&eacute;metelleness&eacute;g&eacute;vel, 1938. m&aacute;rcius
-            12-&eacute;n a n&eacute;metek megsz&aacute;llj&aacute;k
-            Ausztri&aacute;t &eacute;s B&eacute;csben hivatalosan
-            kihirdett&eacute;k N&eacute;metorsz&aacute;g &eacute;s Ausztria
-            egyes&uuml;l&eacute;s&eacute;t (Anschluss). A megsz&aacute;ll&aacute;s
-            Ausztria N&eacute;metorsz&aacute;ghoz val&oacute;
-            csatol&aacute;s&aacute;r&oacute;l sz&oacute;l&oacute;
-            n&eacute;pszavaz&aacute;s el&#337;tt egy nappal t&ouml;rt&eacute;nt,
-            nehogy a n&eacute;pszavaz&aacute;s &ldquo;rosszul
-            siker&uuml;lj&ouml;n&rdquo;. Az egyes&uuml;l&eacute;st a t&ouml;bbi
-            orsz&aacute;g csak tudom&aacute;sul vette, &iacute;gy ez
-            b&aacute;tor&iacute;totta Hitlert: elkezdt&eacute;k k&ouml;vetelni a
-            szinte 100%-ban n&eacute;metlakta (kb. h&aacute;rommilli&oacute;
-            n&eacute;met) Szud&eacute;ta-vid&eacute;ket
-            Csehszlov&aacute;ki&aacute;t&oacute;l, akik ak&aacute;r
-            auton&oacute;mi&aacute;t is biztos&iacute;tottak volna a
-            ter&uuml;lettel, de akkor Hitler h&aacute;bor&uacute;val &eacute;s
-            megsz&aacute;ll&aacute;ssal kezdett fenyeget&#337;zni. A
-            v&aacute;ls&aacute;got Chamberlain fell&eacute;p&eacute;se oldotta
-            meg, aki 1938 szeptember&eacute;ben &ouml;sszeh&iacute;vta a
-            m&uuml;ncheni konferenci&aacute;t, ahol Nagy-Britannia,
-            Franciaorsz&aacute;g &eacute;s Olaszorsz&aacute;g beleegyezett a
-            Szud&eacute;ta-vid&eacute;k visszacsatol&aacute;s&aacute;ba.</span
-          >
-        </li>
-      </ul>
-</body>
-
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Ki&aacute;br&aacute;ndults&aacute;g</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Nincs eszm&eacute;ny</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >l&rsquo;art pour l&rsquo;art == M&#369;v&eacute;szet a
+          m&#369;v&eacute;szet&eacute;rt</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Politikamentess&eacute;g</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Sz&eacute;ps&eacute;g kultusz</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Parnasszizmus == Csak a k&ouml;lt&eacute;szetnek szenteli az
+          &eacute;let&eacute;t</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >&bdquo;Vissza kell t&eacute;rni a tiszta m&#369;v&eacute;szet
+          elef&aacute;ntcsonttorny&aacute;ba&rdquo;</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Titokzatoss&aacute;g</span>
+      </li>
+      <li class="c2 li-bullet-0"><span>Metaforikuss&aacute;g</span></li>
+    </ul>
+    <p class="c3">
+      <span>10.</span><span class="c16">&nbsp; &nbsp;</span
+      ><span class="c4"
+        >Mit jelent a historizmus &eacute;s az eklektika, az
+        akad&eacute;mizmus?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_3qoc08y8syek-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1"
+          >Historizmus: Kor&aacute;bbi &eacute;p&iacute;t&eacute;szeti
+          st&iacute;lusok haszn&aacute;lata (Neo-st&iacute;lusok). Csak az
+          &eacute;p&iacute;t&eacute;szetben</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Eklektika: K&uuml;l&ouml;nb&ouml;z&#337; korok, st&iacute;lusok,
+          ir&aacute;nyzatok jegyeit tartalmazza.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span
+          >Akad&eacute;mizmus: A fest&eacute;szetben szab&aacute;lyokat
+          alkotnak, hogy milyen technik&aacute;val, avagy hogyan kell festeni.
+          Aki nem &iacute;gy tesz, azt a fest&#337;t nem min&#337;s&iacute;tik
+          &bdquo;j&oacute;&rdquo; fest&#337;nek, &eacute;s nem lesz
+          sikeres.</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>11.</span><span class="c16">&nbsp; &nbsp;</span
+      ><span class="c4"
+        >Mi az impresszionizmus, melyek az &aacute;ltal&aacute;nos jellemz&#337;
+        jegyei az egyes m&#369;v&eacute;szeti &aacute;gakban? Nevezzen meg
+        h&iacute;res fest&#337;ket!</span
+      >
+    </p>
+    <ul class="c13 lst-kix_9p7nzhdug46k-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1">Az akad&eacute;mizmussal szemben jelenik meg.</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Impresszi&oacute; == Benyom&aacute;s (els&#337;
+          benyom&aacute;s/pillanat)</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Gyors fest&eacute;si technika</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Egy adott pillanat/eml&eacute;k bemutat&aacute;sa</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Fest&eacute;szetben, irodalomban, zenem&#369;v&eacute;szetben volt
+          jelen</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Irodalomban a nomin&aacute;lis st&iacute;lust
+          haszn&aacute;lt&aacute;k impresszionizmusban. (Ig&eacute;k
+          mell&#337;z&eacute;se, f&#337;leg csak n&eacute;vsz&oacute;k
+          haszn&aacute;lata)</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span>H&iacute;res fest&#337;: Ferenczy K&aacute;roly</span>
+      </li>
+    </ul>
+    <p class="c3">
+      <span>12.</span><span class="c16">&nbsp; &nbsp;</span
+      ><span class="c4"
+        >Mi a szecesszi&oacute;, melyek a jellemz&#337; von&aacute;sai?</span
+      >
+    </p>
+    <ul class="c13 lst-kix_wlaqd8dpuyng-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1">Secessio == Kivonul&aacute;s</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Olyan m&#369;v&eacute;szek, akik kivonultak a jelenlegi
+          m&#369;v&eacute;szeti form&aacute;kb&oacute;l.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">Jellemz&#337;i:</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Dekorativit&aacute;s</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >Vir&aacute;gsz&aacute;las diz&aacute;jn (pl.:
+          &eacute;p&uuml;leteken)</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Jellemz&#337; sz&iacute;nei: lila, arany, fekete</span>
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">Irodalomban:</span></li>
+      <li class="c2 li-bullet-0">
+        <span class="c1">Hal&aacute;lv&aacute;gy/depresszi&oacute;</span>
+      </li>
+      <li class="c2 li-bullet-0"><span class="c1">Erotika</span></li>
+    </ul>
+    <p class="c12"><span class="c1"></span></p>
+    <p class="c3">
+      <span>13.</span><span class="c16">&nbsp; &nbsp;</span
+      ><span class="c4">Mi a szimbolizmus, mi jellemzi?</span>
+    </p>
+    <ul class="c13 lst-kix_zf20msu6mk7g-0 start">
+      <li class="c17 c15 li-bullet-0">
+        <span class="c1">19. sz&aacute;zad v&eacute;g&eacute;n terjed el</span>
+      </li>
+      <li class="c2 li-bullet-0">
+        <span class="c1"
+          >K&eacute;p/k&eacute;prendszer &ouml;n&aacute;ll&oacute;v&aacute;
+          v&aacute;lik, avagy szimb&oacute;lumokban nek&uuml;nk kell
+          megtal&aacute;lni a jelk&eacute;pes &eacute;rtelmet.</span
+        >
+      </li>
+      <li class="c2 li-bullet-0">
+        <span
+          >K&eacute;p/k&eacute;prendszer csak sejtet, &iacute;gy neh&eacute;z
+          &eacute;rtelmet tal&aacute;lni</span
+        >
+      </li>
+    </ul>
+    <p class="c3">
+      <span>14.</span><span class="c16">&nbsp; &nbsp;</span
+      ><span class="c4"
+        >&Iacute;rjon 5-5-5 igaz &aacute;ll&iacute;t&aacute;st Baudelaire,
+        Verlaine, Rimbaud k&ouml;lt&eacute;szet&eacute;r&#337;l,
+        verseir&#337;l!</span
+      >
+    </p>
+    <p class="c3 c28"><span class="c4"></span></p>
+    <a id="t.fdc5d29e1100b9bcb8c30edc38036d5c069a7a43"></a><a id="t.2"></a>
+    <table class="c39">
+      <tbody>
+        <tr class="c14">
+          <td class="c32" colspan="1" rowspan="1">
+            <p class="c11"><span class="c4">Verlaine</span></p>
+          </td>
+          <td class="c35" colspan="1" rowspan="1">
+            <p class="c11"><span class="c4">Baudelaire</span></p>
+          </td>
+          <td class="c34" colspan="1" rowspan="1">
+            <p class="c11"><span class="c4">Rimbaud</span></p>
+          </td>
+        </tr>
+        <tr class="c26">
+          <td class="c20" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Szimbolizmus (pl.: k&ouml;lt&eacute;szettan)</span
+              >
+            </p>
+          </td>
+          <td class="c31" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">Polg&aacute;rpukkaszt&oacute; m&#369;vek</span>
+            </p>
+          </td>
+          <td class="c33" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">L&aacute;zad&oacute; st&iacute;lusok</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c26">
+          <td class="c23" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">Impresszi&oacute; (pl.: &#336;szi chanson)</span>
+            </p>
+          </td>
+          <td class="c22" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">Sz&eacute;ps&eacute;gim&aacute;dat</span>
+            </p>
+          </td>
+          <td class="c30" colspan="1" rowspan="1">
+            <p class="c5"><span class="c1">Kamaszos erotika</span></p>
+          </td>
+        </tr>
+        <tr class="c14">
+          <td class="c23" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Hal&aacute;lf&eacute;lelem &eacute;s
+                elv&aacute;gy&oacute;d&aacute;s</span
+              >
+            </p>
+          </td>
+          <td class="c22" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Ny&aacute;rs polg&aacute;r &eacute;rz&eacute;s</span
+              >
+            </p>
+          </td>
+          <td class="c30" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">Zsarnoks&aacute;ggy&#369;l&uuml;let</span>
+            </p>
+          </td>
+        </tr>
+        <tr class="c26">
+          <td class="c23" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Tartalomhi&aacute;ny/hom&aacute;lyos m&#369;vek (pl.: &#336;szi
+                chanson)</span
+              >
+            </p>
+          </td>
+          <td class="c22" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Hom&aacute;lyos/tartalom n&eacute;lk&uuml;li m&#369;vek (pl.:
+                Kapcsolatok)</span
+              >
+            </p>
+          </td>
+          <td class="c30" colspan="1" rowspan="1">
+            <p class="c5"><span class="c1">Szonettek</span></p>
+          </td>
+        </tr>
+        <tr class="c26">
+          <td class="c23" colspan="1" rowspan="1">
+            <p class="c5"><span class="c1">Programnyilatkozat</span></p>
+          </td>
+          <td class="c22" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1">Szonett vers (pl.: Kapcsolatok)</span>
+            </p>
+          </td>
+          <td class="c30" colspan="1" rowspan="1">
+            <p class="c5">
+              <span class="c1"
+                >Kisemmizettek ir&aacute;nti r&eacute;szv&eacute;t</span
+              >
+            </p>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
 </html>
