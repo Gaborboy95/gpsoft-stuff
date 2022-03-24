@@ -4,966 +4,1918 @@
     <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
     <style type="text/css">
         html {
-            background-color: black;
-            color: white !important;
-            text-align: center !important;
-            user-select: none;
-            margin: auto;
-            list-style: none;
-        }
-        
-        ol {
-            margin: 0;
-            padding: 0;
-            list-style: none;
-        }
-        
-        ul {
-            list-style: none;
-        }
-        
-        table, th, td {
-          border: 1px solid;
-        }
-        
-        .c1 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-        }
-        
-        .c16 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 11pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        
-        .c24 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 22pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c2 {
-            font-weight: 400;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 12pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c20 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 15.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c21 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 13.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c25 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 18pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c17 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.07;
-            orphans: 2;
-            widows: 2;
-            height: 11pt;
-        }
-        
-        .c19 {
-            padding-top: 0pt;
-            padding-bottom: 0pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-            height: 11pt;
-        }
-        
-        .c11 {
-            padding-top: 24pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c10 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c14 {
-            padding-top: 12pt;
-            padding-bottom: 0pt;
-            line-height: 1.6363636363636365;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c8 {
-            padding-top: 12pt;
-            padding-bottom: 12pt;
-            line-height: 1.15;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .c27 {
-            font-weight: 700;
-            text-decoration: none;
-            vertical-align: baseline;
-            font-size: 15.5pt;
-            font-family: "Arial";
-            font-style: normal;
-        }
-        
-        .c5 {
-            font-weight: 800;
-        }
-        
-        .c6 {
-            font-size: 7pt;
-            font-family: "Times New Roman";
-            font-weight: 400;
-        }
-        
-        .c26 {
-            text-indent: -18pt;
-        }
-        
-        .c4 {
-            font-weight: 400;
-            font-family: "Courier New";
-        }
-        
-        .c15 {
-            text-indent: -18pt;
-        }
-        
-        .c9 {
-            text-indent: -18pt;
-        }
-        
-        .c13 {
-            height: 11pt;
-        }
-        
-        .c7 {
-            font-size: 12pt;
-        }
-        
-        .c12 {
-            font-size: 7pt;
-        }
-        
-        .title {
-            padding-top: 0pt;
-            font-size: 26pt;
-            padding-bottom: 3pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        .subtitle {
-            padding-top: 0pt;
-            font-size: 15pt;
-            padding-bottom: 16pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        li {
-            font-size: 11pt;
-            font-family: "Arial";
-        }
-        
-        p {
-            margin: 0;
-            font-size: 11pt;
-            font-family: "Arial";
-        }
-        
-        h1 {
-            padding-top: 20pt;
-            font-size: 20pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h2 {
-            padding-top: 18pt;
-            font-size: 16pt;
-            padding-bottom: 6pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h3 {
-            padding-top: 16pt;
-            font-size: 14pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h4 {
-            padding-top: 14pt;
-            font-size: 12pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h5 {
-            padding-top: 12pt;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            orphans: 2;
-            widows: 2;
-        }
-        
-        h6 {
-            padding-top: 12pt;
-            font-size: 11pt;
-            padding-bottom: 4pt;
-            font-family: "Arial";
-            line-height: 1.15;
-            page-break-after: avoid;
-            font-style: italic;
-            orphans: 2;
-            widows: 2;
-        }
+        background-color: black;
+        color: white !important;
+        text-align: center !important;
+        user-select: none;
+        margin: auto;
+        list-style: none;
+		font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+	  body {
+		width: 100vw;
+		overflow-wrap: break-word;
+		word-wrap: break-word;
+		hyphens: auto;
+		padding: 10px;
+		overflow-x: hidden;
+		scrollbar-width: none; 
+		-ms-overflow-style: none;
+		visibility: visible;
+	  }
+
+	  body::-webkit-scrollbar {
+		display: none;
+	  }
+
+      ol {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+      }
+
+      ul {
+        list-style: none;
+      }
+
+	  table {
+		  margin: auto;
+		  overflow-x: auto !important;
+	  }
+
+      table,
+      th,
+      td {
+        border: 1px solid;
+      }
+
+	  .c7, 
+	  .c4 {
+		  font-weight: bold;
+	  }
     </style>
 </head>
 
-<body id="buffje" class="c18" onclick="this.style.setProperty('color', this.style.color == 'white' ? 'black' : 'white', 'important')" style="width: 100vw; overflow-x: hidden;">
-    <ol class="c1 lst-kix_tpq8m4h3lfvd-0 start" start="1">
-        <li class="c0 c6 li-bullet-0"><span class="c2">Fogalmak</span></li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">&Aacute;ltal&aacute;nos v&aacute;laszt&oacute;jog</span
-          ><span class="c2"
-            >: demokr&aacute;ci&aacute;ban, nincs tekintettel korra (de 18+),
-            nemre, iskol&aacute;zotts&aacute;gra</span
+<body id="buffje" class="c18" onclick="this.style.setProperty('opacity', this.style.opacity == '1' ? '0' : '1', 'important')">
+  <div id="pf2" class="pf w0 h0" data-page-no="2">
+    <div class="pc pc2 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A r<span class="_ _0"></span>et<span class="_ _0"></span>orik<span
+            class="_ _0"
+          ></span
+          >a <span class="_ _0"></span>f<span class="_ _2"></span>og<span
+            class="_ _2"
+          ></span
+          >alma
+        </div>
+        <div class="t m0 x3 h5 y5 ff3 fs3 fc0 sc0 ls0 ws1">
+          R<span class="_ _0"></span>etorik<span class="_ _2"></span
+          >a=sz<span class="_ _2"></span>ónoklat<span class="_ _0"></span
+          >tan, az<span class="_ _0"></span>az a meg<span
+            class="_ _3"
+          ></span
+          >gy<span class="_ _0"></span>őz<span class="_ _2"></span>ő s<span
+            class="_ _4"
+          ></span
+          >z<span class="_ _2"></span>öveg<span class="_ _4"></span>ek
+          alk<span class="_ _2"></span>ot<span class="_ _0"></span>ásának és
+        </div>
+        <div class="t m0 x3 h6 y6 ff3 fs4 fc0 sc0 ls0 ws1">
+          előadásának tudomán<span class="_ _2"></span>y<span
+            class="_ _4"
+          ></span
+          >a.
+        </div>
+        <div class="t m0 x3 h5 y7 ff2 fs3 fc0 sc0 ls0 ws1">
+          A r<span class="_ _4"></span>et<span class="_ _4"></span>orik<span
+            class="_ _0"
+          ></span
+          >a ma a logik<span class="_ _4"></span>us gondolk<span
+            class="_ _5"
+          ></span
+          >odás, <span class="_ _3"></span>az önkif<span class="_ _2"></span
+          >ejez<span class="_ _2"></span>és és <span class="_ _3"></span>a
+          k<span class="_ _0"></span>ultur<span class="_ _2"></span>ált
+        </div>
+        <div class="t m0 x3 h5 y8 ff3 fs3 fc0 sc0 ls0 ws1">
+          meg<span class="_ _3"></span>gy<span class="_ _0"></span>őz<span
+            class="_ _2"
+          ></span
+          >és tudomán<span class="_ _0"></span>y<span class="_ _0"></span>a.
+          <span class="_ _3"></span>Minden
+          <span class="_ _3"></span>oly<span class="_ _0"></span>an n<span
+            class="_ _4"
+          ></span
+          >yilv<span class="_ _2"></span>ánosság<span class="_ _3"></span
+          >nak sz<span class="_ _2"></span>óló ír<span class="_ _0"></span
+          >ásbeli és
+        </div>
+        <div class="t m0 x3 h5 y9 ff2 fs3 fc0 sc0 ls0 ws1">
+          s<span class="_ _4"></span>z<span class="_ _0"></span>óbeli
+          megsz<span class="_ _2"></span>ólalással f<span
+            class="_ _2"
+          ></span
+          >oglalk<span class="_ _2"></span>ozik,<span class="_ _4"></span>
+          melyn<span class="_ _4"></span>ek <span class="_ _3"></span>célja
+          g<span class="_ _4"></span>ondola<span class="_ _4"></span>t
+          át<span class="_ _0"></span>adása, a
+        </div>
+        <div class="t m0 x3 h6 ya ff3 fs4 fc0 sc0 ls0 ws1">
+          partner meg<span class="_ _3"></span>gy<span class="_ _0"></span
+          >ő<span class="_ _4"></span>z<span class="_ _0"></span>ése.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf3" class="pf w0 h0" data-page-no="3">
+    <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A s<span class="_ _0"></span>z<span class="_ _5"></span>ónoklás
+          <span class="_ _3"></span>r<span class="_ _0"></span>ég<span
+            class="_ _0"
+          ></span
+          >en (an<span class="_ _4"></span>tikvit<span class="_ _0"></span
+          >ás idején)
+        </div>
+        <div class="t m0 x3 h7 yb ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>T<span class="_ _1"></span>öbb ór<span
+            class="_ _0"
+          ></span
+          >ás
+        </div>
+        <div class="t m0 x3 h7 yc ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Nem f<span class="_ _0"></span
+          >elolvas<span class="_ _4"></span>va <span class="_ _4"></span>az
+          agór<span class="_ _4"></span>án<span class="ff3"
+            >, népgyűlés<span class="_ _3"></span>ben</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megp&aacute;rt</span
-          ><span class="c2"
-            >: nagy, t&ouml;bb t&iacute;zezres tags&aacute;gsz&aacute;m&uacute;
-            p&aacute;rt</span
+        </div>
+        <div class="t m0 x3 h7 yd ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Ér<span class="_ _4"></span>dek<span
+            class="_ _0"
+          ></span
+          >es, hat<span class="_ _4"></span>ásos besz<span
+            class="_ _0"
+          ></span
+          >éd
+        </div>
+        <div class="t m0 x3 h7 ye ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>K<span class="_ _0"></span>öz<span
+            class="_ _0"
+          ></span
+          >önség<span class="_ _3"></span> figyelembe vé<span
+            class="_ _4"
+          ></span
+          >tele
+        </div>
+        <div class="t m0 x3 h7 yf ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Saját k<span class="_ _2"></span
+          >épességeik
+        </div>
+        <div class="t m0 x3 h7 y10 ff2 fs5 fc0 sc0 ls1">
+          -<span class="ff3 ls0 ws1"
+            >It<span class="_ _4"></span>t és most műv<span
+              class="_ _4"
+            ></span
+            >ész<span class="_ _0"></span>ei</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Fasizmus</span
-          ><span class="c2"
-            >: sz&eacute;ls&#337;jobb oldali, tot&aacute;lis dikt&aacute;tora
-            Mussolini, Nemzeti Fasiszta P&aacute;rt ir&aacute;ny&iacute;t,
-            nacionalista, egy vezet&#337;-ideol&oacute;gia-p&aacute;rt</span
+        </div>
+        <div class="t m0 x3 h7 y11 ff2 fs5 fc0 sc0 ls0 ws2">
+          -<span class="_"> </span>Inf<span class="_ _0"></span>ormált,
+        </div>
+        <div class="t m0 x3 h7 y12 ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Gy<span class="_ _0"></span>öny<span
+            class="_ _0"
+          ></span
+          >örk<span class="_ _0"></span>ödtet<span class="_ _0"></span
+          >et<span class="_ _4"></span>t
+        </div>
+        <div class="t m0 x3 h7 y13 ff2 fs5 fc0 sc0 ls0 ws2">
+          -<span class="_"> </span>Mo<span class="_ _4"></span>zgósít<span
+            class="_ _0"
+          ></span
+          >ott
+        </div>
+        <div class="t m0 x3 h7 y14 ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Emelk<span class="_ _2"></span>edett
+          n<span class="_ _4"></span>y<span class="_ _4"></span>elvi
+          kif<span class="_ _0"></span>ejez<span class="_ _4"></span>ések
+        </div>
+        <div class="t m0 x3 h7 y15 ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Látv<span class="_ _0"></span>ány<span
+            class="_ _4"
+          ></span
+          >os gesztusok
+        </div>
+        <div class="t m0 x3 h7 y16 ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>K<span class="_ _0"></span>övetk<span
+            class="_ _2"
+          ></span
+          >ez<span class="_ _0"></span>etes érvek
+        </div>
+        <div class="t m0 x3 h7 y17 ff2 fs5 fc0 sc0 ls0 ws1">
+          -<span class="_ _6"> </span>Logosz (gondola<span
+            class="_ _4"
+          ></span
+          >t<span class="_ _4"></span>ai pontosak<span class="ls2">), </span
+          >éthosz<span class="_"> </span>(egyéniség) és páthosz<span
+            class="_"
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Korporat&iacute;v &aacute;llam</span
-          ><span class="c2"
-            >: fasiszta &aacute;llam &eacute;p&iacute;ti ki, szakmai
-            &aacute;gazatonk&eacute;nt t&ouml;m&ouml;r&iacute;tik az embereket,
-            nem a t&aacute;rsadalmi r&eacute;tegek szerint: munkaad&oacute;,
-            munkav&aacute;llal&oacute; &eacute;s &aacute;llami
-            tisztvisel&#337;</span
+          </span
+          >(a besz<span class="_ _0"></span>éd<span class="_ _3"></span>
+          stí<span class="_ _4"></span>lusa) együtt jellemez<span
+            class="_ _4"
+          ></span
+          >t<span class="_ _4"></span>e.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf4" class="pf w0 h0" data-page-no="4">
+    <div class="pc pc4 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A s<span class="_ _0"></span>z<span class="_ _5"></span>ónoklás
+          <span class="_ _3"></span>célja és es<span class="_ _0"></span
+          >zk<span class="_ _1"></span>ö<span class="_ _2"></span>z<span
+            class="_ _2"
+          ></span
+          >ei napjainkban
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >R<span class="_ _0"></span>ögzíthet<span class="_ _0"></span>ő,
+            vi<span class="_ _4"></span>ss<span class="_ _4"></span>z<span
+              class="_ _0"
+            ></span
+            >aidézhe<span class="_ _4"></span>t<span class="_ _4"></span
+            >ő</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Kisantant</span
-          ><span class="c2"
-            >: 1920-21, 3 tag: Csehszlov&aacute;kia, Rom&aacute;nia,
-            Jugoszl&aacute;via, c&eacute;lja Magyarorsz&aacute;g
-            elszigetel&eacute;se &eacute;s a francia befoly&aacute;s
-            fenntart&aacute;sa, francia &ouml;tletre j&ouml;tt l&eacute;tre</span
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >Kb. f<span class="_ _2"></span>él ór<span class="_ _0"></span>a
+            maximum</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Dawes-terv</span
-          ><span class="c2"
-            >: amerikai gazdas&aacute;gi terv a
-            vil&aacute;gv&aacute;ls&aacute;gb&oacute;l val&oacute;
-            kil&aacute;bal&aacute;sra</span
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Figy<span class="_ _0"></span>elemf<span class="_ _2"></span
+            >elk<span class="_ _2"></span>elt<span class="_ _4"></span
+            >és</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">P&aacute;rt&aacute;llam</span
-          ><span class="c2"
-            >: tot&aacute;lis diktat&uacute;r&aacute;ban j&ouml;n l&eacute;tre,
-            &aacute;llam &ouml;sszefon&oacute;dik a diktat&uacute;r&aacute;t
-            gyakorl&oacute; p&aacute;rttal; n&aacute;cik, szovjetek,
-            fasiszt&aacute;k</span
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws3"
+            >Meggyő<span class="_ _0"></span>z<span class="_ _0"></span
+            >és</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">&Aacute;llamos&iacute;t&aacute;s</span
-          ><span class="c2"
-            >: mag&aacute;ntulajdon k&aacute;rp&oacute;tl&aacute;s
-            n&eacute;lk&uuml;li elv&eacute;tele, kommunizmussal egy&uuml;tt
-            j&aacute;r: f&#337;leg gy&aacute;rak, c&eacute;gek</span
+        </div>
+        <div class="t m0 x3 h6 y1b ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws4"
+            >Sz<span class="_ _2"></span>ór<span class="_ _0"></span>ak<span
+              class="_ _2"
+            ></span
+            >ozt<span class="_ _0"></span>at<span class="_ _0"></span
+            >ás</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Kollektiviz&aacute;l&aacute;s</span
-          ><span class="c2"
-            >: f&ouml;ldbirtokok kisaj&aacute;t&iacute;t&aacute;sa
-            k&aacute;rp&oacute;tl&aacute;s n&eacute;lk&uuml;l</span
+        </div>
+        <div class="t m0 x3 h5 y1c ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Csökk<span class="_ _2"></span>en a logik<span
+              class="_ _0"
+            ></span
+            >ai kidolg<span class="_ _4"></span>o<span class="_ _4"></span
+            >z<span class="_ _2"></span>ottság</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tervutas&iacute;t&aacute;sos rendszer</span
-          ><span class="c2"
-            >: szabad piacba beavatkozik az &aacute;llam tervekkel:
-            megsz&#369;nteti/csak beavatkozik</span
+        </div>
+        <div class="t m0 x3 h5 y1d ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Az emelk<span class="_ _2"></span>edet<span class="_ _0"></span
+            >tsége<span class="_ _4"></span>t f<span class="_ _2"></span
+            >elv<span class="_ _0"></span>áltja a humor
+            <span class="_ _3"></span>és az ir<span class="_ _0"></span
+            >ónia</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Gulag</span
-          ><span class="c2"
-            >: b&uuml;ntet&#337; t&aacute;borok h&aacute;l&oacute;zata,
-            Szovjetuni&oacute;, &iacute;t&eacute;lettel vagy an&eacute;lk&uuml;l,
-            rettenetes k&ouml;r&uuml;lm&eacute;nyek, &aacute;ltal&aacute;ban
-            hal&aacute;l</span
+        </div>
+        <div class="t m0 x3 h6 y1e ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws1"
+            >Nő a k<span class="_ _2"></span>éphasznál<span
+              class="_ _4"
+            ></span
+            >at (pl. pr<span class="_ _0"></span>ez<span class="_ _2"></span
+            >ent<span class="_ _0"></span>áció)</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Szem&eacute;lyi kultusz</span
-          ><span class="c2"
-            >: tot&aacute;lis diktat&uacute;ra jellemz&#337;je: a vez&eacute;rt
-            dics&#337;&iacute;tik, az &#337; kultusz&aacute;t terjesztik &eacute;s
-            szem&eacute;lye &aacute;tsz&ouml;vi a mindennapokat (szobrok,
-            plak&aacute;tok, stb.)</span
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf5" class="pf w0 h0" data-page-no="5">
+    <div class="pc pc5 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A be<span class="_ _0"></span>f<span class="_ _2"></span>oly<span
+            class="_ _0"
+          ></span
+          >ásolás típusai
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls5 ws1">: </span
+          ><span class="ff5 ls0 ws5"
+            >Meg<span class="_ _3"></span>gy<span class="_ _4"></span>ő<span
+              class="_ _4"
+            ></span
+            >z<span class="_ _0"></span>és<span class="_"> </span
+            ><span class="ff3 ws1"
+              >bef<span class="_ _2"></span>og<span class="_ _4"></span>adó
+              tudat<span class="_ _0"></span>ában
+              <span class="_ _3"></span>v<span class="_ _0"></span>an,
+              <span class="_ _3"></span>hogy a bes<span class="_ _4"></span
+              >z<span class="_ _0"></span>élő meg ak<span
+                class="_ _0"
+              ></span
+              >arja
+            </span></span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Koncepci&oacute;s per</span
-          ><span class="c2"
-            >: valamilyen igazs&aacute;galappal rendelkez&#337;, de
-            v&eacute;geredm&eacute;nyben elferd&iacute;tett per -&gt; hamis
-            &iacute;t&eacute;letek, diktat&uacute;r&aacute;k politikai
-            fegyvere</span
+        </div>
+        <div class="t m0 x4 h6 y6 ff3 fs4 fc0 sc0 ls0 ws1">
+          gy<span class="_ _0"></span>őzni<span class="_ _4"></span> őt
+          valami<span class="_ _0"></span>r<span class="_ _4"></span>ől.
+          K<span class="_ _0"></span>ét<span class="_ _4"></span>oldalú
+          f<span class="_ _2"></span>oly<span class="_ _0"></span>amat.
+        </div>
+        <div class="t m0 x3 h5 y7 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff6 ls0 ws1"
+            >Manipuláció: <span class="_ _3"></span
+            ><span class="ff2"
+              >a be<span class="_ _4"></span>f<span class="_ _2"></span
+              >ogadó n<span class="_ _4"></span>incs
+              <span class="_ _3"></span>tuda<span class="_ _4"></span>t<span
+                class="_ _0"
+              ></span
+              >ában <span class="_ _3"></span>a bef<span class="_ _2"></span
+              >oly<span class="_ _0"></span>ásolásnak,
+              <span class="_ _3"></span>nem tud
+            </span></span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&#337;zsde</span
-          ><span class="c2"
-            >: szabadpiaci kapitalista &aacute;llamokra jellemz&#337; -&gt;
-            v&aacute;llalat r&eacute;szv&eacute;nyeket bocs&aacute;t ki, az
-            &aacute;rfolyam fog v&aacute;ltozni, objekt&iacute;v (termel&eacute;si
-            adatok) &eacute;s szubjekt&iacute;v (k&uuml;ls&#337; dolgok, az
-            emberek mit gondolnak) t&eacute;nyez&#337;k is
-            befoly&aacute;solj&aacute;k</span
+        </div>
+        <div class="t m0 x4 h5 y8 ff2 fs3 fc0 sc0 ls0 ws1">
+          s<span class="_ _4"></span>z<span class="_ _0"></span>abadon
+          <span class="_ _3"></span>dönt<span class="_ _0"></span>eni.
+          <span class="_ _3"></span>Egy<span class="_ _4"></span>oldalú
+          f<span class="_ _2"></span>oly<span class="_ _0"></span>amat.
+          Soks<span class="_ _4"></span>z<span class="_ _2"></span>or
+          <span class="_ _3"></span>nem biz<span class="_ _2"></span>on<span
+            class="_ _4"
+          ></span
+          >yítha<span class="_ _0"></span>tó a
+        </div>
+        <div class="t m0 x4 h5 y9 ff2 fs3 fc0 sc0 ls0 ws1">
+          manipula<span class="_ _0"></span>tív
+          <span class="_ _3"></span>sz<span class="_ _2"></span>ándék.
+          <span class="_ _3"></span>
+        </div>
+        <div class="t m0 x3 h6 y1f ff3 fs4 fc0 sc0 ls0 ws1">
+          (Lehet pl<span class="_ _4"></span>. inf<span class="_ _2"></span
+          >ormáció <span class="_ _3"></span>elhal<span class="_ _4"></span
+          >lg<span class="_ _0"></span>at<span class="_ _0"></span>ásá<span
+            class="_ _4"
+          ></span
+          >v<span class="_ _0"></span>al, lén<span class="_ _0"></span
+          >y<span class="_ _0"></span>eget
+          <span class="_ _4"></span>elf<span class="_ _2"></span>edő f<span
+            class="_ _0"
+          ></span
+          >elesleg<span class="_ _0"></span>es
+        </div>
+        <div class="t m0 x3 h5 y20 ff3 fs3 fc0 sc0 ls0 ws1">
+          r<span class="_ _0"></span>észlet<span class="_ _0"></span>ek
+          k<span class="_ _2"></span>ö<span class="_ _0"></span>zlésév<span
+            class="_ _4"
+          ></span
+          >el, homály<span class="_ _0"></span>os,
+          <span class="_ _3"></span>k<span class="_ _2"></span>étért<span
+            class="_ _0"
+          ></span
+          >elmű megf<span class="_ _2"></span>ogalmaz<span
+            class="_ _2"
+          ></span
+          >ással, hibás
+        </div>
+        <div class="t m0 x3 h5 y21 ff2 fs3 fc0 sc0 ls0 ws1">
+          érveléssel<span class="_ _4"></span> manipulálni.)
+        </div>
+        <div class="t m0 x3 h5 y22 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff6 ls0 ws1"
+            >K<span class="_ _0"></span>én<span class="_ _0"></span>ys<span
+              class="_ _4"
+            ></span
+            >z<span class="_ _0"></span>erítés: <span class="_ _3"></span
+            ><span class="ff3"
+              >a be<span class="_ _0"></span>f<span class="_ _0"></span
+              >ogadó nem ért egy<span class="_ _0"></span>et a bes<span
+                class="_ _4"
+              ></span
+              >z<span class="_ _2"></span>élővel,<span class="_ _4"></span>
+              mégis
+            </span></span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&uacute;ltermel&eacute;si v&aacute;ls&aacute;g</span
-          ><span class="c2"
-            >: t&uacute;l sok term&eacute;ket termeltek, amit nem tudnak eladni
-            -&gt; 1929-es v&aacute;ls&aacute;g oka</span
+        </div>
+        <div class="t m0 x4 h6 y23 ff2 fs4 fc0 sc0 ls0 ws1">
+          eng<span class="_ _4"></span>edelmesk<span class="_ _5"></span
+          >edik, hogy elk<span class="_ _2"></span>erülje a bün<span
+            class="_ _4"
+          ></span
+          >te<span class="_ _0"></span>tés<span class="_ _0"></span>t
+          <span class="_ _3"></span>v<span class="_ _0"></span>agy eln<span
+            class="_ _0"
+          ></span
+          >y<span class="_ _0"></span>erje a j<span class="_ _3"></span
+          >ut<span class="_ _0"></span>almat.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf6" class="pf w0 h0" data-page-no="6">
+    <div class="pc pc6 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff7 fs2 fc0 sc0 ls0 ws1">
+          Hír<span class="_ _0"></span>es s<span class="_ _2"></span>z<span
+            class="_ _2"
+          ></span
+          >ónok<span class="_ _1"></span>ok különbö<span class="_ _0"></span
+          >ző k<span class="_ _1"></span>or<span class="_ _2"></span>okban
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3">Cicer<span class="_ _0"></span>o</span>
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws4"
+            >Pla<span class="_ _4"></span>t<span class="_ _4"></span
+            >ón</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">New Deal</span
-          ><span class="c2"
-            >: Roosevelt v&aacute;laszt&aacute;si programja, amelyet az amerikai
-            v&aacute;ls&aacute;gb&oacute;l kil&aacute;bal&aacute;s&eacute;rt
-            &iacute;rt, alapjait Keynes gondolataira &eacute;p&iacute;tette: nem
-            termel&#337; &aacute;llami beruh&aacute;z&aacute;sokkal
-            n&ouml;velt&eacute;k a v&aacute;s&aacute;rl&oacute;er&#337;t</span
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Aris<span class="_ _4"></span>zt<span class="_ _4"></span
+            >otelés<span class="_ _0"></span>z</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tot&aacute;lis diktat&uacute;ra</span
-          ><span class="c2"
-            >: ny&iacute;lt er&#337;szakkal t&aacute;mad&oacute; hatalom</span
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Sz<span class="_ _0"></span>ókr<span class="_ _0"></span
+            >at<span class="_ _0"></span>ész</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megpropaganda</span
-          ><span class="c2"
-            >: kisz&eacute;les&iacute;tett&eacute;k a v&aacute;laszt&oacute;jogot
-            -&gt; t&ouml;bb m&#369;velts&eacute;gi szint szavazhat -&gt;
-            alacsonyabb szinten kell megfogalmazni a sz&ouml;vegeket</span
+        </div>
+        <div class="t m0 x3 h6 y1b ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >K<span class="_ _0"></span>ossuth
+            <span class="_ _3"></span>Lajos</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Nemzetiszocializmus</span
-          ><span class="c2"
-            >: a saj&aacute;t nemzetet el&#337;t&eacute;rbe helyezik,
-            vil&aacute;guralomra t&ouml;r&#337; nacionalista mozgalom,
-            vezet&#337;je Adolf Hitler, n&aacute;cik</span
+        </div>
+        <div class="t m0 x3 h5 y1c ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >P<span class="_ _2"></span>ázmány P<span class="_ _2"></span
+            >ét<span class="_ _4"></span>er</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Fajelm&eacute;let</span
-          ><span class="c2"
-            >: nemzeteket rangsorolt&aacute;k: als&oacute;bb,
-            &iacute;rtand&oacute; n&eacute;pek; szolg&aacute;l&oacute;
-            n&eacute;pek; n&eacute;metek: uralkod&oacute;k, legfells&#337;bb
-            rend&#369; n&eacute;p</span
+        </div>
+        <div class="t m0 x3 h5 y1d ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >E<span class="_ _0"></span>ötvös Jó<span class="_ _0"></span
+            >zse<span class="_ _4"></span>f</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Zsid&oacute;&uuml;ld&ouml;z&eacute;s</span
-          ><span class="c2"
-            >: antiszemitizmus, fajelm&eacute;let szerint
-            elpuszt&iacute;tand&oacute; faj</span
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf7" class="pf w0 h0" data-page-no="7">
+    <div class="pc pc7 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff7 fs2 fc0 sc0 ls0 ws6">
+          Műf<span class="_ _2"></span>ajai
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls6 ws7">
+          1.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >T<span class="_ _7"></span>örvén<span class="_ _2"></span
+            >ys<span class="_ _4"></span>z<span class="_ _2"></span>éki
+            besz<span class="_ _2"></span>éd: <span class="_ _3"></span>pl.
+            jogi besz<span class="_ _2"></span>édek</span
           >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">F&uuml;hrer</span
-          ><span class="c2"
-            >: vez&eacute;r, Hitler, N&eacute;metorsz&aacute;g teljhatalm&uacute;
-            dikt&aacute;tora</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">SS</span
-          ><span class="c2"
-            >: fekete egyenruh&aacute;s, elit egys&eacute;gek, eredetileg Hitler
-            test&#337;rs&eacute;ge, k&eacute;s&#337;bb a Hossz&uacute;
-            K&eacute;sek &eacute;jszak&aacute;j&aacute;n lesznek
-            h&iacute;rhedtek</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Berlin-R&oacute;ma tengely</span
-          ><span class="c2"
-            >: Olaszorsz&aacute;g-N&eacute;metorsz&aacute;g
-            sz&ouml;vets&eacute;gi, egym&aacute;st t&aacute;mogat&oacute;
-            szerz&#337;d&eacute;se</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Anschluss</span
-          ><span class="c2"
-            >: Ausztria N&eacute;metorsz&aacute;ghoz csatol&aacute;sa</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Tekint&eacute;lyelv&#369; &aacute;llam</span
-          ><span class="c2"
-            >: m&#369;k&ouml;dik, de korl&aacute;tolt a demokr&aacute;cia: a
-            vezet&#337; olyan magas tekint&eacute;ly&#369;, hogy a
-            jog&aacute;llamis&aacute;g felett &aacute;ll,
-            tekint&eacute;ly&eacute;t felhaszn&aacute;lva
-            ir&aacute;ny&iacute;t</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Er&#337;szakmentes ellen&aacute;ll&aacute;s</span
-          ><span class="c2"
-            >: Gandhi a vezet&#337;je, indiai f&uuml;ggetlens&eacute;gi mozgalom,
-            a britek elleni ellen&aacute;ll&aacute;ssal kiv&iacute;vja India
-            f&uuml;ggetlens&eacute;g&eacute;t</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Magaskult&uacute;ra (elitkult&uacute;ra)</span
-          ><span class="c2"
-            >: a m&#369;veltebb, kifinomultabb emberek
-            sz&oacute;rakoztat&aacute;si m&oacute;dja (opera, nagyreg&eacute;nyek,
-            stb.)</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">T&ouml;megkult&uacute;ra</span
-          ><span class="c2"
-            >: a t&ouml;megek &aacute;ltal is meg&eacute;rtett
-            sz&oacute;rakoztat&aacute;si m&oacute;dok, mindenki meg&eacute;rti
-            (operett, kom&eacute;dia)</span
-          >
-        </li>
-      </ul>
-      <ol class="c1 lst-kix_tpq8m4h3lfvd-0" start="2">
-        <li class="c0 c6 li-bullet-0">
-          <span class="c2">Szem&eacute;lyek</span>
-        </li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Benito Mussolini</span
-          ><span class="c2"
-            >: Olasz fasiszta politikus, dikt&aacute;tor, a n&aacute;ci
-            N&eacute;metorsz&aacute;g sz&ouml;vets&eacute;gese, szem&eacute;lyi
-            kultuszt &eacute;p&iacute;tett ki, 1922-43</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Szt&aacute;lin</span
-          ><span class="c2"
-            >: Szovjet politikus, k&eacute;s&#337;bb dikt&aacute;tor, a
-            Szovjetuni&oacute; Kommunista P&aacute;rtj&aacute;nak
-            f&#337;titk&aacute;ra, aki felismeri ezen tiszts&eacute;g
-            fontoss&aacute;g&aacute;t &eacute;s ezt kihaszn&aacute;lva veszi
-            &aacute;t a hatalmat</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Franklin Delano Roosevelt</span
-          ><span class="c2"
-            >: 1932-ben nyerte meg az eln&ouml;kv&aacute;laszt&aacute;st az
-            USA-ban a demokrat&aacute;k oldal&aacute;n, &#337; hirdette meg a New
-            Deal programot, amely a megold&aacute;s volt a
-            v&aacute;ls&aacute;gb&oacute;l val&oacute;
-            kil&aacute;bal&aacute;sra</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">John Maynard Keynes</span
-          ><span class="c2"
-            >: New Deal k&ouml;zgazdas&aacute;gi alapjait kidolgoz&oacute;
-            k&ouml;zgazd&aacute;sz</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Adolf Hitler</span
-          ><span class="c2"
-            >: Osztr&aacute;k sz&uuml;let&eacute;s&#369; n&eacute;met politikus, a
-            Nemzetiszocialista N&eacute;met Munk&aacute;sp&aacute;rt
-            vezet&#337;je, k&eacute;s&#337;bb N&eacute;metorsz&aacute;g
-            teljhatalm&uacute; vezet&#337;je, F&uuml;hrere</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Joseph Goebbels</span
-          ><span class="c2"
-            >: N&aacute;ci N&eacute;metorsz&aacute;g propaganda minisztere, a
-            n&aacute;cizmust &uuml;gyesen terjeszti &eacute;s
-            propag&aacute;lja</span
-          >
-        </li>
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3">Mah&aacute;tma Gandhi</span
-          ><span class="c2"
-            >: Indiai politikus, spiritu&aacute;lis vezet&#337;, a brit uralom
-            elleni passz&iacute;v ellen&aacute;ll&aacute;s megteremt&#337;je, a
-            s&oacute;menet megszervez&#337;je, k&eacute;s&#337;bb az &uacute;j
-            indiai alkotm&aacute;ny egyik megalkot&oacute;ja</span
-          >
-        </li>
-      </ul>
-      <ol class="c1 lst-kix_tpq8m4h3lfvd-0" start="3">
-        <li class="c0 c6 li-bullet-0">
-          <span class="c2">Kronol&oacute;gia</span>
-        </li>
-      </ol>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3"
-            >1922 (Fasiszta hatalom&aacute;tv&eacute;tel
-            Olaszorsz&aacute;gban)</span
-          >
-        </li>
-      </ul>
-      <p class="c0 c8 c9">
-        <span class="c2"
-          >Olaszorsz&aacute;g az antant r&eacute;sz&eacute;n nyert de
-          v&eacute;g&uuml;l a b&eacute;keszerz&#337;d&eacute;ssel
-          el&eacute;gtelen</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >mert r&eacute;szben tudt&aacute;k csak
-          &eacute;rv&eacute;nyes&iacute;teni a
-          k&eacute;r&eacute;s&uuml;ket.(balk&aacute;n-f&eacute;lsziget
-          terjeszked&eacute;s + f&ouml;ldk&ouml;zi tenger + gyarmatok)</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >H&aacute;bor&uacute; ut&aacute;n &#10132; gazdas&aacute;gi
-          v&aacute;ls&aacute;g, t&aacute;rsadalmi el&eacute;gedetlens&eacute;g =
-          politikai v&aacute;ls&aacute;g</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Mussolini l&eacute;p fel a nemzeti fasiszta p&aacute;rt vezet&#337;je
-          k&eacute;nt</span
-        >
-      </p>
-      <ul class="c1 lst-kix_p20sdo5mw4sx-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >a rend &eacute;s a jog v&eacute;delm&eacute;re l&eacute;ptek
-            f&ouml;l</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2">1922 &ldquo;marcia su Roma&rdquo;</span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >fekete ruh&aacute;s t&ouml;meggel bevonult R&oacute;m&aacute;ba
-            &eacute;s &aacute;tvette a hatalmat</span
-          >
-        </li>
-      </ul>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;1929
-          ig diktat&oacute;rikusan uralkodik 1929 ut&aacute;n alakul ki</span
-        >
-      </p>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Uralkod&aacute;sa:
-          adott eszme, adott dikt&aacute;tor beleavatkozik az eg&eacute;sz
-          t&aacute;rsadalomba</span
-        >
-      </p>
-      <p class="c0">
-        <span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;jellemz&#337;je:
-          egy dikt&aacute;tor, egy p&aacute;rt, egy eszme (DUCE)<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nincs
-          antiszemitizmus c&eacute;l: R&oacute;mai birodalomm&aacute;
-          alak&iacute;tani &uacute;jra.</span
-        >
-      </p>
-      <p class="c0">
-        <span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span
-        ><span class="c2"
-          >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Korpor&aacute;ci&oacute;
-          jellemezte: csoportos&iacute;tja az embereket</span
-        >
-      </p>
-      <p class="c0 c8">
-        <span class="c7 c3"
-          >(A Szovjetuni&oacute; l&eacute;trehoz&aacute;sa)</span
-        >
-      </p>
-      <p class="c0 c8 c9">
-        <span class="c2"
-          >Bolsevikok nyernek &iacute;gy l&eacute;trej&ouml;n a
-          Szovjetuni&oacute;. Gazdas&aacute;g gyenge, &uacute;jj&aacute; kell
-        </span>
-      </p>
-      <p class="c0 c8 c9"><span class="c2">mindent tervezni.</span></p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Gondok: t&#337;ke, szakember. Nincs seg&iacute;ts&eacute;g a nyugati
-          orsz&aacute;gt&oacute;l hiszen kommunizmus. Marxi elm&eacute;let nem
-          fektette le hogyan &eacute;p&uuml;l fel a prolet&aacute;r
-          &aacute;llam</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2">1924-ben meghal Lenin (agyv&eacute;rz&eacute;s)</span>
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Verseng&eacute;s Bolsevikok k&ouml;z&ouml;tt ki lesz a
-          vezet&#337;&#10132; Trockij ellent&eacute;t Szt&aacute;lin
-          k&ouml;z&ouml;tt</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Szt&aacute;lin sok inform&aacute;ci&oacute; gy&#369;jt&eacute;se miatt
-          nyer. 1928-ban Trockij-t sz&aacute;m&#369;zik
-          Kazahszt&aacute;nba(Szovjetuni&oacute; elhagy&aacute;sa). A
-          k&uuml;zdelem eszmei &aacute;gon is folytat&oacute;dik. Szt&aacute;lin
-          szocialista egyorsz&aacute;gba &eacute;s saj&aacute;t eszm&eacute;it
-          haszn&aacute;lja.</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >A f&ouml;ldeket kollektiviz&aacute;lt&aacute;k &eacute;s a megtermelt
-          term&eacute;ket eladni k&uuml;lf&ouml;ld&ouml;n &#10132; p&eacute;nz
-          &#10132;gy&aacute;rak, neh&eacute;zipar, iparos&iacute;tj&aacute;k az
-          orsz&aacute;got &eacute;s a katonas&aacute;got(eredeti
-          t&#337;kefelhalmoz&aacute;s). Kul&aacute;k: gazdag parasztok.</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Holodomor (1932-1933) &#10132; &ouml;sszes gabon&aacute;t
-          export&aacute;lja</span
-        >
-      </p>
-      <p class="c0 c10">
-        <span class="c2"
-          >Minden ellens&eacute;get ki&aacute;ll&iacute;tott &#10132;
-          gul&aacute;gokba (munkat&aacute;borba,b&iacute;r&oacute;s&aacute;gi
-          &iacute;t&eacute;let n&eacute;lk&uuml;l)</span
-        >
-      </p>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1924 (A Dawes-terv)</span>
-        </li>
-      </ul>
-      <p class="c0 c10">
-        <span
-          >A p&eacute;nz&uuml;gyi &ldquo;v&eacute;rkering&eacute;s&rdquo;
-          beind&iacute;t&aacute;s&aacute;ra az Egyes&uuml;lt &Aacute;llamok tett
-          javaslatot 1924-ben, ez volt a (Dawes-terv). &Ouml;szt&ouml;n&ouml;zte a
-          n&eacute;metorsz&aacute;gi befektet&eacute;seket &eacute;s hiteleket
-          ny&uacute;jtott a vesztes orsz&aacute;goknak. &Iacute;gy k&eacute;pes
-          lett a j&oacute;v&aacute;t&eacute;telek fizet&eacute;s&eacute;re is ami
-          az antant orsz&aacute;gok k&ouml;lts&eacute;gvet&eacute;s&eacute;t is
-          stabiliz&aacute;lta. Eur&oacute;pai gazdas&aacute;g beind&iacute;tja a
-          k&uuml;lkereskedelmet, &eacute;s mindenki k&eacute;pes lesz
-          visszafizetni hiteleit az Egyes&uuml;lt &Aacute;llamoknak
-        </span>
-      </p>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1925 (A locarn&oacute;i egyezm&eacute;ny)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_8grsn05gykj4-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Franciaorsz&aacute;g &uacute;j
-            biztons&aacute;gpolitik&aacute;j&aacute;nak els&#337;
-            eredm&eacute;nye. N&eacute;metorsz&aacute;g &eacute;s a nagyhatalmak </span
-          ><span class="c2">garant&aacute;lt&aacute;k</span
-          ><span class="c2"
-            >, hogy N&eacute;metorsz&aacute;g nem t&ouml;rekszik a nyugati
-            hat&aacute;rainak megv&aacute;ltoztat&aacute;s&aacute;ra. Ez
-            meger&#337;s&iacute;tette a versailles-i
-            b&eacute;keszerz&#337;d&eacute;st A hat&aacute;rok </span
-          ><span class="c2">s&eacute;rthetetlens&eacute;g&eacute;&eacute;rt</span
-          ><span class="c2"
-            >&nbsp;Nagy-Britannia &eacute;s Olaszorsz&aacute;g v&aacute;llalt
-            garanci&aacute;t. A rajna vid&eacute;ket
-            demilitariz&aacute;lt&aacute;k. A n&aacute;ci
-            hatalom&aacute;tv&eacute;tel ut&aacute;n N&eacute;metorsz&aacute;g az
-            egyezm&eacute;nyt megszegi amikor bevonult a
-            Rajna-vid&eacute;kre.</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3"
-            >1929-1933 (A vil&aacute;ggazdas&aacute;gi v&aacute;ls&aacute;g)</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_cd4bbenoabo3-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Az els&#337; vil&aacute;gh&aacute;bor&uacute; ut&aacute;n az USA
-            gazdas&aacute;gi n&ouml;veked&eacute;s t&ouml;retlen&uuml;l
-            folytat&oacute;dik, viszont a fogyaszt&aacute;s nem n&#337;.
-            Ez&aacute;ltal a r&eacute;szv&eacute;ny&aacute;rak cs&ouml;kkenni
-            kezdtek v&eacute;g&uuml;l a &ldquo;Fekete kedden&rdquo;
-            &ouml;sszeomlik a t&#337;zsde, egy h&eacute;t alatt 40%-ot estek
-            &aacute;tlagosan a r&eacute;szv&eacute;nyek.
+        </div>
+        <div class="t m0 x3 h6 y18 ff2 fs4 fc0 sc0 ls7 ws8">
+          2.<span class="_"> </span
+          ><span class="ff3 ls0 ws1"
+            >T<span class="_ _8"></span>anácsadó bes<span
+              class="_ _4"
+            ></span
+            >z<span class="_ _0"></span>éd (előn<span class="_ _0"></span
+            >y<span class="_ _4"></span>ök és hátr<span class="_ _2"></span
+            >án<span class="_ _0"></span>yok la<span class="_ _4"></span
+            >t<span class="_ _4"></span>olg<span class="_ _0"></span>at<span
+              class="_ _0"
+            ></span
+            >ása) pl.
           </span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >T&uacute;ltermel&eacute;si v&aacute;ls&aacute;g &#10132;
-            t&#337;zsdep&aacute;nik &#10132; bankp&aacute;nik (emberek rohannak
-            kivenni a p&eacute;nz&uuml;ket).</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Megn&ouml;velik a v&aacute;mokat, &iacute;gy &ouml;sszeomlik a
-            vil&aacute;gkereskedelem.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >&Ouml;rd&ouml;gi k&ouml;r: munkan&eacute;lk&uuml;lis&eacute;g
-            &#10132; cs&ouml;kken&#337; v&aacute;s&aacute;rl&oacute;er&#337;
-            &#10132; cs&ouml;kken a bev&eacute;tel &#10132;
-            munkan&eacute;lk&uuml;lis&eacute;g</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >V&eacute;g&uuml;l John Maynard Keynes (brit k&ouml;zgazd&aacute;sz)
-            javaslat&aacute;ra fogyaszt&aacute;s&eacute;l&eacute;nk&iacute;t&#337;
-            &aacute;llami beruh&aacute;z&aacute;sok &aacute;ltal
-            &aacute;ll&iacute;tj&aacute;k helyre a gazdas&aacute;got.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Franklin Roosevelt &uacute;j eln&ouml;k, innent&#337;l beavatkozik az
-            &aacute;llam a gazdas&aacute;gba</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1933 (Hitler hatalomra ker&uuml;l&eacute;se)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_exr0t7c1b7ou-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Weimari k&ouml;zt&aacute;rsas&aacute;g els&#337; &eacute;veiben
-            sz&aacute;mos sz&eacute;ls&#337;s&eacute;ges p&aacute;rt alakul,
-            p&eacute;ld&aacute;ul az NSDAP (Nemzetiszocialista N&eacute;met
-            Munk&aacute;sp&aacute;rt). Ennek vezet&#337;je (f&uuml;hrer) Adolf
-            Hitler volt. Radik&aacute;lis k&uuml;lpolitikai terveket,
-            szoci&aacute;lis demag&oacute;gi&aacute;t &eacute;s antiszemitizmust
-            h&iacute;rdet.</span
-          >
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >B&aacute;r a m&uuml;ncheni s&ouml;rpuccs nem siker&uuml;l, a
-            gazdas&aacute;gi v&aacute;ls&aacute;g idej&eacute;n megn&#337; a
-            n&eacute;pszer&#369;s&eacute;g&uuml;k &eacute;s a n&aacute;ci
-            propaganda gyors &eacute;s hat&eacute;konyan m&#369;k&ouml;dve
-            v&eacute;g&uuml;l Hindenburg kinevezi Hitler minisztereln&ouml;knek.
-            Alg f&eacute;l &eacute;v alatt felsz&aacute;molj&aacute;k a
-            demokr&aacute;ci&aacute;t &eacute;s a felhatalmaz&aacute;si
-            t&ouml;rv&eacute;ny elfogad&aacute;s&aacute;val teljesk&ouml;r&#369;
-            hatalma lesz. A hossz&uacute; k&eacute;sek
-            &eacute;jszak&aacute;j&aacute;n minden addigi ellenfel&eacute;vel
-            v&eacute;gez (pl SA vezet&#337;je: Ernst R&ouml;hm) &eacute;s
-            &ouml;sszevonja az &aacute;llamf&#337;i &eacute;s
-            korm&aacute;nyf&#337;i poz&iacute;ci&oacute;t. A
-            krist&aacute;ly&eacute;jszak&aacute;n zsid&oacute;kat lincseltek meg,
-            boltokat fosztottak ki, illetve zsinag&oacute;g&aacute;kat
-            &eacute;gettek le.</span
-          >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c3 c7">1936 (Berlin-R&oacute;ma tengely)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_93yazgp71kx3-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >1935-t&#337;l sz&aacute;mos ponton elkezdi megszegni a Versailles-i
-            b&eacute;k&eacute;t N&eacute;metorsz&aacute;g: fegyverkeznek, majd
-            bevezetik a hadk&ouml;telezetts&eacute;get: Olaszorsz&aacute;g, a
-            britek &eacute;s a franci&aacute;k is el&iacute;t&eacute;lik &eacute;s
-            ki&aacute;llnak Ausztria f&uuml;ggetlens&eacute;ge mellett -&gt;
-            &uacute;gy t&#369;nik, hogy ezen orsz&aacute;gok
-            sz&ouml;vets&eacute;gre l&eacute;pve a Szovjetuni&oacute;val
-            beker&iacute;tik N&eacute;metorsz&aacute;got, de az olaszok &eacute;s
-            a szovjetek k&ouml;z&ouml;tt ellent&eacute;t alakul ki, mert a
-            szovjetek kihirdetik az antifasiszta &ouml;sszefog&aacute;s
-            sz&uuml;ks&eacute;gess&eacute;g&eacute;t: el&#337;sz&ouml;r
-            N&eacute;metorsz&aacute;g &eacute;s Jap&aacute;n, majd
-            Olaszorsz&aacute;g k&ouml;t kommunistaellenes
-            &nbsp;szerz&#337;d&eacute;st (antikomintern paktum).
+        </div>
+        <div class="t m0 x5 h5 y7 ff3 fs3 fc0 sc0 ls0 ws1">
+          k<span class="_ _0"></span>ampán<span class="_ _0"></span
+          >ybesz<span class="_ _2"></span>édek,
+          <span class="_ _3"></span>előadások
+        </div>
+        <div class="t m0 x3 h5 y24 ff2 fs3 fc0 sc0 ls6 ws7">
+          3.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >Bemut<span class="_ _0"></span>ató bes<span class="_ _0"></span
+            >z<span class="_ _0"></span>éd <span class="_ _3"></span>(célja
+            érz<span class="_ _2"></span>elemk<span class="_ _2"></span
+            >elt<span class="_ _4"></span>és) pl. évn<span
+              class="_ _2"
+            ></span
+            >yitó<span class="_ _0"></span>, év<span class="_ _0"></span
+            >z<span class="_ _4"></span>ár<span class="_ _0"></span>ó<span
+              class="_ _4"
+            ></span
+            >, nemz<span class="_ _2"></span>eti
           </span>
-        </li>
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >Olasz-n&eacute;met bar&aacute;ts&aacute;gnak h&aacute;la Mussolini
-            elkezd Afrik&aacute;ban terjeszkedni - britek &eacute;s
-            franci&aacute;k alig vesznek r&oacute;la tudom&aacute;st, Hitler
-            elismeri a terjeszked&eacute;st, Mussolini elt&aacute;volodik addigi
-            sz&ouml;vets&eacute;geseit&#337;l. 1936 &#337;sz&eacute;n Hitler
-            &eacute;s Mussolini meg&aacute;llapodik, hogy egyeztetik
-            k&uuml;lpolitikai l&eacute;p&eacute;seiket: Berlin-R&oacute;ma tengely
-            megsz&uuml;letik, 1940-ben Toki&oacute; is csatlakozik.</span
+        </div>
+        <div class="t m0 x5 h5 y25 ff2 fs3 fc0 sc0 ls0 ws1">
+          ünnepek, <span class="_ _3"></span>s<span class="_ _4"></span
+          >zület<span class="_ _0"></span>ésnapok,
+          <span class="_ _3"></span>évf<span class="_ _2"></span>ordul<span
+            class="_ _4"
+          ></span
+          >ók, <span class="_ _3"></span>gy<span class="_ _0"></span
+          >ász<span class="_ _0"></span>sz<span class="_ _2"></span
+          >ertart<span class="_ _0"></span>ások
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf8" class="pf w0 h0" data-page-no="8">
+    <div class="pc pc8 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A jó s<span class="_ _0"></span>z<span class="_ _5"></span>ónok
+          <span class="_ _3"></span>tulajdonság<span class="_ _2"></span>ai
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Tis<span class="_ _4"></span>ztesség (Legy<span
+              class="_ _0"
+            ></span
+            >en tis<span class="_ _0"></span>ztesség<span
+              class="_ _4"
+            ></span
+            >es, aki k<span class="_ _2"></span>ö<span class="_ _4"></span
+            >z<span class="_ _2"></span>életi s<span class="_ _4"></span
+            >z<span class="_ _0"></span>er<span class="_ _0"></span>epet
+            v<span class="_ _4"></span>állal)</span
           >
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_tpq8m4h3lfvd-1 start">
-        <li class="c0 c5 li-bullet-0">
-          <span class="c7 c3">1938 (Anschluss, a m&uuml;ncheni konferencia)</span>
-        </li>
-      </ul>
-      <ul class="c1 lst-kix_63k7e0c4f96j-0 start">
-        <li class="c0 c4 li-bullet-0">
-          <span class="c2"
-            >1935-t&#337;l sorra s&eacute;rtik meg a Versailles-i b&eacute;ke
-            pontjait a n&eacute;metek, a britek tudom&aacute;sul veszik a
-            terjeszked&eacute;st &eacute;s flotta&eacute;p&iacute;t&eacute;st.
-            1937-t&#337;l Anglia &uacute;j minisztereln&ouml;ke Neville
-            Chamberlain: n&eacute;metek jogos s&eacute;relmeinek
-            orvosl&aacute;s&aacute;val szeretn&eacute; cs&ouml;kkenteni a
-            fesz&uuml;lts&eacute;get. Franciaorsz&aacute;g egyed&uuml;l marad
-            n&eacute;metelleness&eacute;g&eacute;vel, 1938. m&aacute;rcius
-            12-&eacute;n a n&eacute;metek megsz&aacute;llj&aacute;k
-            Ausztri&aacute;t &eacute;s B&eacute;csben hivatalosan
-            kihirdett&eacute;k N&eacute;metorsz&aacute;g &eacute;s Ausztria
-            egyes&uuml;l&eacute;s&eacute;t (Anschluss). A megsz&aacute;ll&aacute;s
-            Ausztria N&eacute;metorsz&aacute;ghoz val&oacute;
-            csatol&aacute;s&aacute;r&oacute;l sz&oacute;l&oacute;
-            n&eacute;pszavaz&aacute;s el&#337;tt egy nappal t&ouml;rt&eacute;nt,
-            nehogy a n&eacute;pszavaz&aacute;s &ldquo;rosszul
-            siker&uuml;lj&ouml;n&rdquo;. Az egyes&uuml;l&eacute;st a t&ouml;bbi
-            orsz&aacute;g csak tudom&aacute;sul vette, &iacute;gy ez
-            b&aacute;tor&iacute;totta Hitlert: elkezdt&eacute;k k&ouml;vetelni a
-            szinte 100%-ban n&eacute;metlakta (kb. h&aacute;rommilli&oacute;
-            n&eacute;met) Szud&eacute;ta-vid&eacute;ket
-            Csehszlov&aacute;ki&aacute;t&oacute;l, akik ak&aacute;r
-            auton&oacute;mi&aacute;t is biztos&iacute;tottak volna a
-            ter&uuml;lettel, de akkor Hitler h&aacute;bor&uacute;val &eacute;s
-            megsz&aacute;ll&aacute;ssal kezdett fenyeget&#337;zni. A
-            v&aacute;ls&aacute;got Chamberlain fell&eacute;p&eacute;se oldotta
-            meg, aki 1938 szeptember&eacute;ben &ouml;sszeh&iacute;vta a
-            m&uuml;ncheni konferenci&aacute;t, ahol Nagy-Britannia,
-            Franciaorsz&aacute;g &eacute;s Olaszorsz&aacute;g beleegyezett a
-            Szud&eacute;ta-vid&eacute;k visszacsatol&aacute;s&aacute;ba.</span
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws1"
+            >Erk<span class="_ _5"></span>ölcsi hitel<span
+              class="_ _4"
+            ></span
+            >esség (meg<span class="_ _3"></span>gy<span class="_ _0"></span
+            >őz<span class="_ _2"></span>és mia<span class="_ _0"></span
+            >tt)</span
           >
-        </li>
-      </ul>
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >T<span class="_ _8"></span>alálék<span class="_ _5"></span
+            >on<span class="_ _4"></span>y<span class="_ _4"></span>ság
+            (meg<span class="_ _0"></span>találn<span class="_ _4"></span>i
+            a jó ér<span class="_ _3"></span>v<span class="_ _0"></span
+            >ek<span class="_ _2"></span>et,
+            <span class="ls8 ws9">ea</span>. Kö<span class="_ _0"></span
+            >zben tudjon
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y24 ff2 fs3 fc0 sc0 ls0 ws3">
+          alk<span class="_ _0"></span>almazk<span class="_ _2"></span>odni)
+        </div>
+        <div class="t m0 x3 h5 y26 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Sz<span class="_ _0"></span>erk<span class="_ _2"></span
+            >es<span class="_ _4"></span>ztők<span class="_ _5"></span
+            >ész<span class="_ _0"></span>ség (össz<span class="_ _2"></span
+            >egyűjtöt<span class="_ _0"></span>t an<span class="_ _4"></span
+            >y<span class="_ _0"></span>ag elr<span class="_ _0"></span
+            >endez<span class="_ _2"></span>ése)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y27 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Stílusérz<span class="_ _2"></span>ék
+            <span class="_ _3"></span>(t<span class="_ _4"></span>émának,
+            hallg<span class="_ _0"></span>at<span class="_ _0"></span
+            >óság<span class="_ _3"></span>nak, bes<span class="_ _0"></span
+            >z<span class="_ _0"></span>édhely<span class="_ _4"></span
+            >z<span class="_ _2"></span>etnek
+            <span class="_ _3"></span>legink<span class="_ _2"></span>ább
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y28 ff2 fs3 fc0 sc0 ls0 ws3">
+          megf<span class="_ _2"></span>eleljen)
+        </div>
+        <div class="t m0 x3 h5 y29 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws3"
+            >Emlék<span class="_ _2"></span>e<span class="_ _4"></span
+            >z<span class="_ _0"></span>őtehe<span class="_ _0"></span
+            >tség</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y2a ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws4"
+            >előadók<span class="_ _2"></span>és<span class="_ _4"></span
+            >z<span class="_ _4"></span>ség</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf9" class="pf w0 h0" data-page-no="9">
+    <div class="pc pc9 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          F<span class="_ _0"></span>elk<span class="_ _1"></span>és<span
+            class="_ _2"
+          ></span
+          >zülés a sz<span class="_ _1"></span>ónoki
+          <span class="_ _3"></span>bes<span class="_ _0"></span>z<span
+            class="_ _5"
+          ></span
+          >édr<span class="_ _0"></span>e
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls6 ws7">
+          1.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >A mondaniv<span class="_ _0"></span>aló
+            <span class="_ _3"></span>meg<span class="_ _0"></span>találása:
+            v<span class="_ _2"></span>áloga<span class="_ _0"></span>tás
+            <span class="_ _4"></span>a gondol<span class="_ _4"></span
+            >at<span class="_ _0"></span>ok <span class="_ _3"></span>k<span
+              class="_ _5"
+            ></span
+            >öz<span class="_ _2"></span>ött</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff2 fs4 fc0 sc0 ls7 ws8">
+          2.<span class="_"> </span
+          ><span class="ff3 ls0 ws1"
+            >T<span class="_ _8"></span>art<span class="_ _0"></span>almi
+            elr<span class="_ _0"></span>endez<span class="_ _2"></span>és:
+            logik<span class="_ _0"></span>ai s<span class="_ _4"></span
+            >z<span class="_ _0"></span>empon<span class="_ _0"></span>tok,
+            mivel<span class="_ _4"></span> k<span class="_ _2"></span
+            >ez<span class="_ _2"></span>dődjön, hogy<span
+              class="_ _0"
+            ></span
+            >an
+          </span>
+        </div>
+        <div class="t m0 x5 h5 y7 ff3 fs3 fc0 sc0 ls0 ws1">
+          f<span class="_ _2"></span>ejez<span class="_ _2"></span>ődjön
+          <span class="_ _3"></span>be, mi hov<span class="_ _0"></span>á
+          k<span class="_ _2"></span>erüljön <span class="_ _3"></span>a
+          bes<span class="_ _0"></span>z<span class="_ _0"></span>édben?
+        </div>
+        <div class="t m0 x3 h5 y24 ff2 fs3 fc0 sc0 ls6 ws7">
+          3.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >Megs<span class="_ _4"></span>z<span class="_ _0"></span
+            >öv<span class="_ _4"></span>eg<span class="_ _4"></span>ez<span
+              class="_ _2"
+            ></span
+            >és, kif<span class="_ _2"></span>ejtés</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y26 ff2 fs3 fc0 sc0 ls6 ws7">
+          4.<span class="_"> </span
+          ><span class="ls0 ws3"
+            >Meg<span class="_ _0"></span>tanul<span class="_ _0"></span
+            >ás</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y27 ff2 fs3 fc0 sc0 ls6 ws7">
+          5.<span class="_"> </span><span class="ff3 ls0">Előadás</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pfa" class="pf w0 h0" data-page-no="a">
+    <div class="pc pca w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A s<span class="_ _0"></span>z<span class="_ _5"></span>ónoki
+          <span class="_ _3"></span>bes<span class="_ _0"></span>z<span
+            class="_ _5"
+          ></span
+          >éd sz<span class="_ _1"></span>erk<span class="_ _1"></span
+          >e<span class="_ _0"></span>z<span class="_ _5"></span>et<span
+            class="_ _0"
+          ></span
+          >e
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Bev<span class="_ _0"></span>ez<span class="_ _2"></span
+            >etés</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >Elbes<span class="_ _0"></span>z<span class="_ _0"></span>élés
+            (a témáho<span class="_ _0"></span>z k<span class="_ _0"></span
+            >apcsolódó <span class="_ _3"></span>k<span class="_ _5"></span
+            >örülmén<span class="_ _0"></span>y<span class="_ _0"></span
+            >ek)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Kit<span class="_ _4"></span>ér<span class="_ _0"></span>és
+            (történe<span class="_ _0"></span>t, sz<span class="_ _2"></span
+            >emély<span class="_ _0"></span>es példa,
+            <span class="_ _3"></span>láts<span class="_ _0"></span>z<span
+              class="_ _0"
+            ></span
+            >ólag elt<span class="_ _4"></span>ér a t<span
+              class="_ _4"
+            ></span
+            >émát<span class="_ _0"></span>ól)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >T<span class="_ _7"></span>émamegjelölés (kimondja
+            álláspontjá<span class="_ _4"></span>t, vélem<span
+              class="_ _4"
+            ></span
+            >én<span class="_ _0"></span>y<span class="_ _0"></span>ét, a
+            biz<span class="_ _0"></span>on<span class="_ _0"></span
+            >yít<span class="_ _0"></span>ást
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y26 ff3 fs3 fc0 sc0 ls0 ws3">
+          elők<span class="_ _2"></span>és<span class="_ _4"></span>zíti)
+        </div>
+        <div class="t m0 x3 h5 y27 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Biz<span class="_ _2"></span>on<span class="_ _4"></span
+            >yít<span class="_ _0"></span>ás
+            <span class="_ _3"></span>(meg<span class="_ _4"></span>er<span
+              class="_ _0"
+            ></span
+            >ősítjük <span class="_ _3"></span>állít<span
+              class="_ _0"
+            ></span
+            >ásunk hely<span class="_ _4"></span>esség<span
+              class="_ _4"
+            ></span
+            >ét)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y2b ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Cáf<span class="_ _2"></span>olás (ellen<span
+              class="_ _0"
+            ></span
+            >vélem<span class="_ _4"></span>én<span class="_ _0"></span
+            >y)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y2c ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Bef<span class="_ _5"></span>ejez<span class="_ _0"></span>és
+            (öss<span class="_ _4"></span>z<span class="_ _0"></span
+            >ege<span class="_ _0"></span>zzük f<span class="_ _2"></span
+            >őbb <span class="_ _3"></span>gondola<span class="_ _0"></span
+            >taink<span class="_ _2"></span>at, lelk<span
+              class="_ _2"
+            ></span
+            >esítjük a k<span class="_ _2"></span>ö<span class="_ _4"></span
+            >z<span class="_ _0"></span>önsége<span class="_ _0"></span
+            >t)</span
+          >
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="pfd" class="pf w0 h0" data-page-no="d">
+    <div class="pc pcd w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Az ér<span class="_ _3"></span>v<span class="_ _0"></span>ek
+        </div>
+        <div class="t m0 x3 h5 y5 ff3 fs3 fc0 sc0 ls0 ws1">
+          Oly<span class="_ _2"></span>an <span class="_ _3"></span>er<span
+            class="_ _0"
+          ></span
+          >ős állít<span class="_ _4"></span>ás, amely tov<span
+            class="_ _2"
+          ></span
+          >ábbi <span class="_ _3"></span>indokl<span class="_ _4"></span
+          >ásr<span class="_ _0"></span>a <span class="_ _3"></span>nem
+          sz<span class="_ _2"></span>orul.
+        </div>
+        <div class="t m0 x3 h8 y18 ff5 fs4 fc0 sc0 ls0 ws1">
+          Mitől<span class="_ _4"></span> er<span class="_ _4"></span>ős?
+        </div>
+        <div class="t m0 x3 h5 y19 ff2 fs3 fc0 sc0 ls0 wsa">
+          -<span class="_"> </span>Logik<span class="_ _0"></span>us
+        </div>
+        <div class="t m0 x3 h5 y1a ff2 fs3 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>T<span class="_ _8"></span>ár<span
+            class="_ _0"
+          ></span
+          >sadalmilag elf<span class="_ _2"></span>og<span
+            class="_ _4"
+          ></span
+          >adot<span class="_ _4"></span>t
+        </div>
+        <div class="t m0 x3 h6 y1b ff2 fs4 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>Hit<span class="_ _0"></span>eles
+          f<span class="_ _0"></span>orr<span class="_ _0"></span>ásból
+          <span class="_ _3"></span>s<span class="_ _4"></span>z<span
+            class="_ _0"
+          ></span
+          >ármazik
+        </div>
+        <div class="t m0 x3 h5 y1c ff2 fs3 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>A több<span class="_ _4"></span>ség
+          egye<span class="_ _4"></span>t<span class="_ _4"></span>ért
+          v<span class="_ _0"></span>ele
+        </div>
+        <div class="t m0 x3 h5 y1d ff2 fs3 fc0 sc0 ls9">
+          -<span class="ff3 ls0 ws3"
+            >Megk<span class="_ _2"></span>ér<span class="_ _0"></span
+            >dőjelezhet<span class="_ _0"></span>etlen</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y1e ff2 fs4 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>Ada<span class="_ _4"></span>tokr<span
+            class="_ _2"
+          ></span
+          >a, tén<span class="_ _2"></span>y<span class="_ _4"></span
+          >ekr<span class="_ _0"></span>e támas<span class="_ _0"></span
+          >zk<span class="_ _2"></span>odik
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pfe" class="pf w0 h0" data-page-no="e">
+    <div class="pc pce w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Az ér<span class="_ _3"></span>v<span class="_ _0"></span>ek
+          f<span class="_ _2"></span>ajt<span class="_ _0"></span>ái
+        </div>
+        <div class="t m0 x3 h9 y2d ff6 fs6 fc0 sc0 ls0 ws1">
+          F<span class="_ _4"></span>orr<span class="_ _0"></span>ásuk
+          sz<span class="_ _2"></span>erint:<span class="_"> </span
+          ><span class="ff3"
+            >külső<span class="_"> </span>f<span class="_ _2"></span
+            >orr<span class="_ _0"></span>ásból (törvén<span
+              class="_ _0"
+            ></span
+            >y<span class="_ _4"></span>ek, jogs<span class="_ _0"></span
+            >z<span class="_ _4"></span>abály<span class="_ _4"></span>ok,
+            sz<span class="_ _2"></span>erz<span class="_ _0"></span>ődés
+          </span>
+        </div>
+        <div class="t m0 x3 h9 y2e ff2 fs6 fc0 sc0 ls0 ws1">
+          st<span class="_ _0"></span>atis<span class="_ _0"></span>zti<span
+            class="_ _3"
+          ></span
+          >k<span class="_ _0"></span>a),
+          <span class="ff3"
+            >belső f<span class="_ _2"></span>orr<span class="_ _0"></span
+            >ásból (ötletg<span class="_ _0"></span>az<span
+              class="_ _0"
+            ></span
+            >dagság<span class="_ _3"></span>, előismer<span
+              class="_ _0"
+            ></span
+            >etek<span class="_ _4"></span>,
+            <span class="_ _4"></span>tudás,
+          </span>
+        </div>
+        <div class="t m0 x3 h9 y2f ff2 fs6 fc0 sc0 ls0 ws1">
+          érz<span class="_ _0"></span>ék<span class="_ _2"></span>en<span
+            class="_ _0"
+          ></span
+          >ység, <span class="_ _0"></span>össz<span class="_ _0"></span
+          >efügg<span class="_ _4"></span>ések
+          <span class="_ _0"></span>meglát<span class="_ _0"></span>ása)
+          sz<span class="_ _0"></span>ármaz<span class="_ _0"></span>ó.
+        </div>
+        <div class="t m0 x3 ha y30 ff6 fs6 fc0 sc0 ls0 ws1">
+          Logik<span class="_ _0"></span>ájuk sz<span class="_ _0"></span
+          >erin<span class="_ _4"></span>t:
+        </div>
+        <div class="t m0 x3 h9 y31 ff2 fs6 fc0 sc0 lsa wsb">
+          1.<span class="_"> </span
+          ><span class="ff3 ls0 ws1"
+            >Deduktív <span class="_ _4"></span>(vissz<span
+              class="_ _2"
+            ></span
+            >ak<span class="_ _0"></span>öv<span class="_ _0"></span
+            >etk<span class="_ _2"></span>ezt<span class="_ _0"></span
+            >et<span class="_ _4"></span>ő):
+            <span class="_ _0"></span>ált.<span class="_ _3"></span> té<span
+              class="_ _4"
+            ></span
+            >telből <span class="_ _2"></span>az adott esetr<span
+              class="_ _0"
+            ></span
+            >e v<span class="_ _0"></span>onunk le
+          </span>
+        </div>
+        <div class="t m0 x5 h9 y32 ff2 fs6 fc0 sc0 ls0 wsc">
+          k<span class="_ _2"></span>öv<span class="_ _0"></span>etk<span
+            class="_ _2"
+          ></span
+          >ezte<span class="_ _0"></span>tés<span class="_ _0"></span>t
+        </div>
+        <div class="t m0 x3 h9 y33 ff3 fs6 fc0 sc0 ls0 ws1">
+          Pl. A kínai t<span class="_ _4"></span>ermék<span
+            class="_ _2"
+          ></span
+          >ek gy<span class="_ _0"></span>enge
+          <span class="_ _0"></span>minőségűek. T<span class="_ _7"></span
+          >ehát <span class="_ _0"></span>ez a kínai cipő nagy<span
+            class="_ _0"
+          ></span
+          >on
+        </div>
+        <div class="t m0 x3 hb y34 ff2 fs7 fc0 sc0 ls0 ws1">
+          gy<span class="_ _0"></span>or<span class="_ _0"></span>san
+          sz<span class="_ _0"></span>étmegy<span class="_ _8"></span>.
+        </div>
+        <div class="t m0 x3 h9 y35 ff3 fs6 fc0 sc0 ls0 ws1">
+          2. Induktív: <span class="_ _0"></span>(egyediv<span
+            class="_ _0"
+          ></span
+          >el k<span class="_ _2"></span>ez<span class="_ _2"></span>dődő):
+          <span class="_ _4"></span>az egy<span class="_ _4"></span>edi
+          <span class="_ _4"></span>eset<span class="_ _0"></span>től
+          <span class="_ _4"></span>jutunk az ált<span class="_ _0"></span
+          >alános
+        </div>
+        <div class="t m0 x3 h9 y36 ff2 fs6 fc0 sc0 ls0 wsc">
+          meg<span class="_ _0"></span>állapításig
+        </div>
+        <div class="t m0 x3 h9 y37 ff3 fs6 fc0 sc0 ls0 ws1">
+          Ez a cipő Kínában k<span class="_ _5"></span>észült
+          <span class="_ _4"></span>és egy <span class="_ _4"></span>hét
+          ut<span class="_ _0"></span>án kilyuk<span class="_ _0"></span
+          >adt. Minden kínai termék
+        </div>
+        <div class="t m0 x3 hb y38 ff3 fs7 fc0 sc0 ls0 ws1">
+          nagy<span class="_ _0"></span>on gy<span class="_ _0"></span>enge
+          minő<span class="_ _4"></span>ségű.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pff" class="pf w0 h0" data-page-no="f">
+    <div class="pc pcf w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Az ér<span class="_ _3"></span>v<span class="_ _0"></span>ek
+          f<span class="_ _2"></span>ajt<span class="_ _0"></span>ái
+          lev<span class="_ _2"></span>e<span class="_ _4"></span>z<span
+            class="_ _1"
+          ></span
+          >et<span class="_ _0"></span>ésük <span class="_ _3"></span>s<span
+            class="_ _0"
+          ></span
+          >z<span class="_ _2"></span>erin<span class="_ _0"></span>t
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >De<span class="_ _4"></span>finícióból (meghat<span
+              class="_ _0"
+            ></span
+            >ár<span class="_ _0"></span>oz<span class="_ _0"></span>ásból)
+            lev<span class="_ _4"></span>e<span class="_ _4"></span>z<span
+              class="_ _0"
+            ></span
+            >et<span class="_ _0"></span>et<span class="_ _4"></span>t</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >Okf<span class="_ _2"></span>ejtéssel<span class="_ _4"></span
+            >, ok<span class="_ _2"></span>ok f<span class="_ _0"></span
+            >elt<span class="_ _0"></span>ár<span class="_ _0"></span
+            >ásá<span class="_ _4"></span>v<span class="_ _0"></span>al,
+            magy<span class="_ _0"></span>ar<span class="_ _0"></span
+            >áz<span class="_ _0"></span>at<span class="_ _4"></span>á<span
+              class="_ _0"
+            ></span
+            >v<span class="_ _4"></span>al</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >K<span class="_ _0"></span>örülmén<span class="_ _0"></span
+            >y<span class="_ _0"></span>ekből
+            <span class="_ _3"></span>lev<span class="_ _4"></span>e<span
+              class="_ _4"
+            ></span
+            >z<span class="_ _0"></span>et<span class="_ _0"></span>et<span
+              class="_ _4"
+            ></span
+            >t</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Öss<span class="_ _4"></span>z<span class="_ _2"></span
+            >eve<span class="_ _4"></span>tésből<span class="_ _4"></span>
+            és példákból</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y1b ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws1"
+            >T<span class="_ _7"></span>én<span class="_ _0"></span>y<span
+              class="_ _0"
+            ></span
+            >ekből, <span class="_ _3"></span>ada<span class="_ _4"></span
+            >t<span class="_ _4"></span>okból</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y1c ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >V<span class="_ _1"></span>alós<span class="_ _0"></span
+            >zínűségekből, ált<span class="_ _4"></span>alánosan elf<span
+              class="_ _0"
+            ></span
+            >og<span class="_ _4"></span>adot<span class="_ _0"></span>t
+            vélek<span class="_ _5"></span>edésekből,
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y2b ff3 fs3 fc0 sc0 ls0 ws3">
+          megfigy<span class="_ _0"></span>elésekből
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf10" class="pf w0 h0" data-page-no="10">
+    <div class="pc pc10 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Az ér<span class="_ _3"></span>v<span class="_ _0"></span>elés
+          f<span class="_ _5"></span>elt<span class="_ _0"></span>ét<span
+            class="_ _4"
+          ></span
+          >elei
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Kív<span class="_ _0"></span>áncsiság
+            <span class="_ _3"></span>(ér<span class="_ _0"></span>deklődés
+            a helyz<span class="_ _2"></span>et, a s<span
+              class="_ _4"
+            ></span
+            >z<span class="_ _0"></span>er<span class="_ _0"></span>eplők,
+            <span class="_ _3"></span>a k<span class="_ _5"></span
+            >örülmén<span class="_ _0"></span>y<span class="_ _0"></span>ek
+            <span class="_ _3"></span>ir<span class="_ _0"></span>ánt)</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >Odafi<span class="_ _4"></span>gy<span class="_ _0"></span>elés
+            (kisebb-nagy<span class="_ _0"></span>obb
+            <span class="_ _a"></span>r<span class="_ _0"></span>észle<span
+              class="_ _4"
+            ></span
+            >t<span class="_ _4"></span>ek és<span class="_ _4"></span
+            >zr<span class="_ _0"></span>evé<span class="_ _4"></span>t<span
+              class="_ _4"
+            ></span
+            >ele)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Nyit<span class="_ _0"></span>ottság és f<span
+              class="_ _2"
+            ></span
+            >elelősség (nem hisz a kiz<span class="_ _0"></span>ár<span
+              class="_ _0"
+            ></span
+            >ólagosságban, v<span class="_ _4"></span>állalja
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y24 ff3 fs3 fc0 sc0 ls0 ws1">
+          mondaniv<span class="_ _0"></span>alójáért
+          <span class="_ _3"></span>a f<span class="_ _2"></span
+          >elelősség<span class="_ _4"></span>et)
+        </div>
+        <div class="t m0 x3 h5 y26 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >P<span class="_ _2"></span>ont<span class="_ _4"></span>osság
+            <span class="_ _3"></span>és hit<span class="_ _4"></span
+            >elesség (megbízha<span class="_ _4"></span>tóak a f<span
+              class="_ _2"
+            ></span
+            >orr<span class="_ _0"></span>ások, adat<span
+              class="_ _4"
+            ></span
+            >ok)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y27 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Kif<span class="_ _2"></span>ejez<span class="_ _2"></span
+            >ésbeli g<span class="_ _0"></span>az<span class="_ _0"></span
+            >dagság (a logik<span class="_ _0"></span>a melle<span
+              class="_ _4"
+            ></span
+            >t<span class="_ _0"></span>t gyön<span class="_ _2"></span
+            >yörk<span class="_ _1"></span>ödtet, emelk<span
+              class="_ _5"
+            ></span
+            >edet<span class="_ _4"></span>t,
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y28 ff3 fs3 fc0 sc0 ls0 ws1">
+          humor<span class="_ _2"></span>os,
+          <span class="_ _a"></span>sz<span class="_ _2"></span>emlélet<span
+            class="_ _0"
+          ></span
+          >es, jó n<span class="_ _4"></span>y<span class="_ _0"></span>elvi
+          er<span class="_ _4"></span>ejű)
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf11" class="pf w0 h0" data-page-no="11">
+    <div class="pc pc11 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 hc y39 ff1 fs8 fc0 sc0 ls0 ws1">
+          A c<span class="_ _0"></span>áf<span class="_ _2"></span>olás
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff3 ls0 ws1"
+            >Az érvelés párja, a biz<span class="_ _2"></span>on<span
+              class="_ _4"
+            ></span
+            >yít<span class="_ _0"></span>ás
+            <span class="_ _3"></span>meger<span class="_ _2"></span
+            >ősítésének es<span class="_ _0"></span>zk<span
+              class="_ _2"
+            ></span
+            >öz<span class="_ _2"></span>e<span class="_ _3"></span
+            ><span class="ff2">.</span></span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws1"
+            >V<span class="_ _1"></span>agy
+            <span class="_ _4"></span>ismerjük az ellen<span
+              class="_ _4"
+            ></span
+            >f<span class="_ _2"></span>él vél<span class="_ _4"></span
+            >emén<span class="_ _0"></span>y<span class="_ _0"></span>ét,
+            v<span class="_ _4"></span>agy ált<span class="_ _0"></span
+            >alános f<span class="_ _2"></span>elf<span class="_ _0"></span
+            >og<span class="_ _0"></span>ás ellen
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y7 ff2 fs3 fc0 sc0 ls0 ws3">
+          s<span class="_ _4"></span>z<span class="_ _0"></span>ól.
+        </div>
+        <div class="t m0 x3 h5 y24 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Hiba az ellen<span class="_ _0"></span>vélem<span
+              class="_ _0"
+            ></span
+            >én<span class="_ _4"></span>y bármely pon<span
+              class="_ _4"
+            ></span
+            >tját cáf<span class="_ _2"></span>olatlanu<span
+              class="_ _0"
+            ></span
+            >l hagyni.</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y26 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Cél: a másik érveinek meggyengít<span class="_ _0"></span>ése,
+            majd ut<span class="_ _4"></span>ána saját ér<span
+              class="_ _3"
+            ></span
+            >v<span class="_ _0"></span>eink
+          </span>
+        </div>
+        <div class="t m0 x4 h6 y3a ff2 fs4 fc0 sc0 ls0 ws4">
+          f<span class="_ _2"></span>elsor<span class="_ _0"></span>olása.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf12" class="pf w0 h0" data-page-no="12">
+    <div class="pc pc12 w0 h0">
+      
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A c<span class="_ _0"></span>áf<span class="_ _2"></span>olás
+          módjai
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >T<span class="_ _8"></span>ag<span class="_ _0"></span>adás (ha
+            rendelk<span class="_ _5"></span>ezünk<span class="_ _4"></span>
+            kiz<span class="_ _4"></span>ár<span class="_ _0"></span>ólagos
+            t<span class="_ _4"></span>én<span class="_ _0"></span>y<span
+              class="_ _4"
+            ></span
+            >ekk<span class="_ _2"></span>el, ig<span class="_ _0"></span
+            >azság<span class="_ _0"></span>okkal)</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws1"
+            >Ny<span class="_ _0"></span>omat<span class="_ _0"></span
+            >ék<span class="_ _2"></span>osít<span class="_ _4"></span>ás:
+            <span class="_ _3"></span>az elle<span class="_ _4"></span
+            >n<span class="_ _0"></span>vél<span class="_ _4"></span
+            >emén<span class="_ _2"></span>ynél er<span class="_ _0"></span
+            >őteljesebb állít<span class="_ _0"></span>ás</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Leleple<span class="_ _0"></span>z<span class="_ _0"></span>és:
+            az ellenf<span class="_ _2"></span>él érvelés<span
+              class="_ _4"
+            ></span
+            >ét önmag<span class="_ _0"></span>a ellen f<span
+              class="_ _0"
+            ></span
+            >or<span class="_ _0"></span>dítjuk,
+            <span class="_ _3"></span>mit hallg<span class="_ _0"></span
+            >at<span class="_ _4"></span>ot<span class="_ _4"></span>t
+          </span>
+        </div>
+        <div class="t m0 x4 h5 y24 ff2 fs3 fc0 sc0 ls0 ws1">
+          el s<span class="_ _4"></span>z<span class="_ _0"></span
+          >ándék<span class="_ _2"></span>osan,
+          <span class="_ _3"></span>mily<span class="_ _0"></span>en ér<span
+            class="_ _3"
+          ></span
+          >vei nem<span class="_ _4"></span> tart<span class="_ _0"></span
+          >oznak a t<span class="_ _0"></span>émához
+        </div>
+        <div class="t m0 x3 h5 y26 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Men<span class="_ _4"></span>t<span class="_ _4"></span
+            >ege<span class="_ _4"></span>tés: ha az ellen<span
+              class="_ _0"
+            ></span
+            >ér<span class="_ _3"></span>vek c<span class="_ _0"></span
+            >áf<span class="_ _0"></span>olhat<span class="_ _0"></span
+            >atlanok (érz<span class="_ _2"></span>elmekr<span
+              class="_ _4"
+            ></span
+            >e v<span class="_ _0"></span>agy
+          </span>
+        </div>
+        <div class="t m0 x4 h6 y3a ff2 fs4 fc0 sc0 ls0 ws1">
+          erk<span class="_ _5"></span>ölcsi k<span class="_ _2"></span
+          >érdés<span class="_ _4"></span>ekr<span class="_ _0"></span>e
+          <span class="_ _3"></span>hiv<span class="_ _2"></span>atk<span
+            class="_ _5"
+          ></span
+          >oz<span class="_ _4"></span>unk ily<span class="_ _0"></span
+          >enk<span class="_ _2"></span>or)
+        </div>
+        <div class="t m0 x3 h5 y29 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >V<span class="_ _1"></span>annak cáf<span class="_ _2"></span
+            >olási és érvelési hibák: r<span class="_ _2"></span>ámuta<span
+              class="_ _0"
+            ></span
+            >tunk <span class="_ _3"></span>az ellenf<span
+              class="_ _5"
+            ></span
+            >él ér<span class="_ _3"></span>v<span class="_ _4"></span
+            >elésének
+          </span>
+        </div>
+        <div class="t m0 x4 h6 y3b ff2 fs4 fc0 sc0 ls0 ws4">
+          pr<span class="_ _0"></span>oblémáir<span class="_ _2"></span>a.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf13" class="pf w0 h0" data-page-no="13">
+    <div class="pc pc13 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff7 fs2 fc0 sc0 ls0 ws1">
+          A ha<span class="_ _0"></span>t<span class="_ _4"></span>ásos
+          előadásmód es<span class="_ _0"></span>zk<span class="_ _1"></span
+          >ö<span class="_ _2"></span>z<span class="_ _5"></span>ei
+        </div>
+        <div class="t m0 x3 h9 y3c ff4 fs6 fc0 sc0 lsb">
+          •<span class="ff2 ls0 ws1"
+            >Sz<span class="_ _0"></span>emélyiség
+            <span class="_ _0"></span>(hiteles,
+            <span class="_ _4"></span>nincs ellen<span class="_ _0"></span
+            >tmondás bes<span class="_ _0"></span>z<span class="_ _0"></span
+            >éde <span class="_ _4"></span>és viselk<span
+              class="_ _5"
+            ></span
+            >edése <span class="_ _4"></span>k<span class="_ _2"></span
+            >ö<span class="_ _4"></span>z<span class="_ _0"></span>öt<span
+              class="_ _4"
+            ></span
+            >t)</span
+          >
+        </div>
+        <div class="t m0 x3 h9 y3d ff4 fs6 fc0 sc0 lsb">
+          •<span class="ff2 ls0 ws1"
+            >A bes<span class="_ _4"></span>z<span class="_ _0"></span
+            >édhely<span class="_ _0"></span>z<span class="_ _0"></span>et,
+            <span class="_ _0"></span>a helyz<span class="_ _2"></span
+            >et</span
+          >
+        </div>
+        <div class="t m0 x3 h9 y3e ff4 fs6 fc0 sc0 lsb">
+          •<span class="ff3 ls0">Előadásmód</span>
+        </div>
+        <div class="t m0 x3 h9 y3f ff4 fs6 fc0 sc0 lsb">
+          •<span class="ff2 ls0 ws1"
+            >Pr<span class="_ _4"></span>e<span class="_ _4"></span>z<span
+              class="_ _0"
+            ></span
+            >ent<span class="_ _0"></span>ációs
+            <span class="_ _4"></span>eszk<span class="_ _5"></span>öz<span
+              class="_ _2"
+            ></span
+            >ök alk<span class="_ _0"></span>almaz<span class="_ _4"></span
+            >ása</span
+          >
+        </div>
+        <div class="t m0 x3 h9 y40 ff2 fs6 fc0 sc0 ls0 ws1">
+          Ha<span class="_ _4"></span>t<span class="_ _4"></span>ásos a
+          besz<span class="_ _2"></span>éd, <span class="_ _4"></span>ha:
+        </div>
+        <div class="t m0 x3 h9 y41 ff2 fs6 fc0 sc0 lsc">
+          -<span class="ff3 ls0 ws1"
+            >Illik k<span class="_ _2"></span>ö<span class="_ _0"></span
+            >zlőjéhez</span
+          >
+        </div>
+        <div class="t m0 x3 h9 y42 ff2 fs6 fc0 sc0 ls0 ws1">
+          -<span class="_ _b"> </span>T<span class="_ _8"></span>árgy<span
+            class="_ _2"
+          ></span
+          >ához
+        </div>
+        <div class="t m0 x3 h9 y43 ff2 fs6 fc0 sc0 ls0 wsd">
+          -<span class="_"> </span>Be<span class="_ _4"></span>f<span
+            class="_ _0"
+          ></span
+          >og<span class="_ _0"></span>adójár<span class="_ _4"></span>ól
+        </div>
+        <div class="t m0 x3 hb y44 ff2 fs7 fc0 sc0 ls0 ws1">
+          -<span class="_ _b"> </span>K<span class="_ _0"></span>épes
+          <span class="_ _4"></span>megv<span class="_ _0"></span>álto<span
+            class="_ _0"
+          ></span
+          >zta<span class="_ _0"></span>tni a k<span class="_ _2"></span
+          >ö<span class="_ _0"></span>z<span class="_ _4"></span>önség
+          <span class="_ _4"></span>ho<span class="_ _0"></span
+          >zzáállásá<span class="_ _0"></span>t.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf14" class="pf w0 h0" data-page-no="14">
+    <div class="pc pc14 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 hc y39 ff1 fs8 fc0 sc0 ls0 ws1">
+          A ha<span class="_ _4"></span>t<span class="_ _0"></span>ásos
+          hangz<span class="_ _5"></span>ó bes<span class="_ _4"></span
+          >z<span class="_ _5"></span>éd
+        </div>
+        <div class="t m0 x3 h4 y45 ff1 fs2 fc0 sc0 ls0 ws1">
+          A bes<span class="_ _0"></span>z<span class="_ _5"></span>éd
+          sz<span class="_ _0"></span>upr<span class="_ _2"></span>asz<span
+            class="_ _1"
+          ></span
+          >egmen<span class="_ _0"></span>t<span class="_ _0"></span>ális
+          es<span class="_ _0"></span>zk<span class="_ _1"></span>ö<span
+            class="_ _0"
+          ></span
+          >z<span class="_ _5"></span>ei
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3">Hangszín</span>
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff3 ls0 ws1"
+            >Hang<span class="_ _4"></span>er<span class="_ _0"></span
+            >ő<span class="_ _0"></span>,
+            <span class="_ _3"></span>hanglejt<span class="_ _0"></span
+            >és</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3">Hangsúly</span>
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Besz<span class="_ _2"></span>édt<span class="_ _4"></span
+            >empó</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y1b ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws4"
+            >bes<span class="_ _4"></span>z<span class="_ _2"></span
+            >édszüne<span class="_ _0"></span>t</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf15" class="pf w0 h0" data-page-no="15">
+    <div class="pc pc15 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Lehetség<span class="_ _2"></span>es hibák
+        </div>
+        <div class="t m0 x3 h5 y5 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws3"
+            >Hangsúly<span class="_ _0"></span>eltolódás</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y18 ff4 fs4 fc0 sc0 ls4">
+          •<span class="ff2 ls0 ws4"
+            >Dallam<span class="_ _4"></span>f<span class="_ _2"></span
+            >elk<span class="_ _0"></span>apás</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >T<span class="_ _1"></span>úl<span class="_ _4"></span> gy<span
+              class="_ _0"
+            ></span
+            >or<span class="_ _4"></span>s, hadar<span class="_ _0"></span>ó
+            <span class="_ _3"></span>besz<span class="_ _2"></span>éd</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y1a ff4 fs3 fc0 sc0 ls3">
+          •<span class="ff2 ls0 ws1"
+            >Lassú, akado<span class="_ _0"></span>z<span
+              class="_ _0"
+            ></span
+            >ó<span class="_ _0"></span>, dadogó besz<span
+              class="_ _2"
+            ></span
+            >éd</span
+          >
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf16" class="pf w0 h0" data-page-no="16">
+    <div class="pc pc16 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff7 fs2 fc0 sc0 ls0 ws1">
+          Bes<span class="_ _0"></span>z<span class="_ _5"></span>éd és
+          lev<span class="_ _0"></span>egőv<span class="_ _0"></span>ét<span
+            class="_ _0"
+          ></span
+          >el
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls0 ws3">
+          Légz<span class="_ _0"></span>és<span class="_ _4"></span>típusok:
+        </div>
+        <div class="t m0 x3 h6 y18 ff2 fs4 fc0 sc0 ls0 ws1">
+          -<span class="_"> </span>Némalégz<span class="_ _2"></span>és:
+          orr<span class="_ _0"></span>on <span class="_ _3"></span>át,
+          csuk<span class="_ _5"></span>ot<span class="_ _4"></span>t
+          sz<span class="_ _2"></span>ájj<span class="_ _3"></span>al
+        </div>
+        <div class="t m0 x3 h5 y19 ff2 fs3 fc0 sc0 lsd">
+          -<span class="ff3 ls0 ws1"
+            >Besz<span class="_ _2"></span>édlégz<span class="_ _2"></span
+            >és (orr<span class="_ _0"></span>on,
+            <span class="_ _3"></span>sz<span class="_ _2"></span>ájon
+            <span class="_ _3"></span>át v<span class="_ _0"></span>eszünk
+            lev<span class="_ _0"></span>egőt, más a lev<span
+              class="_ _0"
+            ></span
+            >egőv<span class="_ _0"></span>étel
+          </span>
+        </div>
+        <div class="t m0 x3 h5 y24 ff3 fs3 fc0 sc0 ls0 ws1">
+          gy<span class="_ _0"></span>or<span class="_ _4"></span>saság<span
+            class="_ _0"
+          ></span
+          >a, a leveg<span class="_ _0"></span>ő menn<span
+            class="_ _0"
+          ></span
+          >yisége)
+        </div>
+        <div class="t m0 x3 h5 y26 ff2 fs3 fc0 sc0 ls0 ws1">
+          -<span class="_"> </span>T<span class="_ _7"></span>echnik<span
+            class="_ _0"
+          ></span
+          >ai <span class="_ _3"></span>légz<span class="_ _2"></span>és
+          (r<span class="_ _4"></span>ek<span class="_ _2"></span
+          >eszlégz<span class="_ _2"></span>és): a bes<span
+            class="_ _0"
+          ></span
+          >z<span class="_ _0"></span>édlégz<span class="_ _0"></span>és
+          kif<span class="_ _2"></span>ejleszt<span class="_ _0"></span
+          >et<span class="_ _4"></span>t v<span class="_ _0"></span
+          >álto<span class="_ _0"></span>z<span class="_ _4"></span>at<span
+            class="_ _0"
+          ></span
+          >a, a
+        </div>
+        <div class="t m0 x3 h6 y3a ff2 fs4 fc0 sc0 ls0 ws1">
+          s<span class="_ _4"></span>z<span class="_ _0"></span>erve<span
+            class="_ _0"
+          ></span
+          >z<span class="_ _0"></span>et kif<span class="_ _2"></span
+          >ár<span class="_ _0"></span>aszt<span class="_ _0"></span>ása
+          nélkül is nagy teljesít<span class="_ _4"></span>mén<span
+            class="_ _0"
+          ></span
+          >yr<span class="_ _0"></span>e <span class="_ _3"></span>k<span
+            class="_ _2"
+          ></span
+          >épes.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf17" class="pf w0 h0" data-page-no="17">
+    <div class="pc pc17 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          Non<span class="_ _2"></span>v<span class="_ _0"></span>erbális
+          <span class="_ _3"></span>k<span class="_ _1"></span>ommunik<span
+            class="_ _5"
+          ></span
+          >áció s<span class="_ _0"></span>z<span class="_ _5"></span
+          >er<span class="_ _0"></span>epe
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls0 ws3">
+          Z<span class="_ _0"></span>ónat<span class="_ _4"></span>á<span
+            class="_ _0"
+          ></span
+          >volság<span class="_ _4"></span>ok:
+        </div>
+        <div class="t m0 x3 h6 y18 ff2 fs4 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>In<span class="_ _4"></span>tim (kb.
+          0,5 <span class="_ _3"></span>m)
+        </div>
+        <div class="t m0 x3 h5 y19 ff2 fs3 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>Sz<span class="_ _0"></span>emély<span
+            class="_ _0"
+          ></span
+          >es (0,5-1,2 <span class="_ _a"></span>m)
+        </div>
+        <div class="t m0 x3 h5 y1a ff2 fs3 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>T<span class="_ _8"></span>ár<span
+            class="_ _0"
+          ></span
+          >sadalmi (1,2-3,6 <span class="_ _a"></span>m)
+        </div>
+        <div class="t m0 x3 h6 y1b ff2 fs4 fc0 sc0 ls0 ws1">
+          -<span class="_ _9"> </span>Nyil<span class="_ _4"></span>v<span
+            class="_ _0"
+          ></span
+          >ános <span class="_ _3"></span>(3,6 m
+          <span class="_ _3"></span>f<span class="_ _2"></span>elet<span
+            class="_ _0"
+          ></span
+          >t)
+        </div>
+        <div class="t m0 x3 h5 y1c ff2 fs3 fc0 sc0 ls0 ws1">
+          Mimik<span class="_ _2"></span>a
+          <span class="_ _3"></span>(arcmo<span class="_ _0"></span>z<span
+            class="_ _0"
+          ></span
+          >dulat<span class="_ _0"></span>ok, tekin<span class="_ _0"></span
+          >tet)
+        </div>
+        <div class="t m0 x3 h5 y1d ff2 fs3 fc0 sc0 ls0 ws1">
+          Gesztusok (f<span class="_ _2"></span>ej, k<span
+            class="_ _4"
+          ></span
+          >ar<span class="_ _7"></span>, k<span class="_ _2"></span>éz
+          mo<span class="_ _0"></span>z<span class="_ _0"></span>dula<span
+            class="_ _4"
+          ></span
+          >t<span class="_ _0"></span>ai, <span class="_ _3"></span>tes<span
+            class="_ _0"
+          ></span
+          >t<span class="_ _4"></span>t<span class="_ _0"></span>artás)
+        </div>
+        <div class="t m0 x3 h6 y1e ff2 fs4 fc0 sc0 ls0 ws1">
+          K<span class="_ _0"></span>ultur<span class="_ _2"></span>ális
+          <span class="_ _3"></span>s<span class="_ _4"></span>zignálok
+          (ruha, haj, éks<span class="_ _4"></span>z<span
+            class="_ _2"
+          ></span
+          >erek, jel<span class="_ _4"></span>vén<span class="_ _2"></span
+          >y<span class="_ _0"></span>ek, szimból<span class="_ _4"></span
+          >umok)
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf18" class="pf w0 h0" data-page-no="18">
+    <div class="pc pc18 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws6">
+          Vit<span class="_ _2"></span>a
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls0 ws1">
+          T<span class="_ _7"></span>ermés<span class="_ _4"></span>z<span
+            class="_ _2"
+          ></span
+          >etes és nélkül<span class="_ _4"></span>ö<span
+            class="_ _0"
+          ></span
+          >zhete<span class="_ _4"></span>tlen módja a
+          <span class="_ _3"></span>tudás megsz<span class="_ _2"></span
+          >erz<span class="_ _0"></span>ésének,
+        </div>
+        <div class="t m0 x3 h6 y6 ff2 fs4 fc0 sc0 ls0 ws1">
+          meg<span class="_ _4"></span>oszt<span class="_ _0"></span>ásának,
+          a k<span class="_ _2"></span>ö<span class="_ _4"></span>z<span
+            class="_ _0"
+          ></span
+          >ös tudás f<span class="_ _0"></span>ormálásának.
+        </div>
+        <div class="t m0 x3 h5 y7 ff2 fs3 fc0 sc0 ls0 ws1">
+          Állít<span class="_ _0"></span>ások,
+          <span class="_ _3"></span>t<span class="_ _0"></span>apaszt<span
+            class="_ _0"
+          ></span
+          >alat<span class="_ _4"></span>ok össz<span class="_ _2"></span
+          >ev<span class="_ _4"></span>et<span class="_ _0"></span>ése,
+          gondolk<span class="_ _5"></span>odási
+          <span class="_ _3"></span>f<span class="_ _2"></span>oly<span
+            class="_ _0"
+          ></span
+          >amat.
+        </div>
+        <div class="t m0 x3 h5 y24 ff2 fs3 fc0 sc0 ls0 ws1">
+          Az érvelés sajá<span class="_ _4"></span>tos alk<span
+            class="_ _0"
+          ></span
+          >almaz<span class="_ _0"></span>ása.<span class="_ _3"></span>
+        </div>
+        <div class="t m0 x3 h5 y26 ff3 fs3 fc0 sc0 ls0 ws1">
+          K<span class="_ _0"></span>ommunik<span class="_ _0"></span>ációs
+          <span class="_ _3"></span>műf<span class="_ _0"></span>aj,
+          <span class="_ _3"></span>a f<span class="_ _2"></span>elek a
+          dönt<span class="_ _0"></span>és
+          <span class="_ _3"></span>elér<span class="_ _0"></span>ése
+          ér<span class="_ _4"></span>dek<span class="_ _2"></span>ében
+          össz<span class="_ _2"></span>ev<span class="_ _0"></span>etik
+        </div>
+        <div class="t m0 x3 h6 y3a ff2 fs4 fc0 sc0 ls0 ws4">
+          álláspon<span class="_ _0"></span>tjaik<span class="_ _4"></span
+          >at.
+        </div>
+        <div class="t m0 x3 h5 y28 ff3 fs3 fc0 sc0 ls0 ws1">
+          Soha nem <span class="_ _3"></span>lehe<span class="_ _4"></span>t
+          f<span class="_ _2"></span>en<span class="_ _0"></span>yeg<span
+            class="_ _0"
+          ></span
+          >ető<span class="_ _2"></span>, k<span class="_ _2"></span>én<span
+            class="_ _0"
+          ></span
+          >ys<span class="_ _0"></span>z<span class="_ _0"></span>erítő<span
+            class="_ _0"
+          ></span
+          >, megsemmisít<span class="_ _0"></span>ő.
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf19" class="pf w0 h0" data-page-no="19">
+    <div class="pc pc19 w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff7 fs2 fc0 sc0 ls0 ws1">
+          A vit<span class="_ _0"></span>a öss<span class="_ _0"></span
+          >z<span class="_ _5"></span>et<span class="_ _0"></span>evői
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls6 ws7">
+          1.<span class="_"> </span
+          ><span class="ff3 ls0 ws1"
+            >T<span class="_ _8"></span>ár<span class="_ _0"></span>gy<span
+              class="_ _4"
+            ></span
+            >a, amir<span class="_ _0"></span>e vona<span
+              class="_ _4"
+            ></span
+            >tk<span class="_ _5"></span>ozik (t<span class="_ _0"></span
+            >én<span class="_ _4"></span>y<span class="_ _0"></span>ekr<span
+              class="_ _0"
+            ></span
+            >ől <span class="_ _3"></span>s<span class="_ _4"></span>z<span
+              class="_ _0"
+            ></span
+            >óló<span class="_ _0"></span>, érték<span class="_ _5"></span
+            >ek<span class="_ _2"></span>et érin<span class="_ _0"></span
+            >tő<span class="_ _2"></span>,
+          </span>
+        </div>
+        <div class="t m0 x5 h6 y6 ff2 fs4 fc0 sc0 ls0 ws1">
+          cselekv<span class="_ _0"></span>és
+          <span class="_ _3"></span>v<span class="_ _0"></span>agy in<span
+            class="_ _0"
+          ></span
+          >té<span class="_ _4"></span>zk<span class="_ _2"></span>edés)
+        </div>
+        <div class="t m0 x3 h5 y7 ff2 fs3 fc0 sc0 ls6 ws7">
+          2.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >Vit<span class="_ _0"></span>áz<span class="_ _0"></span>ók,
+            akik <span class="_ _3"></span>r<span class="_ _0"></span>észt
+            v<span class="_ _4"></span>es<span class="_ _4"></span>znek
+            benne <span class="_ _3"></span>(önf<span class="_ _2"></span
+            >egy<span class="_ _0"></span>elem, odafigy<span
+              class="_ _0"
+            ></span
+            >elés, másik
+          </span>
+        </div>
+        <div class="t m0 x5 h5 y8 ff2 fs3 fc0 sc0 ls0 ws1">
+          v<span class="_ _4"></span>élemén<span class="_ _2"></span>yének
+          elf<span class="_ _2"></span>og<span class="_ _4"></span>adása
+        </div>
+        <div class="t m0 x3 h5 y25 ff2 fs3 fc0 sc0 ls6 ws7">
+          3.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >Dön<span class="_ _4"></span>tésho<span class="_ _2"></span
+            >z<span class="_ _0"></span>ók, <span class="_ _3"></span>akik
+            az eredmén<span class="_ _2"></span>y<span class="_ _0"></span
+            >ét <span class="_ _3"></span>megha<span class="_ _4"></span
+            >t<span class="_ _0"></span>ár<span class="_ _4"></span>o<span
+              class="_ _4"
+            ></span
+            >zz<span class="_ _0"></span>ák (leg<span class="_ _0"></span
+            >többs<span class="_ _0"></span>z<span class="_ _0"></span>ör a
+          </span>
+        </div>
+        <div class="t m0 x5 h6 y1f ff2 fs4 fc0 sc0 ls0 ws4">
+          k<span class="_ _5"></span>öz<span class="_ _2"></span>önség)
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+  <div id="pf1a" class="pf w0 h0" data-page-no="1a">
+    <div class="pc pc1a w0 h0">
+      <div class="c x0 y1 w2 h0">
+        <div class="t m0 x3 h4 y4 ff1 fs2 fc0 sc0 ls0 ws1">
+          A vit<span class="_ _0"></span>a típusai
+        </div>
+        <div class="t m0 x3 h5 y5 ff2 fs3 fc0 sc0 ls6 ws7">
+          1.<span class="_"> </span
+          ><span class="ls0 ws3">P<span class="_ _2"></span>arlamenti</span>
+        </div>
+        <div class="t m0 x3 h6 y18 ff2 fs4 fc0 sc0 ls7 ws8">
+          2.<span class="_"> </span
+          ><span class="ls0 ws1"
+            >P<span class="_ _2"></span>olitik<span class="_ _0"></span>ai
+            <span class="_ _3"></span>(k<span class="_ _0"></span>ampán<span
+              class="_ _0"
+            ></span
+            >y)</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y19 ff2 fs3 fc0 sc0 ls6 ws7">
+          3.<span class="_"> </span
+          ><span class="ls0 ws3"
+            >K<span class="_ _0"></span>öz<span class="_ _2"></span
+            >életi</span
+          >
+        </div>
+        <div class="t m0 x3 h5 y1a ff2 fs3 fc0 sc0 ls6 ws7">
+          4.<span class="_"> </span
+          ><span class="ls0 ws3"
+            >Sz<span class="_ _0"></span>akmai-tudomán<span
+              class="_ _0"
+            ></span
+            >y<span class="_ _4"></span>os</span
+          >
+        </div>
+        <div class="t m0 x3 h6 y1b ff2 fs4 fc0 sc0 ls7 ws8">
+          5.<span class="_"> </span><span class="ls0 ws4">Családi</span>
+        </div>
+      </div>
+    </div>
+    <div
+      class="pi"
+      data-data='{"ctm":[1.000000,0.000000,0.000000,1.000000,0.000000,0.000000]}'
+    ></div>
+  </div>
+</div>
 </body>
 
 </html>
