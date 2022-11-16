@@ -61,191 +61,1694 @@
     class="c18"
     onclick="this.style.setProperty('opacity', this.style.opacity == '1' ? '0' : '1', 'important')"
   >
-    <h1 class="c8" id="h.thspxj60ja41">
-      <span class="c11">Statikus forgalomir&aacute;ny&iacute;t&aacute;s</span>
-    </h1>
-    <ul class="c1 lst-kix_w7kx2ei3jh7s-0 start">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >Eldobja a router azt a csomagot, amelynek nem tal&aacute;lnak
-          c&eacute;lt</span
-        >
-      </li>
-      <li class="c2 li-bullet-0"><span class="c0">Fajt&aacute;i</span></li>
-    </ul>
-    <ul class="c1 lst-kix_w7kx2ei3jh7s-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0">Hagyom&aacute;nyos statikus &uacute;tvonal</span>
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0">Alap&eacute;rtelmezett statikus &uacute;tvonal</span>
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0">Lebeg&#337; statikus &uacute;tvonal</span>
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0">&Ouml;sszevont &uacute;tvonal</span>
-      </li>
-    </ul>
-    <h3 class="c6" id="h.lcktgsr69zxx">
-      <span class="c4">Alap&eacute;rtelmezett statikus &uacute;tvonal</span>
-    </h3>
-    <ul class="c1 lst-kix_qjxm38g5h0de-0 start">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >0.0.0.0 subnet mask -&gt; minden h&aacute;l&oacute;zatra
-          hivatkoz&aacute;s</span
-        >
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >ip route 0.0.0.0 0.0.0.0 [nexthop/kimen&#337; interf&eacute;sz]</span
-        >
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >minden olyan csomagot ide k&uuml;ld, amihez nem tartozik el&#337;re
-          megtanult, statikus &uacute;tvonal</span
-        >
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >ha konfigur&aacute;lva van, akkor a hib&aacute;s/nem
-          tal&aacute;lhat&oacute; c&eacute;l&uacute; csomagot eldobja</span
-        >
-      </li>
-    </ul>
-    <h3 class="c6" id="h.r2vaegbqujo6">
-      <span class="c4">Lebeg&#337; statikus &uacute;tvonal</span>
-    </h3>
-    <ul class="c1 lst-kix_3vop07dbe4k-0 start">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >Olyan statikus &uacute;tvonal, amely egy els&#337;dleges statikus
-          vagy dinamikus kapcsolat hib&aacute;ja eset&eacute;n tartal&eacute;k
-          &uacute;tvonalat biztos&iacute;t</span
-        >
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0">nem a routing t&aacute;bla t&aacute;rolja</span>
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0">adminisztrat&iacute;v t&aacute;vols&aacute;g:</span>
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_3vop07dbe4k-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >meghat&aacute;rozza, hogy melyik &uacute;tvonal a legjobb</span
-        >
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >statikus &uacute;tvonal: 1, csatolt h&aacute;l&oacute;zat: 0,
-          dinamikusn&aacute;l: nagyobb</span
-        >
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >k&uuml;l&ouml;nb&ouml;z&#337; fajta
-          forgalomir&aacute;ny&iacute;t&aacute;s k&ouml;z&ouml;tt tesz
-          k&uuml;l&ouml;nbs&eacute;get</span
-        >
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_3vop07dbe4k-0">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >lebeg&#337; statikus &uacute;tvonaln&aacute;l az
-          adminisztrat&iacute;v t&aacute;vols&aacute;gnak nagyobbnak kell lenni
-          a helyettes&iacute;tend&#337; &uacute;tvonal adminisztrat&iacute;v
-          t&aacute;vols&aacute;g&aacute;nal</span
-        >
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_3vop07dbe4k-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >ip route [ip] [subnet] [next hop] [adminisztrat&iacute;v
-          t&aacute;vols&aacute;g]</span
-        >
-      </li>
-    </ul>
-    <h3 class="c6" id="h.f5b0xnvacwvb">
-      <span class="c4">&Ouml;sszevont statikus &uacute;tvonal</span>
-    </h3>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-0 start">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >Sok k&uuml;l&ouml;n&aacute;ll&oacute; h&aacute;l&oacute;zat
-          lass&iacute;tja a forgalomir&aacute;ny&iacute;t&aacute;st</span
-        >
-      </li>
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >nem minden esetben lehets&eacute;ges a h&aacute;l&oacute;zatok
-          &ouml;sszevon&aacute;sa</span
-        >
-      </li>
-      <li class="c2 li-bullet-0"><span class="c0">T&iacute;pusai:</span></li>
-    </ul>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0">&Uacute;tvonal &ouml;sszegz&eacute;s</span>
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >Szuperh&aacute;l&oacute;zat k&eacute;sz&iacute;t&eacute;s</span
-        >
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-0">
-      <li class="c2 li-bullet-0">
-        <span class="c0">&Uacute;tvonal &ouml;sszegz&eacute;s</span>
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >&Ouml;sszevont h&aacute;l&oacute;zat prefixe nem lehet kisebb az
-          oszt&aacute;lyos c&iacute;m prefix&eacute;n&eacute;l</span
-        >
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >VLSM-el sz&eacute;tbontott h&aacute;l&oacute;zatok r&eacute;szleges
-          vagy teljes &ouml;sszevon&aacute;sa</span
-        >
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >csak folytonos h&aacute;l&oacute;zatokat lehet &ouml;sszevonni, nem
-          lehet k&eacute;t k&uuml;l&ouml;n alh&aacute;l&oacute;zat
-          k&uuml;l&ouml;n forgalomir&aacute;ny&iacute;t&oacute;
-          m&ouml;g&ouml;tt</span
-        >
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-0">
-      <li class="c2 li-bullet-0">
-        <span class="c0"
-          >Szuperh&aacute;l&oacute;zat k&eacute;sz&iacute;t&eacute;s:</span
-        >
-      </li>
-    </ul>
-    <ul class="c1 lst-kix_5jvq2s31k5r3-1 start">
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >A szuperh&aacute;l&oacute;zat prefixe kisebb lesz az oszt&aacute;lyos
-          c&iacute;m prefix&eacute;n&eacute;l</span
-        >
-      </li>
-      <li class="c3 li-bullet-0">
-        <span class="c0"
-          >folytonos h&aacute;l&oacute;zatok &ouml;sszevonhat&oacute;k, azonos
-          next-hoppal</span
-        >
-      </li>
-    </ul>
+  <h1 class="c12" id="h.qoqlwr5sc3o8">
+    <span class="c9"
+      >II. Magyarorsz&aacute;g 1945 &eacute;s 1956 k&ouml;z&ouml;tt</span
+    >
+  </h1>
+  <h3 class="c6" id="h.3oqo31ifbq90">
+    <span class="c4"
+      >7. A szovjet megsz&aacute;ll&aacute;s k&ouml;vetkezm&eacute;nyei</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Hatalmas anyagi k&aacute;rok &eacute;s emberi vesztes&eacute;g a
+        frontvonal &aacute;tvonul&aacute;sa miatt</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Magyarorsz&aacute;g szovjet megsz&aacute;ll&aacute;s al&aacute;
+        ker&uuml;l</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1">M&aacute;lenkij robot</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >K&ouml;r&uuml;lbel&uuml;l f&eacute;l milli&oacute; embert hurcoltak
+        el gul&aacute;gokba</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1944 v&eacute;g&eacute;re a dun&aacute;nt&uacute;lon m&eacute;g
+        nyilas uralom van</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >44 December&eacute;ben Debrecenben megalakul az ideiglenes
+        nemzetgy&#369;l&eacute;s</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A sz&eacute;ls&#337;jobb p&aacute;rtok betiltj&aacute;k, nem vehetnek
+        r&eacute;szt</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">R&eacute;szt vesz m&aacute;r a :</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Kommunista p&aacute;rt</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">F&uuml;ggetlen kisgazda p&aacute;rt</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">Szoci&aacute;ldemokrata p&aacute;rt</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">egy&eacute;b polg&aacute;ri p&aacute;rtok</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Megalakul az ideiglenes korm&aacute;ny is</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >D&aacute;lnoki Mikl&oacute;s B&eacute;la a minisztereln&ouml;k</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1945 tavasz&aacute;ra a szovjet csapatok ki&#369;zik a nyilasokat
+        &eacute;s a n&eacute;meteket</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Sz&ouml;vets&eacute;ges Ellen&#337;rz&#337; Bizotts&aacute;g
+        l&eacute;trej&ouml;tte</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_p0nx0hmgh0ak-1 start">
+    <li class="c5 li-bullet-0">
+      <span>A magyar </span><span>SZEB-ben</span
+      ><span class="c1">&nbsp;is vannak angol francia emberek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Val&oacute;j&aacute;ban a szovjetek vezetik</span>
+    </li>
+  </ul>
+  <h3 class="c6" id="h.3jl6e6fzk2xm">
+    <span class="c4"
+      >8. T&aacute;rsadalmi, gazdas&aacute;gi v&aacute;ltoz&aacute;sok
+      &eacute;s az &uacute;j politikai rendszer kialakul&aacute;sa</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1945 november&eacute;ben Budapesten tartanak
+        v&aacute;laszt&aacute;sokat (&#x1f5ff;fidesz&#x1f5ff; &#8532;
+        !!!)</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A f&uuml;ggetlen kisgazdap&aacute;rt nyeri a
+        v&aacute;laszt&aacute;st</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nagy arconcsap&aacute;s a kommunist&aacute;knak, mert azt
+        hitt&eacute;k hogy &#337;k nyerik a v&aacute;laszt&aacute;st</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >De a szovjetet kik&eacute;nyszer&iacute;tik hogy ne az legyen:</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >A kisgazdap&aacute;rt koal&iacute;ci&oacute;s p&aacute;rtot
+        alap&iacute;t v&eacute;g&uuml;l</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A kisgazdap&aacute;rt, a szoci&aacute;ldemokrata p&aacute;rt, a
+        kommunista p&aacute;rt, &eacute;s a nemzeti parasztp&aacute;rt</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A bel&uuml;gyminiszteri t&aacute;rc&aacute;t a kommunista p&aacute;rt
+        kapja meg</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&Uacute;j &aacute;llamforma: Magyar
+        N&eacute;p&ouml;zt&aacute;rsas&aacute;g</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Tildy Zolt&aacute;n k&ouml;zt&aacute;rsas&aacute;gi eln&ouml;k -
+        kisgazdas&aacute;gi p&aacute;rt</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nagy Ferenc minisztereln&ouml;k - kisgazdas&aacute;gi
+        p&aacute;rt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A gazdas&aacute;g ter&uuml;let&eacute;n nagy a befoly&aacute;sa a
+        kommunista p&aacute;rtnak - 3 &eacute;ves
+        &uacute;jj&aacute;&eacute;p&iacute;t&eacute;se</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">elindul az &aacute;llamos&iacute;t&aacute;s </span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">El&#337;sz&ouml;r nagyobb bankok</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Gazdas&aacute;g a kommunista Ger&#337; Ern&#337;</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Az orsz&aacute;g f&uuml;gg&#337;v&eacute;</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Peng&#337; -&gt; hiperinfl&aacute;ci&oacute;</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">1945-ben bevezetik a forintot</span>
+    </li>
+  </ul>
+  <h3 class="c6" id="h.76kn0ae83uek">
+    <span class="c4"
+      >9. A hat&aacute;ron t&uacute;li magyars&aacute;g &eacute;s a hazai
+      n&eacute;metek sorsa 1944 &eacute;s 1947 k&ouml;z&ouml;tt</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Csehszlov&aacute;kia</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Benes dekr&eacute;tum</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Kollekt&iacute;v b&#369;n&ouml;sk&eacute;nt mondt&aacute;k ki a
+        magyars&aacute;got</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Megfosztott&aacute;k polg&aacute;rs&aacute;g&aacute;t,
+        vagyonukt&oacute;l</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Polg&aacute;r csere valami</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">K&aacute;rp&aacute;talja</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Benes t&aacute;rgyal Szt&aacute;linnal a h&aacute;bor&uacute;
+        ut&aacute;n</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A Szovjetuni&oacute;hoz csatolj&aacute;k a
+        k&aacute;rp&aacute;talj&aacute;t -&gt; kollekt&iacute;van gulagba
+        k&uuml;ldi a magyarokat</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0"><span class="c1">Erd&eacute;ly</span></li>
+    <li class="c0 li-bullet-0">
+      <span class="c1">D&eacute;lvid&eacute;k - Jugoszl&aacute;via</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">&Uacute;jvid&eacute;ki aff&eacute;r</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">40 000 magyart gyilkolnak meg</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">1947 p&aacute;rizsi</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_hnj0bdozxg90-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Rosszabb mint a trianoni b&eacute;keszerz&#337;d&eacute;s</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Csehszlov&aacute;kia 3 k&ouml;zs&eacute;get kap m&eacute;g</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >nem voltak benne kisebbs&eacute;gi felt&eacute;telek</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.f91sa3pkzlim">
+    <span class="c4"
+      >10. Magyarorsz&aacute;g &uacute;ton a diktat&uacute;ra
+      fel&eacute;</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Korm&aacute;ny koal&iacute;ci&oacute;</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0"><span class="c1">FKGP</span></li>
+    <li class="c5 li-bullet-0"><span class="c1">MKP (bal)</span></li>
+    <li class="c5 li-bullet-0"><span class="c1">SZDP (bal)</span></li>
+    <li class="c5 li-bullet-0"><span class="c1">NPP (bal)</span></li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Hidegh&aacute;bor&uacute; =&gt; Szal&aacute;mi taktika - Kommunista
+        p&aacute;rt alkalmazza a hatalom
+        megszerz&eacute;s&eacute;&eacute;rt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A kisgazdap&aacute;rt ellen ir&aacute;nyult - kommunista
+        p&aacute;rtok megsz&uuml;ntetik</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Szal&aacute;mi taktika:</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&ldquo;B&rdquo; list&aacute;z&aacute;s: jobboldali emberek
+        elt&aacute;vol&iacute;t&aacute;sa a
+        k&ouml;zigazgat&aacute;sb&oacute;l</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Magyar k&ouml;z&ouml;ss&eacute;g &uuml;gye:</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >&ldquo;Felfedez&rdquo; egy csoportot a rend&#337;rs&eacute;g</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >A rend&#337;rs&eacute;g kommunist&aacute;kb&oacute;l &aacute;ll</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >&Ouml;sszeesk&uuml;v&eacute;s a K&ouml;zt&aacute;rsas&aacute;g
+        ellen</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">Nagy Fer&oacute; megbuktat&aacute;sa</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Kov&aacute;cs B&eacute;l&aacute;t nem mert&eacute;k lefogni a magyar
+        rend&#337;r&ouml;k, a szovjetek lefogt&aacute;k &eacute;s Gulagra
+        hurcolt&aacute;k</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1947 - &ldquo;k&eacute;kc&eacute;dul&aacute;s&rdquo;
+        v&aacute;laszt&aacute;s</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Megnyerik a v&aacute;laszt&aacute;st 22%</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Taktikai okokb&oacute;l &ouml;ssze&aacute;ll megint a
+        koal&iacute;ci&oacute;</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Hivatalosan kisgazdap&aacute;rti - Dinny&eacute;s Lajos lesz a
+        minisztereln&ouml;k</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >48-ra az &ouml;sszes t&ouml;bbi p&aacute;rt megsz&#369;nik</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1948 - egyes&uuml;l a kommunista p&aacute;rt a
+        szoci&aacute;ldemokrata p&aacute;rttal</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Hivatalosan egyes&uuml;l, gyakorlatilag a szoci&aacute;ldemokrata
+        p&aacute;rt beolvad a kommunista p&aacute;rtba</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >L&eacute;trej&ouml;n a Magyar Dolgoz&oacute;k P&aacute;rtja -
+        &Uacute;j kommunista p&aacute;rt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">&ldquo;N&eacute;pfront&rdquo;</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >P&aacute;rtonk&iacute;v&uuml;liek &eacute;s akik
+        k&iacute;v&uuml;lr&#337;l j&ouml;nnek azok l&eacute;pjenek be</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">1949 v&aacute;laszt&aacute;s</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">(fidesz 2024) 99.9%-os gy&#337;zelem, FIDESZ 2??</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_22lb2zzcph9s-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >49-re kialakult a kommunista diktat&uacute;ra
+        Magyarorsz&aacute;gon</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.3f51c44qv3">
+    <span class="c4"
+      >11. A kommunista diktat&uacute;ra ki&eacute;p&uuml;l&eacute;se</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A &lsquo;49-es v&aacute;laszt&aacute;sokon csak kommunista
+        p&aacute;rtok indulhatnak</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1">Gazdas&aacute;gi helyzet</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&lsquo;46-47-ban elfogadj&aacute;k a 3 &eacute;ves
+        &uacute;jj&aacute;&eacute;p&iacute;t&eacute;si tervet</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A gazdas&aacute;got a kommunist&aacute;k k&ouml;z&uuml;l Ger&#337;
+        Ern&#337; fel&uuml;gyelte</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&lsquo;48-49-re &aacute;llamos&iacute;t&aacute;sokat hajtanak
+        v&eacute;gre</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Magyarorsz&aacute;g hivatalosan is elutas&iacute;tott a Marshall
+        seg&eacute;lyt</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Bevezetik a tervgazd&aacute;lkod&aacute;st</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >&lsquo;50-ben bevezetik az 1. &ouml;t&eacute;ves tervet</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >L&eacute;trehozz&aacute;k a Orsz&aacute;gos Tervhivatalt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Bel&uuml;gyminiszter - Rajk L&aacute;szl&oacute;</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Feloszlatja az &ouml;sszes nem kommunista szervezetet</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Helyett&uuml;k kommunista ir&aacute;ny&iacute;t&aacute;s&uacute;
+        &ldquo;civil&rdquo; szervezeteket alak&iacute;tanak</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Kisdobos, &Uacute;tt&ouml;r&#337; - Di&aacute;kok
+        sz&aacute;m&aacute;ra</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Szakszervezetek &eacute;l&eacute;re kommunist&aacute;kat
+        &aacute;ll&iacute;tanak</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Egyh&aacute;zakkal szembeni politika</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Er&#337;teljesen fell&eacute;pnek az egyh&aacute;z ellen</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Iskol&aacute;kat, egyh&aacute;zi vagyonokat
+        &aacute;llamos&iacute;t&aacute;sa</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Szerzetes rendeket betiltj&aacute;k</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Nem volt ildomos mis&eacute;re j&aacute;rni</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Esztergomi &eacute;rseket, Mintszer J, &lsquo;48
+        kar&aacute;csony&aacute;n letart&oacute;ztatj&aacute;k</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">&Eacute;letfogytiglanra &iacute;t&eacute;lik</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >L&eacute;trehozz&aacute;k a B&eacute;ke Papi mozgalmat</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Papok, akik hajland&oacute;ak egy&uuml;ttm&#369;k&ouml;dni a
+        kommunist&aacute;kkal</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >L&eacute;trehozz&aacute;k az &aacute;llam egyh&aacute;z&uuml;gyi
+        hivatalt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&lsquo;49-t&#337;l Magyar n&eacute;pk&ouml;zt&aacute;rsas&aacute;g
+        lesz</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_awz0r2z7oz4s-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Bevezetik kommunista (szovjet) alkotm&aacute;ny </span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Megv&aacute;ltoztatj&aacute;k c&iacute;mert</span>
+    </li>
+  </ul>
+  <h3 class="c6" id="h.wjptqh8l1xv">
+    <span class="c4">12. A R&aacute;kosi-diktat&uacute;ra id&#337;szaka</span>
+  </h3>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0 start">
+    <li class="c0 li-bullet-0"><span class="c1">Terror szerepe</span></li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&Aacute;VO - &Aacute;llamv&eacute;delmi Oszt&aacute;ly, majd
+        &Aacute;VH - &Aacute;llamv&eacute;delmi Hat&oacute;s&aacute;g</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >K&ouml;zvetlen&uuml;l R&aacute;kosi M&aacute;ty&aacute;s
+        ir&aacute;ny&iacute;totta</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">&Aacute;VH - Terror</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Koncepci&oacute;s perek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">K&iacute;nz&aacute;sok levezet&eacute;se</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Intern&aacute;l&oacute;t&aacute;borok</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Kitelep&iacute;t&eacute;s</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&Aacute;VH Vezet&#337;je: P&eacute;ter G&aacute;bor</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1949 - Rajk L&aacute;szl&oacute;: Legh&iacute;rhedtebb
+        koncepci&oacute;s per</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">A kommunista bel&uuml;gyminisztert</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Szem&eacute;lyi kultusz</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A p&aacute;rt vezet&#337;it dics&#337;&iacute;tik - R&aacute;kosi
+        M&aacute;ty&aacute;s</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Mindent szovjet mint&aacute;ra alak&iacute;tanak &aacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0"><span class="c1">Gazdas&aacute;g</span></li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Szovjet mint&aacute;ra</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Tervgazd&aacute;lkod&aacute;s</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">Neh&eacute;zipar fejleszt&eacute;se</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Mez&#337;gazdas&aacute;gban beindul a
+        kollektiviz&aacute;l&aacute;s</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-2 start">
+    <li class="c2 li-bullet-0">
+      <span>Elveszik a </span><span>termel&#337;kt&#337;l</span
+      ><span class="c1"
+        >&nbsp;a f&ouml;ldeket &eacute;s TSZ-eket (Termel&#337;
+        Sz&ouml;vetkezetek) hoznak l&eacute;tre</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Hadj&aacute;rat ind&iacute;tanak a gazdag paraszts&aacute;g ellen -
+        Kul&aacute;k</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >50-es &eacute;vekben &uacute;jra bevezetik a jegyrendszert</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Bevezetik a parasztok sz&aacute;m&aacute;ra
+        beszolg&aacute;ltat&aacute;st</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.kx2c51yhc6fv">
+    <span class="c4"
+      >13. A t&aacute;rsadalom helyzete az 1950-es &eacute;vek
+      elej&eacute;n</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Kommunista 3 t&aacute;rsadalmi r&eacute;teg</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0"><span class="c1">Munk&aacute;sok</span></li>
+    <li class="c5 li-bullet-0"><span class="c1">Paraszts&aacute;g</span></li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">&Eacute;rtelmis&eacute;g</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Tot&aacute;lis Diktat&uacute;ra</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A teljes t&aacute;rsadalmat &aacute;tsz&ouml;vi a kommunista
+        eszme</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A n&#337;k helyzete megv&aacute;ltozik - dolgozniuk kell</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span
+        >Ratk&oacute; Anna - Eg&eacute;szs&eacute;g&uuml;gyi miniszter lesz;
+        vissza&aacute;ll&iacute;totta az </span
+      ><span>abortusztilalmat</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Az &eacute;let sz&iacute;nvonala cs&ouml;kken</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Pozit&iacute;v v&aacute;ltoz&aacute;s</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Ingyenes eg&eacute;szs&eacute;g&uuml;gy, k&ouml;zoktat&aacute;s</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Olcs&oacute;bb m&#369;vel&#337;d&eacute;s; kommunista
+        befoly&aacute;s</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">Fontosabb szem&eacute;lyek</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_s5xrm4tvmn8-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >R&aacute;kosi M&aacute;ty&aacute;s - P&aacute;rt, Orsz&aacute;g
+        vezet&#337;</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Ger&#337; Ern&#337; - 2. ember, Gazdas&aacute;g</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Farkas Mih&aacute;ly - Er&#337;szakszervezetek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >R&eacute;vai J&oacute;zsef - Kult&uacute;ra &eacute;s
+        oktat&aacute;s</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.nwssffa0mos0">
+    <span class="c4"
+      >14. A R&aacute;kosi-diktat&uacute;ra meggyeng&uuml;l&eacute;se</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >El&eacute;gedetlens&eacute;g a magyar t&aacute;rsadalomban</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Rosszul &eacute;ltek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">&Eacute;hez&eacute;s</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Retteg&eacute;s a terrorban</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Egyre ink&aacute;bb a t&aacute;rsadalmi robban&aacute;s fel&eacute;
+        haladt az orsz&aacute;g</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1">1953.03.05. - Meghal Szt&aacute;lin</span>
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1953 nyar&aacute;n Moszkv&aacute;ba rendelik az MDP fels&#337;
+        vezet&eacute;s&eacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Moszkva R&aacute;kosit felel&#337;ss&eacute;gre vonja</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A Szovjetek egy l&eacute;p&eacute;ssel h&aacute;tr&eacute;bb
+        vez&eacute;nylik</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Lemond a minisztereln&ouml;ki poz&iacute;ci&oacute;r&oacute;l, de
+        tov&aacute;bbra is az MDP titk&aacute;ra marad</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre lesz az &uacute;j minisztereln&ouml;k - Moszkovita</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Volt benne valamilyen magyars&aacute;gtudat, embers&eacute;g</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >R&eacute;szt vett a kor&aacute;bbi vezet&eacute;sben</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1953 ny&aacute;rt&oacute;l Nagy Imre &uacute;gy gondolja Szovjetek
+        t&aacute;mogatj&aacute;k</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Elind&iacute;tja az &Uacute;j szakasz politik&aacute;j&aacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Fenntartja a Kommunista diktat&uacute;r&aacute;t</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >De, pr&oacute;b&aacute;lja korrig&aacute;lni R&aacute;kosi
+        elt&uacute;lzott</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-3 start">
+    <li class="c7 li-bullet-0">
+      <span class="c1"
+        >Megsz&uuml;nteti az intern&aacute;l&oacute; t&aacute;borokat</span
+      >
+    </li>
+    <li class="c7 li-bullet-0">
+      <span class="c1"
+        >Pr&oacute;b&aacute;lja p&eacute;nzt a mez&#337;gazdas&aacute;g
+        fel&eacute; ir&aacute;ny&iacute;tani</span
+      >
+    </li>
+    <li class="c7 li-bullet-0">
+      <span class="c1"
+        >Nagy beruh&aacute;z&aacute;sok le&aacute;ll&iacute;tani</span
+      >
+    </li>
+    <li class="c7 li-bullet-0">
+      <span class="c1"
+        >Pr&oacute;b&aacute;lja a fogyaszt&aacute;si cikkeket n&ouml;velni,
+        fizet&eacute;sek n&ouml;vel&eacute;se</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Politik&aacute;ja miatt Nagy Imre n&eacute;pszer&#369; lesz a
+        t&aacute;rsadalom k&ouml;r&eacute;ben</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >R&aacute;kosi M&aacute;ty&aacute;s nem nyugszik bele,
+        h&aacute;tulr&oacute;l f&uacute;rja Nagy Imr&eacute;t</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&lsquo;53 v&eacute;g&eacute;re kezdik fel&uuml;lvizsg&aacute;lni a
+        t&ouml;rv&eacute;nytelens&eacute;geket</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&lsquo;55-ben a nemzetk&ouml;zi helyzet fokoz&oacute;dik,
+        Hidegh&aacute;bor&uacute;s fesz&uuml;lts&eacute;g n&#337;</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">NSZK felveszik a NATO-ba</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&Uacute;jabb fordulat a magyar politik&aacute;ban, kivendeli Moszkva
+        a magyar vezet&#337;s&eacute;get</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Most R&aacute;kosit dics&eacute;rik a Szovjetek</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >R&aacute;kosi &uacute;jra &aacute;tveszik a hatalmat, Nagy
+        Imr&eacute;t kiz&aacute;rj&aacute;k a p&aacute;rtb&oacute;l</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >R&aacute;kosi megpr&oacute;b&aacute;lja az &lsquo;53 el&#337;tti
+        helyzetet vissza&aacute;ll&iacute;tani</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A magyar t&aacute;rsadalom ellen&aacute;ll&aacute;sa n&#337;</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A t&ouml;rv&eacute;nytelens&aacute;gben egyre jobban kider&uuml;l
+        R&aacute;kosi felel&#337;ss&eacute;ge</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A t&aacute;rsadalom szem&eacute;ben teljesen hiteltelenn&eacute;
+        v&aacute;lik</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_rjbsnaxt50sk-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&lsquo;56 nyar&aacute;n Szovjetek betegs&eacute;gre hivatkozva
+        lemondatj&aacute;k R&aacute;kosit</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Ger&#337; Ern&#337; lesz a minisztereln&ouml;k, nem jav&iacute;t a
+        helyzeten</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Tov&aacute;bbra is n&#337; a t&aacute;rsadalmi
+        ellen&aacute;ll&aacute;sa</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.bhyy7cpfo23i">
+    <span class="c4"
+      >15. Az 1956-os forradalom &eacute;s szabads&aacute;gharc
+      kit&ouml;r&eacute;se &eacute;s els&#337; sikerei</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_2bqhs947gmom-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >1956 febru&aacute;rja - A szovjet kommunista p&aacute;rtj&aacute;nak
+        20. kongresszus</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Hruscsov vezeti a kongresszust</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Hruscsov titkos besz&eacute;de el&iacute;t&eacute;li Szt&aacute;lint
+        &eacute;s a Szt&aacute;linizmust</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Elterjed a csatl&oacute;s orsz&aacute;gok k&ouml;z&ouml;tt</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 6. Rajk L&aacute;szl&oacute;t &uacute;jratemetik</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1">Megindulnak a t&aacute;rsadalmi mozgalmak</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Pet&#337;fi k&ouml;r: val&oacute;di vitak&ouml;r alakul &aacute;t a
+        Pet&#337;fi k&ouml;r</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Val&oacute;di k&eacute;nyes k&eacute;rd&eacute;seket tehetnek
+        fel</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0"><span class="c1">Megalakul a MEFESZ</span></li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Magyar Egyetemi &eacute;s F&#337;iskolai Egyes&uuml;letek
+        Sz&ouml;vets&eacute;g&eacute;t</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Spont&aacute;n alakul meg, nem volt k&ouml;ze a kommunista
+        p&aacute;rthoz</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Megfogalmazz&aacute;k k&ouml;vetel&eacute;seiket 16 pontban</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Lengyelorsz&aacute;gban &lsquo;56 nyar&aacute;n
+        t&uuml;ntet&eacute;sek robbannak ki</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >K&ouml;vetni kell a magyaroknak is a lengyel
+        p&eacute;ld&aacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 22-&eacute;n az egyetemist&aacute;k
+        elhat&aacute;rozz&aacute;k, hogy a lengyel n&eacute;p mellett egy
+        szolidarit&aacute;s t&uuml;ntet&eacute;st szerveznek</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 23-&aacute;n kora d&eacute;lut&aacute;n elindulnak a
+        di&aacute;kok a m&#369;egyetem el&#337;l a
+        t&uuml;ntet&eacute;sre</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">A Margit-h&iacute;d Bem J&oacute;zsef szoborhoz</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A t&ouml;meg ez ut&aacute;n elindul a Pet&#337;fi szoborhoz, ekkor
+        m&aacute;r t&ouml;bb t&iacute;zezer f&#337;s a t&ouml;meg</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">A Parlamenthez mennek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">A t&ouml;meg k&ouml;veteli Nagy Imr&eacute;t</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre ki&aacute;ll &eacute;s besz&eacute;l az emberekhez</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >&Uacute;gy kezdi besz&eacute;d&eacute;t:
+        &ldquo;Elvt&aacute;rsak&rdquo; - a t&ouml;meg lehurogja</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Csal&oacute;d&aacute;s az emberek sz&aacute;m&aacute;ra</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nem oszlik fel -&gt; k&eacute;t r&eacute;szre szakad</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Magyar R&aacute;di&oacute;hoz beolvasni
+        k&ouml;vetel&eacute;seket</span
+      >
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">Szt&aacute;lin Szoborhoz</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-3 start">
+    <li class="c7 li-bullet-0">
+      <span class="c1">Led&ouml;ntik a Szt&aacute;lin szobrot</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A R&aacute;di&oacute; el&#337;tti t&ouml;meget nem engedik be</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >elg&ouml;rd&uuml;lnek az els&#337; l&ouml;v&eacute;sek</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Hajnalban elfoglalj&aacute;k a R&aacute;di&oacute;
+        &eacute;p&uuml;let&eacute;t</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">24-25 hatalmas t&uuml;ntet&eacute;sek</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >az &Aacute;VH t&ouml;bbsz&ouml;r belel&#337;tt ezekbe a
+        t&ouml;megekbe</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">pl Kossuth t&eacute;r</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Budapesti csom&oacute;pontok fegyver ellen&aacute;ll&aacute;si
+        k&ouml;zpontok j&ouml;nnek l&eacute;tre</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Pl. Corvin k&ouml;z</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1">Sz&eacute;na t&eacute;r</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >24-25-&eacute;n m&aacute;r az eg&eacute;sz orsz&aacute;g
+        ter&uuml;let&eacute;n vannak harcok a kommunista er&#337;k ellen</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Vid&eacute;kre is kiterjed a fegyveres felkel&eacute;s</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Kinevezik Nagy Imr&eacute;t minisztereln&ouml;knek</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >A fels&#337;p&aacute;rt vezet&eacute;s elmenek&uuml;l
+        (legink&aacute;bb a Szovjetuni&oacute;ba)</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Az MDP f&#337;titk&aacute;ra K&aacute;d&aacute;r J&aacute;nos
+        lesz</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A forradalom alatt minisztereln&ouml;ki poszt volt a vezet&#337;
+        poz&iacute;ci&oacute;</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">28-&aacute;ig dulnak a fegyveres harcok</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre nem &aacute;ll a forradalm&aacute;rok mell&eacute;</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 28-&aacute;n Nagy Imre &eacute;s korm&aacute;nya
+        megv&aacute;ltoztatja a politik&aacute;j&aacute;t</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nemzeti demokratikus mozgalomnak elismeri a forradalmat</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Kit&#369;zi a &Aacute;VH felsz&aacute;mol&aacute;s&aacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A kommunist&aacute;k oldal&aacute;n az &Aacute;VH-sok &eacute;s a
+        szovjet csapatok harcoltak a forradalommal szemben</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre parancsot ad, hogy a szovjetek vonuljanak ki
+        Budapestr&#337;l</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >K&aacute;d&aacute;r J&aacute;nos is udvozli ezt az
+        &aacute;t&aacute;ll&aacute;st, K&aacute;d&aacute;r is
+        &aacute;t&aacute;ll a forradalm&aacute;rok oldal&aacute;ra</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Megsz&#369;nnek a fegyveres harcok</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre &uacute;j koal&iacute;ci&oacute;s p&aacute;rtot
+        alap&iacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 30-t&oacute;l enged&eacute;lyezik a p&aacute;rtok
+        l&eacute;trehoz&aacute;s&aacute;t</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber 28-&aacute;n gy&#337;z&ouml;tt a forradalom</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Okt&oacute;ber v&eacute;g&eacute;n K&aacute;d&aacute;r J&aacute;nos
+        feloszlatja az MDP &eacute;s l&eacute;trehozza az MSZMP-t (Magyar
+        Szocialista Munk&aacute;sp&aacute;rt)</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A forradalom alatt nem csak a fegyveres harcok zajlottak</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2bqhs947gmom-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A gy&aacute;rakban a munk&aacute;sok munk&aacute;s tan&aacute;csokat
+        v&aacute;lasztanak</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.e9c4rs9kk7ag">
+    <span class="c4"
+      >16. A szabads&aacute;g kiteljesed&eacute;se &eacute;s az &uacute;jabb
+      szovjet intervenci&oacute;</span
+    >
+  </h3>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-0 start">
+    <li class="c0 li-bullet-0"><span class="c1">K&uuml;lpolitika</span></li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Magyarorsz&aacute;g a Szovjetuni&oacute; csatl&oacute;s
+        &aacute;llamai</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre kommunista minisztereln&ouml;k &aacute;t&aacute;ll a
+        forradalm&aacute;rok mell&eacute;</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A szovjetuni&oacute; p&aacute;rtfunkcion&aacute;riusok k&uuml;ld
+        magyarorsz&aacute;gra</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-2 start">
+    <li class="c2 li-bullet-0">
+      <span class="c1">Kezdetben Nagy Imre mell&eacute; &aacute;llnak</span>
+    </li>
+    <li class="c2 li-bullet-0">
+      <span class="c1"
+        >Val&oacute;j&aacute;ban a szovjeteknek nem &eacute;rdeke
+        t&aacute;mogatni Nagy Imr&eacute;t</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-1">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Nyugat kihaszn&aacute;lja ezt az bizonytalan helyzeteket angolok
+        &eacute;s franci&aacute;k megt&aacute;madja Egyiptomot a
+        Szuezi-csatorn&aacute;&eacute;rt</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Megv&aacute;ltozik a szovjet &aacute;ll&aacute;spont; le
+        akarj&aacute;k verni a magyar forradalmat</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >A propagand&aacute;ban amerikai seg&iacute;ts&eacute;get
+        &iacute;g&eacute;r</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Amerikaiak sz&oacute;lnak a szovjeteknek, hogy nem avatkoznak
+        be</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">K&aacute;d&aacute;rt elviszik Moszkv&aacute;ba</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_2ttkscf2u8ld-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >K&aacute;d&aacute;r J&aacute;nos haza&aacute;rul&aacute;st k&ouml;vet
+        el</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >November 4-&eacute;n elindulnak a szovjet csapatok</span
+      >
+    </li>
+  </ul>
+  <h3 class="c6" id="h.c5xvv16gutlu">
+    <span class="c4">&Ouml;sszefoglal&aacute;s II.</span>
+  </h3>
+  <p class="c11 c10 c13"><span class="c1"></span></p>
+  <p class="c11">
+    <span class="c1"
+      >1. Magyarorsz&aacute;g szovjetiz&aacute;l&aacute;sa</span
+    >
+  </p>
+  <ul class="c3 lst-kix_pdn30e43pcib-0 start">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A Magyar Kommunista P&aacute;rt diktat&oacute;rikus
+        t&ouml;rekv&eacute;sei</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-1 start">
+    <li class="c5 li-bullet-0">
+      <span>&Uacute;j rendszer (</span><span>gazdas&aacute;g, politika</span
+      ><span class="c1">)</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra fel&eacute;</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra ki&eacute;p&uuml;l&eacute;se</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">R&aacute;kosi (gazdas&aacute;g)</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A kommunista diktat&uacute;ra ki&eacute;p&iacute;t&eacute;se</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Szovjet megsz&aacute;ll&aacute;s</span>
+    </li>
+    <li class="c5 li-bullet-0"><span class="c1">&Uacute;j rendszer</span></li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra fel&eacute;</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra ki&eacute;p&uuml;l&eacute;se</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">R&aacute;kosi (&eacute;let)</span>
+    </li>
+  </ul>
+  <p class="c11">
+    <span class="c1"
+      >3. Az egyp&aacute;rti diktat&uacute;ra m&#369;k&ouml;d&eacute;se</span
+    >
+  </p>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">A politikai rendszer f&#337; von&aacute;sai</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1">Szovjet megsz&aacute;ll&aacute;s (politika)</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span>&Uacute;j rendszer (</span><span>politika</span
+      ><span class="c1">)</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra fel&eacute; (szavaz&aacute;s)</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Diktat&uacute;ra ki&eacute;p&uuml;l&eacute;se (szervezetek)</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A t&aacute;rsadalom elnyom&aacute;sa, a diktat&uacute;ra
+        eszk&ouml;zei</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-1 start">
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Szovjet megsz&aacute;ll&aacute;s (m&aacute;lenkij robot)</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">Diktat&uacute;ra fel&eacute; (szavaz&aacute;s)</span>
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1"
+        >Diktat&uacute;ra ki&eacute;p&uuml;l&eacute;se (szervezetek)</span
+      >
+    </li>
+    <li class="c5 li-bullet-0">
+      <span class="c1">R&aacute;kosi (terror)</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A gazdas&aacute;gi &eacute;let jellegzetess&eacute;gei</span
+      >
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-1 start">
+    <li class="c5 li-bullet-0">
+      <span>&Uacute;j rendszer (</span><span>gazdas&aacute;g</span
+      ><span class="c1">)</span>
+    </li>
+  </ul>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre els&#337; minisztereln&ouml;ks&eacute;ge</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >&Eacute;letm&oacute;d &eacute;s &eacute;letviszonyok, kult&uacute;ra
+        az &ouml;tvenes &eacute;vekben</span
+      >
+    </li>
+  </ul>
+  <p class="c11">
+    <span class="c1"
+      >4. Az 1956-os forradalom &eacute;s szabads&aacute;gharc</span
+    >
+  </p>
+  <ul class="c3 lst-kix_pdn30e43pcib-0">
+    <li class="c0 li-bullet-0">
+      <span class="c1">A forradalom okai, h&aacute;ttere</span>
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >A forradalom f&#337;bb t&ouml;rekv&eacute;sei &eacute;s
+        esem&eacute;nyei, a szabads&aacute;gharc jellemz&#337;i</span
+      >
+    </li>
+    <li class="c0 li-bullet-0">
+      <span class="c1"
+        >Nagy Imre tev&eacute;kenys&eacute;g&eacute;nek
+        &eacute;rt&eacute;kel&eacute;se</span
+      >
+    </li>
+  </ul>
   </body>
 </html>
